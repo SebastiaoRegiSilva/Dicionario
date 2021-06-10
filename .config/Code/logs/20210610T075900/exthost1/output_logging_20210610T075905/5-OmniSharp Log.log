@@ -1,0 +1,466 @@
+Starting OmniSharp server at 10/06/2021 07:59:06
+    Target: /home/sebastiao/vscode/ProjectXadrez/xadrez-console.sln
+
+OmniSharp server started.
+    Path: /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/run
+    PID: 10262
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on ubuntu 18.4 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.11.0 - "/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/MSBuild.exe'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.11.0 - "/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin"
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin
+            CscToolPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/Roslyn
+            BypassFrameworkInstallChecks = true
+            MSBuildExtensionsPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.Completion.CompletionOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.BlockStructureWorkspaceOptionsProvider, Order: 140
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/sebastiao/vscode/ProjectXadrez'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        Detecting projects in '/home/sebastiao/vscode/ProjectXadrez/xadrez-console.sln'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/sebastiao/vscode/ProjectXadrez'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/sebastiao/vscode/ProjectXadrez' on host 10064.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+[fail]: OmniSharp.MSBuild.ProjectLoader
+        This project targets .NET version that requires reference assemblies that do not ship with OmniSharp out of the box (e.g. .NET Framework). The most common solution is to make sure Mono is installed on your machine (https://mono-project.com/download/) and that OmniSharp is started with that Mono installation (e.g. "omnisharp.useGlobalMono":"always" in C# Extension for VS Code).
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj'.
+/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/Microsoft.Common.CurrentVersion.targets(1216,5): Error: This project targets .NET version that requires reference assemblies that do not ship with OmniSharp out of the box (e.g. .NET Framework). The most common solution is to make sure Mono is installed on your machine (https://mono-project.com/download/) and that OmniSharp is started with that Mono installation (e.g. "omnisharp.useGlobalMono":"always" in C# Extension for VS Code).
+
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+Received response for /v2/getcodeactions but could not find request.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs added to workspace
+Received response for /quickinfo but could not find request.
+Received response for /quickinfo but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 7.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 10.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 22.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 29.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 4, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 4, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 4, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 36.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 23.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 18, Column: 61.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 23, Column: 84.
+Received response for /v2/getcodeactions but could not find request.
+Received response for /v2/getcodeactions but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 17, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 22, Column: 84.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 22, Column: 84.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 27, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 28, Column: 21.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs added to workspace
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs, Line: 2, Column: 4.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 13.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 15.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 18.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 14.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 12.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 4, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 4, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 5, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 6, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 8, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 9, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 10, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 11, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 12, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 13, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 14, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 15, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 17, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 18, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 4.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 15.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 26.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 37.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 19, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 27, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 13.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 13.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 13.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 4.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 27, Column: 9.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 33, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 33, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 4.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 14.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 25, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 23, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 25, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 33, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 36, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 33, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 32, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 25, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 25, Column: 1.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 25, Column: 10.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 29, Column: 9.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 34, Column: 2.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 35, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 36, Column: 4.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 36, Column: 14.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 36, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 27, Column: 3.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs, Line: 23, Column: 2.
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs, Line: 0, Column: 0.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs, Line: 2, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs added to workspace
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs added to workspace
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+Received response for /findusages but could not find request.
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs added to workspace
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 9, Column: 12.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 12, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 99.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 88.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 71.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 24, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 25, Column: 29.
+Received response for /v2/getcodeactions but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 25, Column: 63.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 24, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 24, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 24, Column: 80.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 25, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 11, Column: 21.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 2, Column: 17.
+Received response for /v2/getcodeactions but could not find request.
+Received response for /v2/getcodeactions but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 88.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 80.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 70.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 24, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 15, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 73.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 75.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 76.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 79.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 94.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 101.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 104.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 114.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 110.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 102.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 99.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 91.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 78.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 72.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 70.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 20.

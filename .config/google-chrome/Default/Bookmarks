@@ -1,0 +1,62 @@
+{
+   "checksum": "cd7caeda7b5131a4ccf2faf39ae65f29",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13266699845928269",
+            "guid": "195d40fa-3802-47fd-b8dc-73cf21971bb2",
+            "id": "5",
+            "name": "Classe de objeto (sistema) | Microsoft Docs",
+            "type": "url",
+            "url": "https://docs.microsoft.com/en-us/dotnet/api/system.object?view=net-5.0"
+         }, {
+            "date_added": "13266699912642695",
+            "guid": "4d5b58e7-2eba-4fd2-b5bc-266b171882d8",
+            "id": "6",
+            "name": "Prier - Gerenciamento de Solicitações",
+            "type": "url",
+            "url": "http://app.prier.com.br/Dashboard"
+         }, {
+            "date_added": "13266699921328924",
+            "guid": "c5af41e3-3860-4c84-9734-6416273af49b",
+            "id": "7",
+            "name": "Relier | Trello",
+            "type": "url",
+            "url": "https://trello.com/b/8GXVcp0D/relier"
+         }, {
+            "date_added": "13266699926516813",
+            "guid": "c01d261e-169a-404c-8fd7-253eca837a48",
+            "id": "8",
+            "name": "Relier IT Solutions - Calendar - Week of May 23, 2021",
+            "type": "url",
+            "url": "https://calendar.google.com/calendar/u/0/r?tab=mc&pli=1"
+         } ],
+         "date_added": "13267725999412945",
+         "date_modified": "13266699926516813",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13267725999413064",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Outros favoritos",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13267725999413067",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Favoritos nos dispositivos móveis",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CrABCo8BCIiBAhKIARJ2CAISOAoGCgJibRABEDMaEgkAdX6AZ8QFACEAdX6AZ8QFADIYChYIAhGgtS+QZ8QFABgAIQAAAAAAAAAAEjgKBgoCYmQQABAzGhIJAHV+gGfEBQAhAHV+gGfEBQAyGAoWCAIRoLUvkGfEBQAYACEAAAAAAAAAACAASPrel62fL3D63petny8SACABKhhQa2ZXbUJnYmV2WEk0VnhpRlZxRDNnPT0SwwEIAxK+AQoceTVXRTI3dUk2dlgvRGVJU0hKem5qTXF1V1dzPRJmWjpBRHF0QVp5VWxIMFB6UjZ3eXpOVkFOUytOVTN6cDNQZWlrTmFCblUvTSthSmwycWNhaGFIQ0NKNHp4blRBUjB2ejR2M01ua2FGN21WYlh2elM0NDNrdDNuUXJTRHJFc3Vudz09GAAgACgAMOuBg8HuivECOABAAEocNzlsK0xSRVVwaWFFdkREK0c0M2NwWFN0d0JjPVoAZQAAAAASqwEIARKmAQocL0VLTGFVVXlNZGJLRWsxQmEyVWlueURuZjdJPRJOWjpBRHF0QVp6cGNSRDYxUjFmclMxcnNYcEozOWFraHpZcGg4WlhiYy83SUx5K1dtZjJuQlV0UzFCam9rN0ZDTXdhNHhzeHZtK293aE1sGAAgACgAMOuBg8HuivECOABAAEocVStHR0l0WkVEcFpzSVNsT1VhSVR1SUxkTW5JPVoAZQAAAAASrAIIBhKnAgocZURnK2NpaVhGaFk3WGExWU5ESkQwQ2VJOTd3PRKmAVo6QURxdEFaeHhmakErZ3hnVEZEMnl6cTVFc3JSM3ZHVHZJQlo1NW8vK1ptdnNwVzVSaUx4dDRXcHZScG5PWjFMZmhIaXRYOTIwZ0d6V2JVVzR6MEwrUnExWEYvcDBiNjE5RnM1ODh5TDRZY2dENU02L1FXNEt1b29EWmQxYkQ1MGppOTFXL0t1eWpMS1FMaWFEbWk0Vis3RHhoTTlHQnc5MnZBPT0YACAAKAAwrvfx+f/s8AI4w7vkoZsvQMO75KGbL0ocd3l4N0p4akFHdEJLMFJEeUlrVXlZdFFiZVNVPVoeIhxueVlqSkc3L2I4VmJsVWc4SEljUnJvRENJUzg9ZQAAAAASrAIIBRKnAgocbEZ4MWtmb1dJK3kwUTErL3lNZXowT1Jud2pjPRKmAVo6QURxdEFaeHhmakErZ3hnVEZEMnl6cTVFc3JSM3ZHVHZJQlo1NW8vK1ptdnNwVzVSaU01R05mbDREZnJ2QkRWUTJrUUlTSkFaUTZCY1pyc1JtN3FORFpHNG9lR1dPY0FxQ0dXaU5Nc0hNUTV5dWUrZ0dRc2Q3ZWhDVS9FcWJwbk1yRWphV3RlcUhreElzR1FrSG9oUU0wREtyMW1lQ1B3MURnPT0YACACKAIwyajIwe6K8QI4qbLgoZsvQNCviYufL0oceGVxQjhEK3BTd0lEV1p4VmNxb051elNqdm9vPVoeIhxZSlg5RS9OcXo2dHNlMVA4MkFXMm9LMy94cVE9Zacc0hkSrQIIBxKoAgocbEhMWDJxU2I2b3dWdHFTeHFUNmxrdDNSclZVPRKmAVo6QURxdEFaeHhmakErZ3hnVEZEMnl6cTVFc3JSM3ZHVHZJQlo1NW8vK1ptdnNwVzVSaUpYOVUra3lLVjZSOGluWERMb1Q2N3pzTHQwV3paQzZGbzh1QjNhK0txdm9HN0xjQUZta3lWRjBNcjlaK2I3OFFYaC90NHhEYVRjRUQzQkRlcXEzaUFiYTJFanZaM28yUW1qeC9YTFh1TnQ0MklaSENnPT0YACAFKAUwgOuCtu+K8QI4sf/koZsvQJSYmIufL0ocakIxaGt4aDVFSGx2eHlLTEZCZlA5MW40bjJRPVofIh23ZjlUbUgvNWlmb0VDbU5aSWU0azFidW01OFJNPWVk5s9DEq0CCAgSqAIKHENsRkRqS2VFQ0VRaDlLdEQ4NDUrK1hxTStwOD0SpgFaOkFEcXRBWnh4ZmpBK2d4Z1RGRDJ5enE1RXNyUjN2R1R2SUJaNTVvLytabXZzcFc1UmlJb1NJb1Q4blVHQ0tmYWdEMUpwbTgyZlRYcTNBcTVuTENKMjhkZENxelJYOExIdGlHRkR3S1E1RWViN0hJZE5qeHFzSnI2dnhyU0oyNnhMdUtQZCtHZVBNcDdDUjhJUjhXVU9lcGZYcjh3UHR1ZWY0dz09GAAgAygDMJaOson5jPECOPan5aGbL0Dgz5itny9KHFRUYjhackVIUWIrbUY5RlAyNFhiK0tqMXRCcz1aHyId2zNYWkdPaVhXUzZFYmVuKzlxR3FwWFNyWDVtZz1lamGbvRLDAQgCEr4BChx6RFZHcnJ0WkxkTSs0QlR5YmcrSENPcldneW89EmZaOkFEcXRBWndtT1lDdmZVMDNqeU9IcW5VSXh2bEFPZFNVM05aek1KQ3RrOVY2Z1JMYS95VDVibnVaUWFVeWVTejh4bFVTeHFFK09WdW1aRUVSek5IVUxub0wvZUs0MmNjNVFRPT0YACAAKAAw64GDwe6K8QI4AEAAShw1dXN5L2NwZnBpMUV0b0JIRGdYSXMwcWI0ckE9WgBlAAAAABgBIIjgl62fLygA",
+   "version": 1
+}

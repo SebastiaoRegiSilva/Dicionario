@@ -1,0 +1,162 @@
+[2021-06-09 11:35:04.554] [exthost] [info] extension host started
+[2021-06-09 11:35:04.703] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-06-09 11:35:04.703] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-06-09 11:35:04.719] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-06-09 11:35:04.720] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-06-09 11:35:04.725] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-09 11:35:04.725] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/git/dist/main
+[2021-06-09 11:35:04.909] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-06-09 11:35:04.910] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github/dist/extension.js
+[2021-06-09 11:35:04.922] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-06-09 11:35:04.923] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-06-09 11:35:05.327] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-06-09 11:35:05.327] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-06-09 11:35:05.349] [exthost] [info] ExtensionService#_doActivateExtension ms-dotnettools.csharp {"startup":true,"extensionId":{"value":"ms-dotnettools.csharp","_lower":"ms-dotnettools.csharp"},"activationEvent":"workspaceContains:*.csproj,*.sln,*.slnf,*.csx,*.cake,**/*.csproj,**/*.sln,**/*.slnf,**/*.csx,**/*.cake"}
+[2021-06-09 11:35:05.350] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/dist/extension
+[2021-06-09 11:35:05.557] [exthost] [info] eager extensions activated
+[2021-06-09 11:35:05.564] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-06-09 11:35:05.564] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-06-09 11:35:05.588] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-06-09 11:35:05.589] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-06-09 11:35:05.592] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-06-09 11:35:05.592] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-06-09 11:39:46.139] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug2 {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-06-09 11:39:46.139] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.node-debug2/out/src/extension
+[2021-06-09 11:39:46.145] [exthost] [info] ExtensionService#_doActivateExtension msjsdiag.debugger-for-chrome {"startup":false,"extensionId":{"value":"msjsdiag.debugger-for-chrome","_lower":"msjsdiag.debugger-for-chrome"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-06-09 11:39:46.145] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/sebastiao/.vscode/extensions/msjsdiag.debugger-for-chrome-4.12.12/out/src/extension
+[2021-06-09 11:39:46.286] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-06-09 11:39:46.286] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/ms-vscode.node-debug/dist/extension.js
+[2021-06-09 11:39:46.292] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.powershell {"startup":false,"extensionId":{"value":"ms-vscode.powershell","_lower":"ms-vscode.powershell"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-06-09 11:39:46.292] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/sebastiao/.vscode/extensions/ms-vscode.powershell-2021.5.1/out/src/main
+[2021-06-09 11:41:29.095] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2021-06-09 11:41:29.095] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-06-09 11:41:29.102] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-06-09 11:41:29.102] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-06-09 11:41:29.131] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-06-09 11:41:29.131] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-06-09 11:41:39.627] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"extensionId":{"value":"vscode.debug-server-ready","_lower":"vscode.debug-server-ready"},"activationEvent":"onDebugResolve"}
+[2021-06-09 11:41:39.627] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/debug-server-ready/dist/extension
+[2021-06-09 11:43:16.110] [exthost] [info] ExtensionService#_doActivateExtension jchannon.csharpextensions {"startup":false,"extensionId":{"value":"jchannon.csharpextensions","_lower":"jchannon.csharpextensions"},"activationEvent":"onLanguage:csharp"}
+[2021-06-09 11:43:16.111] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/extension
+[2021-06-09 11:43:16.477] [exthost] [error] [jchannon.csharpextensions] provider FAILED
+[2021-06-09 11:43:16.483] [exthost] [error] Error: Illegal argument: line must be non-negative
+    at C (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:5:1232)
+    at new E (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:76:13933)
+    at new E (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:76:13328)
+    at CodeActionProvider.getInitializeFromCtorCommand (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:166:61)
+    at addInitalizeFromCtor (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:15:28)
+    at CodeActionProvider.provideCodeActions (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:19:9)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163540
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12043
+    at new Promise (<anonymous>:null:null)
+    at m (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12015)
+    at R.provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163520)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186624
+    at Ce._withAdapter (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:180570)
+    at Ce.$provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186600)
+    at l._doInvokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12836)
+    at l._invokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12520)
+    at l._receiveRequest (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:11136)
+    at l._receiveOneMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:9973)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:8074
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29764
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at t._receiveMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20755)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17641
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at acceptChunk (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12862)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12210
+    at Socket.v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:13195)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+
+[2021-06-09 11:43:17.639] [exthost] [error] [jchannon.csharpextensions] provider FAILED
+[2021-06-09 11:43:17.639] [exthost] [error] TypeError: Cannot read property 'selection' of undefined
+    at CodeActionProvider.getInitializeFromCtorCommand (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:165:33)
+    at addInitalizeFromCtor (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:15:28)
+    at CodeActionProvider.provideCodeActions (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:19:9)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163540
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12043
+    at new Promise (<anonymous>:null:null)
+    at m (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12015)
+    at R.provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163520)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186624
+    at Ce._withAdapter (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:180570)
+    at Ce.$provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186600)
+    at l._doInvokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12836)
+    at l._invokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12520)
+    at l._receiveRequest (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:11136)
+    at l._receiveOneMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:9973)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:8074
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29764
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at t._receiveMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20755)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17641
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at acceptChunk (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12862)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12210
+    at Socket.v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:13195)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+
+[2021-06-09 11:52:20.712] [exthost] [info] ExtensionService#_doActivateExtension vscode.grunt {"startup":false,"extensionId":{"value":"vscode.grunt","_lower":"vscode.grunt"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-06-09 11:52:20.713] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/grunt/dist/main
+[2021-06-09 11:52:20.738] [exthost] [info] ExtensionService#_doActivateExtension vscode.gulp {"startup":false,"extensionId":{"value":"vscode.gulp","_lower":"vscode.gulp"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-06-09 11:52:20.739] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/gulp/dist/main
+[2021-06-09 11:52:20.747] [exthost] [info] ExtensionService#_doActivateExtension vscode.jake {"startup":false,"extensionId":{"value":"vscode.jake","_lower":"vscode.jake"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-06-09 11:52:20.747] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/jake/dist/main
+[2021-06-09 11:52:20.759] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-06-09 11:52:20.759] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/npm/dist/npmMain
+[2021-06-09 12:04:23.431] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:json"}
+[2021-06-09 12:04:23.432] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-06-09 12:04:40.384] [exthost] [error] [jchannon.csharpextensions] provider FAILED
+[2021-06-09 12:04:40.384] [exthost] [error] TypeError: Cannot read property 'selection' of undefined
+    at CodeActionProvider.getInitializeFromCtorCommand (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:165:33)
+    at addInitalizeFromCtor (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:15:28)
+    at CodeActionProvider.provideCodeActions (/home/sebastiao/.vscode/extensions/jchannon.csharpextensions-1.3.1/out/src/codeActionProvider.js:19:9)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163540
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12043
+    at new Promise (<anonymous>:null:null)
+    at m (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64:12015)
+    at R.provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:163520)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186624
+    at Ce._withAdapter (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:180570)
+    at Ce.$provideCodeActions (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:87:186600)
+    at l._doInvokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12836)
+    at l._invokeHandler (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:12520)
+    at l._receiveRequest (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:11136)
+    at l._receiveOneMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:9973)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:91:8074
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:29764
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at S.fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:15497)
+    at t._receiveMessage (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:20755)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:17641
+    at fire (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:57:1836)
+    at acceptChunk (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12862)
+    at /usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65:12210
+    at Socket.v (/usr/share/code/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:106:13195)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+
+[2021-06-09 12:05:08.314] [exthost] [info] ExtensionService#_doActivateExtension vassilik.cscs-debugger {"startup":false,"extensionId":{"value":"vassilik.cscs-debugger","_lower":"vassilik.cscs-debugger"},"activationEvent":"onDebug"}
+[2021-06-09 12:05:08.314] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/sebastiao/.vscode/extensions/vassilik.cscs-debugger-0.7.2/out/extension
+[2021-06-09 12:09:38.288] [exthost] [info] extension host terminating: received terminate message from renderer
+[2021-06-09 12:09:39.339] [exthost] [info] exiting with code 0

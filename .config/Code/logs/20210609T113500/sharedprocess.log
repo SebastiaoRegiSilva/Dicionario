@@ -1,0 +1,19 @@
+[2021-06-09 11:35:05.963] [sharedprocess] [error] [uncaught exception in sharedProcess]: The "path" argument must be of type string. Received type undefined: Error: The "path" argument must be of type string. Received type undefined
+    at b (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:14135)
+    at basename (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:22371)
+    at n.groupImportantTipsByExe (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:5088)
+    at n.collectTips (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:4567)
+    at async file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:3764
+[2021-06-09 11:35:42.826] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-06-09 11:41:16.012] [sharedprocess] [info] Installing extension: chakrounanas.turbo-console-log
+[2021-06-09 11:41:16.555] [sharedprocess] [info] Downloaded extension: chakrounanas.turbo-console-log /home/sebastiao/.config/Code/CachedExtensionVSIXs/chakrounanas.turbo-console-log-2.1.6
+[2021-06-09 11:41:16.626] [sharedprocess] [info] Extracted extension to /home/sebastiao/.vscode/extensions/.d686131c-c235-4de2-931e-b9c90d10f5f3: chakrounanas.turbo-console-log
+[2021-06-09 11:41:16.633] [sharedprocess] [info] Renamed to /home/sebastiao/.vscode/extensions/chakrounanas.turbo-console-log-2.1.6
+[2021-06-09 11:41:16.635] [sharedprocess] [info] Installation completed. chakrounanas.turbo-console-log
+[2021-06-09 11:41:16.642] [sharedprocess] [info] Extensions installed successfully: chakrounanas.turbo-console-log
+[2021-06-09 12:04:56.063] [sharedprocess] [info] Installing extension: vassilik.cscs-debugger
+[2021-06-09 12:05:07.137] [sharedprocess] [info] Downloaded extension: vassilik.cscs-debugger /home/sebastiao/.config/Code/CachedExtensionVSIXs/vassilik.cscs-debugger-0.7.2
+[2021-06-09 12:05:07.801] [sharedprocess] [info] Extracted extension to /home/sebastiao/.vscode/extensions/.62fc08c2-dc20-4b43-ab90-c1f3bac3088b: vassilik.cscs-debugger
+[2021-06-09 12:05:07.816] [sharedprocess] [info] Renamed to /home/sebastiao/.vscode/extensions/vassilik.cscs-debugger-0.7.2
+[2021-06-09 12:05:07.820] [sharedprocess] [info] Installation completed. vassilik.cscs-debugger
+[2021-06-09 12:05:07.834] [sharedprocess] [info] Extensions installed successfully: vassilik.cscs-debugger

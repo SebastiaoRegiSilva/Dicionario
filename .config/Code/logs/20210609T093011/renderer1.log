@@ -1,0 +1,32 @@
+[2021-06-09 09:30:14.107] [renderer1] [error] net::ERR_INTERNET_DISCONNECTED: Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (electron/js2c/browser_init.js:109:7029)
+    at SimpleURLLoaderWrapper.emit (events.js:315:20)
+[2021-06-09 09:47:09.613] [renderer1] [error] Cannot read property 'children' of undefined: TypeError: Cannot read property 'children' of undefined
+    at n.get children [as children] (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1937:6236)
+    at h (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1937:7631)
+    at Yt.refreshTOCTree (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:106359)
+    at Yt.triggerSearch (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:108229)
+    at Yt.onSearchInputChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:106782)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:93111
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2098:14638
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:580:14170
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at X.endDeferredEmit (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:589:30323)
+    at W.pushEditOperations (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:587:925)
+    at p.executeEdits (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:617:479)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:618:3260
+    at i._withViewEventsCollector (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:618:5338)
+    at i._executeCursorEdit (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:618:3172)
+    at i.executeEdits (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:618:3225)
+    at hn.executeEdits (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:654:10787)
+    at b.setValue (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2098:15491)
+    at Yt._setOptions (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:89437)
+    at Yt.setInput (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2188:88691)
+    at async a.doSetInput (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1798:10549)
+    at async a.openEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1798:9103)
+    at async file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2452:15922
+    at async Object.run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2623:91498)
+    at async T.runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30945)
+    at async T.run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30844)
+    at async runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1424:34660)

@@ -1,0 +1,108 @@
+[2021-06-09 09:49:41.375] [renderer1] [error] Could not find step with ID: scmClone: Error: Could not find step with ID: scmClone
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1771:4583
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at _.progressStep (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65074)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65358
+    at Array.forEach (<anonymous>)
+    at _.progressByCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65342)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:56305
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at g._tryExecuteCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3560)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3245
+    at async T.runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30945)
+    at async T.run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30844)
+    at async runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1424:34660)
+[2021-06-09 10:04:46.179] [renderer1] [warning] UNRESPONSIVE extension host, 'vscode.git' took 52% of 492.602ms, saved PROFILE here: 'file:///tmp/exthost-00453e.cpuprofile' [{"id":"gc","total":2239,"percentage":0},{"id":"program","total":177648,"percentage":36},{"id":"self","total":58011,"percentage":12},{"id":"vscode.git","total":254614,"percentage":52}]
+[2021-06-09 10:06:08.207] [renderer1] [error] Could not find step with ID: pickAFolderTask-Other: Error: Could not find step with ID: pickAFolderTask-Other
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1771:4583
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at _.progressStep (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65074)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65358
+    at Array.forEach (<anonymous>)
+    at _.progressByCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65342)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:56305
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at g._tryExecuteCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3560)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3245
+    at async EventEmitter.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2635:84478)
+[2021-06-09 10:46:26.347] [renderer1] [error] loadedSources not supported: Error: loadedSources not supported
+    at p.loadedSources (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:959:26504)
+    at A.getLoadedSources (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2189:45360)
+    at q (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:61909)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:63202
+    at Array.forEach (<anonymous>)
+    at F.renderBody (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:63191)
+    at F.render (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:170:17822)
+    at F.render (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2189:115856)
+    at v.onDidAddViewDescriptors (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2471:37092)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2471:32950
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at c.triggerOnDidAddVisibleViewDescriptors (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:9715)
+    at c.onDidChangeContext (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:13902)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:6573
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:58:58821
+    at m.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at m.resume (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:2476)
+    at d.bufferChangeEvents (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:121388)
+    at R.setFocus (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:959:32764)
+    at $.focusStackFrame (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:42464)
+    at $.launchOrAttachToSession (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:37303)
+    at async $.doCreateSession (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:35997)
+    at async $.startDebugging (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:33382)
+    at async handler (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2226:9575)
+    at async EventEmitter.<anonymous> (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2635:84478)
+[2021-06-09 10:49:12.770] [renderer1] [error] loadedSources not supported: Error: loadedSources not supported
+    at p.loadedSources (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:959:26504)
+    at A.getLoadedSources (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2189:45360)
+    at q (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:61909)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:63202
+    at Array.forEach (<anonymous>)
+    at F.renderBody (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:63191)
+    at F.render (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:170:17822)
+    at F.render (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2189:115856)
+    at v.onDidAddViewDescriptors (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2471:37092)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2471:32950
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at c.triggerOnDidAddVisibleViewDescriptors (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:9715)
+    at c.onDidChangeContext (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:13902)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2238:6573
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:58:58821
+    at m.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at m.resume (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:2476)
+    at d.bufferChangeEvents (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:634:121388)
+    at R.setFocus (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:959:32764)
+    at $.focusStackFrame (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:42464)
+    at $.launchOrAttachToSession (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:37303)
+    at async $.doCreateSession (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:35997)
+    at async $.startDebugging (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2227:33382)
+    at async handler (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2226:9575)
+    at async T.runAction (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30945)
+    at async T.run (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:171:30844)
+[2021-06-09 11:31:13.746] [renderer1] [error] Unable to resolve the resource without a debug session: Error: Unable to resolve the resource without a debug session
+    at Sn.createOrUpdateContentModel (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1424:110128)
+    at Sn.provideTextContent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1424:109719)
+    at l.resolveTextModelContent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:109146)
+    at l.doCreateReferencedObject (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:108045)
+    at l.createReferencedObject (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:107479)
+    at l.acquire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:17:13914)
+    at createModelReference (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2288:109818)
+    at mr.resolve (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1972:51006)
+    at sa.setInput (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2242:91827)
+    at async a.doSetInput (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1798:10549)
+    at async a.openEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1798:9103)
+    at async file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2452:15922
+[2021-06-09 11:31:40.782] [renderer1] [error] Could not find category with ID: Codespaces: Error: Could not find category with ID: Codespaces
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1771:4364
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at _.progressStep (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65074)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65358
+    at Array.forEach (<anonymous>)
+    at _.progressByCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:65342)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1770:56305
+    at a.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:60:1836)
+    at g._tryExecuteCommand (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3560)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1743:3245
+    at async u.open (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:628:19630)
+    at async l.open (file:///usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:628:21654)

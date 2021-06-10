@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="firefox.desktop" open-window-count="0" score="3" last-seen="1623252397"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="1" last-seen="1623331411"/>
+    <application id="code.desktop" open-window-count="1" score="2962" last-seen="1623331406"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="545" last-seen="1623331422"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="0" score="11" last-seen="1623330318"/>
+    <application id="discord.desktop" open-window-count="1" score="59" last-seen="1623331410"/>
+    <application id="gnome-initial-setup.desktop" open-window-count="0" score="6" last-seen="1623251808"/>
+    <application id="thunderbird.desktop" open-window-count="0" score="23" last-seen="1623266125"/>
+  </context>
+</application-state>

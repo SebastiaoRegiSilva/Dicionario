@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.defaultProfile.linux": "pwsh",
+    "grunt.autoDetect": "on",
+    "gulp.autoDetect": "on",
+    "jake.autoDetect": "on",
+    "files.autoSave": "afterDelay"
+}

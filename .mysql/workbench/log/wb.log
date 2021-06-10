@@ -1,0 +1,33 @@
+11:57:11 [INF][      WBContext]: Parsing application arguments.
+11:57:11 [INF][      WBContext]:     /usr/lib/mysql-workbench/mysql-workbench-bin
+11:57:11 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /home/sebastiao/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+11:57:11 [INF][      WBContext]: WbContext::init
+11:57:12 [INF][            WBA]: Looking for extension modules for WBA...
+11:57:12 [INF][            WBA]: 0 extension modules found
+11:57:12 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
+11:57:12 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
+11:57:12 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
+11:57:12 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 6.3.8 CE build 1228 (64 bit)
+	Configuration Directory: /home/sebastiao/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.15.10
+	OS: Linux 5.4.0-74-generic
+	CPU: 4x Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz (2184.301MHz) - 7,68GiB RAM
+	Distribution: Ubuntu 18.04.5 LTS
+
+	Fips mode enabled: no
+

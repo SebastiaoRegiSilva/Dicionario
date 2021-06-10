@@ -1,0 +1,730 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /home/sebastiao/vscode/ProjectXadrez
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv :obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/obj/Debug/net5.0/ProjectXadrez.AssemblyInfo.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/Properties/AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs
+> git cat-file -s e36b61b357361d49aefec89e38c5828b3daebe0d
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/App.config
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/App.config
+> git cat-file -s 88fa4027bda397de6bf19f0940e5dd6026c877f9
+> git show --textconv :xadrez-console/tabuleiro/TabuleiroException.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/TabuleiroException.cs
+> git cat-file -s 94bb1210730ffe8eac0d58b6f96e55c4b255631e
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/App.config
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/App.config
+> git cat-file -s 88fa4027bda397de6bf19f0940e5dd6026c877f9
+> git check-ignore -v -z --stdin
+> git show --textconv :xadrez-console/xadrez/Torre.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Torre.cs
+> git cat-file -s ec4b972da557dbb30d2bc0f095814c8b7e8fe1b2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/xadrez/Rei.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Rei.cs
+> git cat-file -s aaa82acad9a2b6c041ab1f8c2fb649e77fc146a4
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/xadrez/PosicaoXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PosicaoXadrez.cs
+> git cat-file -s c831f39acb010178ea1110a76b2b1a8b010aa783
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/xadrez/Peao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Peao.cs
+> git cat-file -s 1b82db996000b86d4720b6a48ea4c2a6a1e70ff0
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/xadrez/Dama.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Dama.cs
+> git cat-file -s 67dad5dbc318a1a3cb44502a4c2309020f2b6be7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git show --textconv :xadrez-console/xadrez/Peao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Peao.cs
+> git cat-file -s 1b82db996000b86d4720b6a48ea4c2a6a1e70ff0
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/Properties/AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs
+> git cat-file -s e36b61b357361d49aefec89e38c5828b3daebe0d
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/Properties/AssemblyInfo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Properties/AssemblyInfo.cs
+> git cat-file -s e36b61b357361d49aefec89e38c5828b3daebe0d
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :xadrez-console/tabuleiro/TabuleiroException.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/TabuleiroException.cs
+> git cat-file -s 94bb1210730ffe8eac0d58b6f96e55c4b255631e
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :xadrez-console/tabuleiro/TabuleiroException.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/TabuleiroException.cs
+> git cat-file -s 94bb1210730ffe8eac0d58b6f96e55c4b255631e
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git show --textconv :xadrez-console/xadrez/Dama.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Dama.cs
+> git cat-file -s 67dad5dbc318a1a3cb44502a4c2309020f2b6be7
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git show --textconv :xadrez-console/xadrez/Peao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Peao.cs
+> git cat-file -s 1b82db996000b86d4720b6a48ea4c2a6a1e70ff0
+> git show --textconv :xadrez-console/xadrez/PosicaoXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PosicaoXadrez.cs
+> git cat-file -s c831f39acb010178ea1110a76b2b1a8b010aa783
+> git show --textconv :xadrez-console/xadrez/Rei.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Rei.cs
+> git cat-file -s aaa82acad9a2b6c041ab1f8c2fb649e77fc146a4
+> git show --textconv :xadrez-console/xadrez/Torre.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Torre.cs
+> git cat-file -s ec4b972da557dbb30d2bc0f095814c8b7e8fe1b2
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :xadrez-console/Tela.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs
+> git cat-file -s 4b6d21d6575d866f7a0d5c1015db2f2a1cc9f545
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git show --textconv :Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :ProjectXadrez.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/ProjectXadrez.csproj
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git show --textconv :xadrez-console/xadrez/Dama.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Dama.cs
+> git cat-file -s 67dad5dbc318a1a3cb44502a4c2309020f2b6be7
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git show --textconv :xadrez-console/xadrez/Peao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Peao.cs
+> git cat-file -s 1b82db996000b86d4720b6a48ea4c2a6a1e70ff0
+> git show --textconv :xadrez-console/xadrez/PosicaoXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PosicaoXadrez.cs
+> git cat-file -s c831f39acb010178ea1110a76b2b1a8b010aa783
+> git show --textconv :xadrez-console/App.config
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/App.config
+> git cat-file -s 88fa4027bda397de6bf19f0940e5dd6026c877f9
+> git show --textconv :xadrez-console/xadrez/Rei.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Rei.cs
+> git cat-file -s aaa82acad9a2b6c041ab1f8c2fb649e77fc146a4
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :xadrez-console/xadrez/Cavalo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Cavalo.cs
+> git cat-file -s 072afe082a63cd309c069cb8f88e2d0d6ecadfc5
+> git show --textconv :xadrez-console/xadrez/Bispo.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Bispo.cs
+> git cat-file -s c480be565e80339b7026ad71890ddb67e83b88d0
+> git show --textconv :xadrez-console/tabuleiro/TabuleiroException.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/TabuleiroException.cs
+> git cat-file -s 94bb1210730ffe8eac0d58b6f96e55c4b255631e
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :xadrez-console/tabuleiro/TabuleiroException.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/TabuleiroException.cs
+> git cat-file -s 94bb1210730ffe8eac0d58b6f96e55c4b255631e
+> git show --textconv :xadrez-console/tabuleiro/Cor.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs
+> git cat-file -s 15132ac0f60844e482b5cf58b468e6875c28b618
+> git show --textconv :xadrez-console/tabuleiro/Peca.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs
+> git cat-file -s 02c3b744230937ee172487ec94f22d598f2003ef
+> git show --textconv :xadrez-console/tabuleiro/Posicao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs
+> git cat-file -s dedc737af4bfc1b8a4500bb6ef850524a0c36eb2
+> git show --textconv :xadrez-console/tabuleiro/Tabuleiro.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs
+> git cat-file -s d2fa1d5eb216cce0af3f21d7d0d6f73c7c38452d
+> git show --textconv :xadrez-console/xadrez/Peao.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/Peao.cs
+> git cat-file -s 1b82db996000b86d4720b6a48ea4c2a6a1e70ff0
+> git show --textconv :xadrez-console/xadrez/PosicaoXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PosicaoXadrez.cs
+> git cat-file -s c831f39acb010178ea1110a76b2b1a8b010aa783
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d
+> git show --textconv :xadrez-console/xadrez/PartidaDeXadrez.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez/PartidaDeXadrez.cs
+> git cat-file -s 6fdef8a2e9a21d0ec7a5f0d1141a1467941bae4d

@@ -1,0 +1,115 @@
+2021/06/09-12:26:39.478 5 Reusing MANIFEST /home/sebastiao/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2021/06/09-12:26:39.480 5 Recovering log #3
+2021/06/09-12:26:39.487 5 Level-0 table #3: started
+2021/06/09-12:26:39.492 5 Level-0 table #3: 14010 bytes OK
+2021/06/09-12:26:39.504 5 Delete type=0 #3
+2021/06/09-12:27:40.122 3 Level-0 table #6: started
+2021/06/09-12:27:40.128 3 Level-0 table #6: 32625 bytes OK
+2021/06/09-12:27:40.133 3 Delete type=0 #4
+2021/06/09-12:31:39.271 3 Level-0 table #8: started
+2021/06/09-12:31:39.279 3 Level-0 table #8: 36684 bytes OK
+2021/06/09-12:31:39.285 3 Delete type=0 #5
+2021/06/09-12:43:14.343 12 Level-0 table #10: started
+2021/06/09-12:43:14.350 12 Level-0 table #10: 12887 bytes OK
+2021/06/09-12:43:14.355 12 Delete type=0 #7
+2021/06/09-12:43:14.355 12 Compacting 4@0 + 0@1 files
+2021/06/09-12:43:14.361 12 Generated table #11@0: 75 keys, 60150 bytes
+2021/06/09-12:43:14.361 12 Compacted 4@0 + 0@1 files => 60150 bytes
+2021/06/09-12:43:14.364 12 compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/09-12:43:14.365 12 Delete type=2 #6
+2021/06/09-12:43:14.365 12 Delete type=2 #10
+2021/06/09-12:43:14.365 12 Delete type=2 #8
+2021/06/09-12:43:14.365 12 Delete type=2 #3
+2021/06/09-13:34:14.343 45 Level-0 table #13: started
+2021/06/09-13:34:14.351 45 Level-0 table #13: 25237 bytes OK
+2021/06/09-13:34:14.357 45 Delete type=0 #9
+2021/06/09-14:34:14.343 72 Level-0 table #15: started
+2021/06/09-14:34:14.352 72 Level-0 table #15: 38364 bytes OK
+2021/06/09-14:34:14.357 72 Delete type=0 #12
+2021/06/09-15:19:57.869 ad Level-0 table #17: started
+2021/06/09-15:19:57.885 ad Level-0 table #17: 13078 bytes OK
+2021/06/09-15:19:57.897 ad Delete type=0 #14
+2021/06/09-15:21:30.418 ad Level-0 table #19: started
+2021/06/09-15:21:30.426 ad Level-0 table #19: 37024 bytes OK
+2021/06/09-15:21:30.429 ad Delete type=0 #16
+2021/06/09-15:21:30.429 ad Compacting 4@0 + 1@1 files
+2021/06/09-15:21:30.435 ad Generated table #20@0: 94 keys, 61367 bytes
+2021/06/09-15:21:30.435 ad Compacted 4@0 + 1@1 files => 61367 bytes
+2021/06/09-15:21:30.439 ad compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/09-15:21:30.440 ad Delete type=2 #11
+2021/06/09-15:21:30.440 ad Delete type=2 #19
+2021/06/09-15:21:30.440 ad Delete type=2 #17
+2021/06/09-15:21:30.440 ad Delete type=2 #15
+2021/06/09-15:21:30.440 ad Delete type=2 #13
+2021/06/09-15:27:14.343 ad Level-0 table #22: started
+2021/06/09-15:27:14.349 ad Level-0 table #22: 10918 bytes OK
+2021/06/09-15:27:14.355 ad Delete type=0 #18
+2021/06/09-15:58:04.769 cc Level-0 table #24: started
+2021/06/09-15:58:04.778 cc Level-0 table #24: 12539 bytes OK
+2021/06/09-15:58:04.783 cc Delete type=0 #21
+2021/06/09-16:15:53.423 cc Level-0 table #26: started
+2021/06/09-16:15:53.429 cc Level-0 table #26: 12624 bytes OK
+2021/06/09-16:15:53.436 cc Delete type=0 #23
+2021/06/09-16:17:14.343 cc Level-0 table #28: started
+2021/06/09-16:17:14.349 cc Level-0 table #28: 12804 bytes OK
+2021/06/09-16:17:14.354 cc Delete type=0 #25
+2021/06/09-16:17:14.355 cc Compacting 4@0 + 1@1 files
+2021/06/09-16:17:14.361 cc Generated table #29@0: 123 keys, 64593 bytes
+2021/06/09-16:17:14.361 cc Compacted 4@0 + 1@1 files => 64593 bytes
+2021/06/09-16:17:14.364 cc compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/09-16:17:14.366 cc Delete type=2 #22
+2021/06/09-16:17:14.366 cc Delete type=2 #20
+2021/06/09-16:17:14.366 cc Delete type=2 #24
+2021/06/09-16:17:14.366 cc Delete type=2 #28
+2021/06/09-16:17:14.366 cc Delete type=2 #26
+2021/06/09-16:22:14.344 e5 Level-0 table #31: started
+2021/06/09-16:22:14.349 e5 Level-0 table #31: 22982 bytes OK
+2021/06/09-16:22:14.354 e5 Delete type=0 #27
+2021/06/09-16:39:14.342 f2 Level-0 table #33: started
+2021/06/09-16:39:14.348 f2 Level-0 table #33: 13149 bytes OK
+2021/06/09-16:39:14.353 f2 Delete type=0 #30
+2021/06/09-16:53:14.344 fb Level-0 table #35: started
+2021/06/09-16:53:14.352 fb Level-0 table #35: 11381 bytes OK
+2021/06/09-16:53:14.356 fb Delete type=0 #32
+2021/06/09-16:55:14.343 fb Level-0 table #37: started
+2021/06/09-16:55:14.349 fb Level-0 table #37: 11915 bytes OK
+2021/06/09-16:55:14.354 fb Delete type=0 #34
+2021/06/09-16:55:14.354 fb Compacting 4@0 + 1@1 files
+2021/06/09-16:55:14.360 fb Generated table #38@0: 123 keys, 65307 bytes
+2021/06/09-16:55:14.360 fb Compacted 4@0 + 1@1 files => 65307 bytes
+2021/06/09-16:55:14.363 fb compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/09-16:55:14.364 fb Delete type=2 #37
+2021/06/09-16:55:14.364 fb Delete type=2 #29
+2021/06/09-16:55:14.364 fb Delete type=2 #31
+2021/06/09-16:55:14.364 fb Delete type=2 #33
+2021/06/09-16:55:14.364 fb Delete type=2 #35
+2021/06/09-16:56:18.337 fb Level-0 table #40: started
+2021/06/09-16:56:18.343 fb Level-0 table #40: 31017 bytes OK
+2021/06/09-16:56:18.348 fb Delete type=0 #36
+2021/06/09-16:57:14.343 104 Level-0 table #42: started
+2021/06/09-16:57:14.350 104 Level-0 table #42: 12278 bytes OK
+2021/06/09-16:57:14.354 104 Delete type=0 #39
+2021/06/09-16:58:50.873 fb Level-0 table #44: started
+2021/06/09-16:58:50.882 fb Level-0 table #44: 13035 bytes OK
+2021/06/09-16:58:50.886 fb Delete type=0 #41
+2021/06/09-16:59:34.775 fb Level-0 table #46: started
+2021/06/09-16:59:34.814 fb Level-0 table #46: 9170 bytes OK
+2021/06/09-16:59:34.822 fb Delete type=0 #43
+2021/06/09-16:59:34.823 fb Compacting 4@0 + 1@1 files
+2021/06/09-16:59:34.830 fb Generated table #47@0: 123 keys, 65934 bytes
+2021/06/09-16:59:34.830 fb Compacted 4@0 + 1@1 files => 65934 bytes
+2021/06/09-16:59:34.836 fb compacted to: files[ 0 1 0 0 0 0 0 ]
+2021/06/09-16:59:34.837 fb Delete type=2 #44
+2021/06/09-16:59:34.837 fb Delete type=2 #42
+2021/06/09-16:59:34.837 fb Delete type=2 #38
+2021/06/09-16:59:34.837 fb Delete type=2 #46
+2021/06/09-16:59:34.837 fb Delete type=2 #40
+2021/06/09-17:00:14.344 fb Level-0 table #49: started
+2021/06/09-17:00:14.354 fb Level-0 table #49: 9189 bytes OK
+2021/06/09-17:00:14.359 fb Delete type=0 #45
+2021/06/09-17:01:14.343 fb Level-0 table #51: started
+2021/06/09-17:01:14.353 fb Level-0 table #51: 9546 bytes OK
+2021/06/09-17:01:14.365 fb Delete type=0 #48
+2021/06/09-17:02:14.344 104 Level-0 table #53: started
+2021/06/09-17:02:14.352 104 Level-0 table #53: 10150 bytes OK
+2021/06/09-17:02:14.358 104 Delete type=0 #50

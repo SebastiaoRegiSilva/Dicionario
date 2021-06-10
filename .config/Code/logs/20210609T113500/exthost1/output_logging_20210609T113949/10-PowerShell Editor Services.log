@@ -1,0 +1,24 @@
+[Warn  - 11:39:49] OmniSharp.Extensions.LanguageServer.Server.LspServerOutputFilter: Tried to send request or notification before initialization was completed and will be sent later OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  } | @Request='OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  }'
+[Warn  - 11:39:49] OmniSharp.Extensions.LanguageServer.Server.LspServerOutputFilter: Tried to send request or notification before initialization was completed and will be sent later OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  } | @Request='OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  }'
+[Error - 11:39:49] Microsoft.PowerShell.EditorServices.Services.PowerShellContextService: Execution of the following command(s) completed with errors:
+
+    Import-Module /home/sebastiao/.vscode/extensions/ms-vscode.powershell-2021.5.1/modules/PowerShellEditorServices/Commands/PowerShellEditorServices.Commands.psd1
+
+ | 
+[Warn  - 11:39:49] OmniSharp.Extensions.LanguageServer.Server.LspServerOutputFilter: Tried to send request or notification before initialization was completed and will be sent later OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  } | @Request='OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  }'
+[Warn  - 11:39:49] OmniSharp.Extensions.LanguageServer.Server.LspServerOutputFilter: Tried to send request or notification before initialization was completed and will be sent later OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  } | @Request='OutgoingNotification { Method = powerShell/executionStatusChanged, Params = Microsoft.PowerShell.EditorServices.Services.PowerShellContext.ExecutionStatusChangedEventArgs, TraceParent = , TraceState =  }'
+[Warn  - 11:39:50] OmniSharp.Extensions.LanguageServer.Server.Configuration.DidChangeConfigurationProvider: No ConfigurationItems have been defined, configuration won't surface any configuration from the client! | 
+[Error - 11:43:30] Microsoft.PowerShell.EditorServices.Services.PowerShellContextService: Execution of the following command(s) completed with errors:
+
+    dotnet run
+    Out-Default
+
+ | 
+[Error - 11:43:48] Microsoft.PowerShell.EditorServices.Services.PowerShellContextService: Execution of the following command(s) completed with errors:
+
+    --project
+    Out-Default
+
+ | 
+[Warn  - 11:43:48] Microsoft.PowerShell.EditorServices.Services.PowerShellContextService: Runtime exception occurred while executing command | 
+[Error - 12:09:38] Connection to server got closed. Server will not be restarted.

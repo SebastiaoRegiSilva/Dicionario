@@ -1,0 +1,38 @@
+dotnet run
+help
+dotnet run
+console run
+clear
+dotnet run
+dotnet debug
+clear
+dotnet run --configuration Release
+clear
+CLI do.NET
+dotnet new console
+dotnet run
+dogtnet run
+dotnet run
+clear
+dotnet run
+code-insiders --install-extension ms-vscode.powershell
+sudo code-insiders --install-extension ms-vscode.powershell
+clear
+cd..
+cd\
+cd /home/sebastiao/vscode/ProjectXadrez>
+clear
+new console
+clear
+dotnet new console
+git status
+git add --all
+git status
+git add --all
+git status
+git commit -m "Comentando e implementando a classe Posiçao."
+git log --oneline
+git config --global user.email "swillian2009@gmail.com"
+git config --global user.name "SebastiaoW93"
+git status
+git add --all

@@ -1,0 +1,19 @@
+[2021-06-09 09:30:17.060] [sharedprocess] [error] [uncaught exception in sharedProcess]: The "path" argument must be of type string. Received type undefined: Error: The "path" argument must be of type string. Received type undefined
+    at b (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:14135)
+    at basename (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:14:22371)
+    at n.groupImportantTipsByExe (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:5088)
+    at n.collectTips (file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:4567)
+    at async file:///usr/share/code/resources/app/out/vs/code/electron-browser/sharedProcess/sharedProcessMain.js:47:3764
+[2021-06-09 09:30:53.942] [sharedprocess] [info] Starting to clean up unused language packs.
+[2021-06-09 09:32:50.200] [sharedprocess] [info] Installing extension: ms-dotnettools.csharp
+[2021-06-09 09:32:52.452] [sharedprocess] [info] Downloaded extension: ms-dotnettools.csharp /home/sebastiao/.config/Code/CachedExtensionVSIXs/ms-dotnettools.csharp-1.23.12
+[2021-06-09 09:32:52.563] [sharedprocess] [info] Extracted extension to /home/sebastiao/.vscode/extensions/.fa3f2046-c7d6-4e0b-b1db-caa2fd1c6bec: ms-dotnettools.csharp
+[2021-06-09 09:32:52.608] [sharedprocess] [info] Renamed to /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12
+[2021-06-09 09:32:52.616] [sharedprocess] [info] Installation completed. ms-dotnettools.csharp
+[2021-06-09 09:32:52.640] [sharedprocess] [info] Extensions installed successfully: ms-dotnettools.csharp
+[2021-06-09 09:33:18.029] [sharedprocess] [info] Installing extension: felixfbecker.php-intellisense
+[2021-06-09 09:33:20.928] [sharedprocess] [info] Downloaded extension: felixfbecker.php-intellisense /home/sebastiao/.config/Code/CachedExtensionVSIXs/felixfbecker.php-intellisense-2.3.14
+[2021-06-09 09:33:24.238] [sharedprocess] [info] Extracted extension to /home/sebastiao/.vscode/extensions/.9839ec70-fb6b-4af8-8a7e-a24d1dd517ee: felixfbecker.php-intellisense
+[2021-06-09 09:33:24.251] [sharedprocess] [info] Renamed to /home/sebastiao/.vscode/extensions/felixfbecker.php-intellisense-2.3.14
+[2021-06-09 09:33:24.253] [sharedprocess] [info] Installation completed. felixfbecker.php-intellisense
+[2021-06-09 09:33:24.261] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-intellisense

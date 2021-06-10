@@ -1,0 +1,6 @@
+2021/06/09-15:19:06.836 3df1 Creating DB /home/sebastiao/.config/google-chrome/Default/IndexedDB/https_praquempedala.onesignal.com_0.indexeddb.leveldb since it was missing.
+2021/06/09-15:19:06.847 3df1 Reusing MANIFEST /home/sebastiao/.config/google-chrome/Default/IndexedDB/https_praquempedala.onesignal.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/06/09-15:19:08.953 3df3 Level-0 table #5: started
+2021/06/09-15:19:08.956 3df3 Level-0 table #5: 6027 bytes OK
+2021/06/09-15:19:08.958 3df3 Delete type=0 #3
+2021/06/09-15:19:08.958 3df3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

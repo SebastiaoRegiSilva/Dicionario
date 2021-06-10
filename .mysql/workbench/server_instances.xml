@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<data grt_format="2.0">
+  <value _ptr_="0x555f545d43a0" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="f922739d-c932-11eb-9a2e-142d27cd683d" struct-checksum="0x367436e2">
+      <link type="object" struct-name="db.mgmt.Connection" key="connection">f922739e-c932-11eb-9a2e-142d27cd683d</link>
+      <value _ptr_="0x555f54cd57d0" type="dict" key="loginInfo"/>
+      <value _ptr_="0x555f54cda750" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+        <value type="string" key="sys.config.path"></value>
+        <value type="string" key="sys.config.section">mysqld</value>
+        <value type="string" key="sys.preset">Custom</value>
+        <value type="string" key="sys.system">Linux</value>
+      </value>
+      <value type="string" key="name">Local 3306</value>
+      <link type="object" struct-name="GrtObject" key="owner">f8a539d1-c932-11eb-9a2e-142d27cd683d</link>
+    </value>
+  </value>
+</data>

@@ -1,0 +1,78 @@
+{
+  "Version": "18.04",
+  "OEM": {
+    "Vendor": "Dell Inc.",
+    "Product": "Inspiron 5437",
+    "Family": ""
+  },
+  "BIOS": {
+    "Vendor": "Dell Inc.",
+    "Version": "A09"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "4",
+    "Threads": "2",
+    "Cores": "2",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "69",
+    "Stepping": "1",
+    "Name": "Intel(R) Core(TM) i7-4500U CPU @ 1.80GHz",
+    "Virtualization": "VT-x"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "0a16"
+    }
+  ],
+  "RAM": 8.1,
+  "Disks": [
+    240.1
+  ],
+  "Partitions": [
+    229.2,
+    0.5
+  ],
+  "Screens": [
+    {
+      "Size": "309mmx173mm",
+      "Resolution": "1366x768",
+      "Frequency": "60.07"
+    }
+  ],
+  "Autologin": false,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "pt_BR",
+  "Timezone": "America/Sao_Paulo",
+  "Install": {
+    "Media": "Ubuntu 18.04.5 LTS \"Bionic Beaver\" - Release amd64 (20200806.1)",
+    "Type": "GTK",
+    "OEM": false,
+    "PartitionMethod": "use_device",
+    "DownloadUpdates": false,
+    "Language": "pt_BR",
+    "Minimal": false,
+    "RestrictedAddons": false,
+    "Stages": {
+      "0": "language",
+      "16": "console_setup",
+      "25": "wireless",
+      "60": "prepare",
+      "145": "partman",
+      "166": "start_install",
+      "194": "timezone",
+      "198": "usersetup",
+      "291": "user_done",
+      "512": "done"
+    }
+  }
+}

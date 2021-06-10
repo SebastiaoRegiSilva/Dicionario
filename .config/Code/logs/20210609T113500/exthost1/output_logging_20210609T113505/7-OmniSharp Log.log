@@ -1,0 +1,62 @@
+Starting OmniSharp server at 09/06/2021 11:35:05
+    Target: /home/sebastiao/vscode/ProjectXadrez/xadrez-console.sln
+
+OmniSharp server started.
+    Path: /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/run
+    PID: 27126
+
+[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on ubuntu 18.4 (x64)
+[info]: OmniSharp.Services.DotNetCliService
+        DotNetPath set to dotnet
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 16.11.0 - "/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/MSBuild.exe'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 16.11.0 - "/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin"
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin
+            CscToolPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/Roslyn
+            BypassFrameworkInstallChecks = true
+            MSBuildExtensionsPath = /home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpFormattingWorkspaceOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.Completion.CompletionOptionsProvider, Order: 0
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.RenameWorkspaceOptionsProvider, Order: 100
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.ImplementTypeWorkspaceOptionsProvider, Order: 110
+[info]: OmniSharp.WorkspaceInitializer
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.BlockStructureWorkspaceOptionsProvider, Order: 140
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/sebastiao/vscode/ProjectXadrez'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.MSBuild.ProjectSystem
+        Detecting projects in '/home/sebastiao/vscode/ProjectXadrez/xadrez-console.sln'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/sebastiao/vscode/ProjectXadrez'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.WorkspaceInitializer
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/sebastiao/vscode/ProjectXadrez' on host 27012.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+[fail]: OmniSharp.MSBuild.ProjectLoader
+        This project targets .NET version that requires reference assemblies that do not ship with OmniSharp out of the box (e.g. .NET Framework). The most common solution is to make sure Mono is installed on your machine (https://mono-project.com/download/) and that OmniSharp is started with that Mono installation (e.g. "omnisharp.useGlobalMono":"always" in C# Extension for VS Code).
+[warn]: OmniSharp.MSBuild.ProjectManager
+        Failed to load project file '/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj'.
+/home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+/home/sebastiao/.vscode/extensions/ms-dotnettools.csharp-1.23.12/.omnisharp/1.37.10/omnisharp/.msbuild/Current/Bin/Microsoft.Common.CurrentVersion.targets(1216,5): Error: This project targets .NET version that requires reference assemblies that do not ship with OmniSharp out of the box (e.g. .NET Framework). The most common solution is to make sure Mono is installed on your machine (https://mono-project.com/download/) and that OmniSharp is started with that Mono installation (e.g. "omnisharp.useGlobalMono":"always" in C# Extension for VS Code).
+
+[fail]: OmniSharp.MSBuild.ProjectManager
+        Attempted to update project that is not loaded: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+Received response for /v2/codestructure but could not find request.
+Received response for /v2/codestructure but could not find request.

@@ -1,0 +1,2792 @@
+From - Thu May 27 10:02:14 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:ab3:30b:0:0:0:0:0 with SMTP id n11csp471396ltg;
+        Thu, 27 May 2021 05:59:34 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzBV7L/+0zgbJnptk9K78E6bZ82A4/elTfoFGpnmeH28cinXtRkfciKxNjAztVvVYHikiak
+X-Received: by 2002:a1f:add0:: with SMTP id w199mr1875291vke.0.1622120374497;
+        Thu, 27 May 2021 05:59:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1622120374; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WSgrxyzlw6EtOM1L1uE7tYfB/FsUnl3Vu0EDXHEXcpn/T8nKRefm3HMLYNWWA9qlQh
+         0F1kssGczuDloRPtSaEssqVYw1Ype/yrIq53MSo8Esh69vtRnCbIQIYEXRxYsIXi2lC+
+         KEqJZLNa9EejCw42bL+GjBBLeAvXe+nDDR2vBRy/DXSL28TioQo5q5e7P1s0V6+xqu/z
+         wRwbBcdZ+waHiUBLTbPHoy69MAwCPQUVLNGCfTQX5kWBPR9qLa09X7IWJrwCHvjLXpGV
+         JKV9GDI49+11wF8Sq8CddcEmldreMzBDGh/LC4eXADMeS4qYOG8JH8thf2+WuLVo3A49
+         bDqg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=subject:message-id:to:mime-version:from:date:dkim-signature;
+        bh=NSoiVp+d2nkjgKrNuNFgdkH9VhTfkF33qslJBFd0mBY=;
+        b=aoW0yVCnjea4tncNy763Ls7TtZ/pT+22E1XL6sDg60NhqevzjpWY7BarPHWdGChm9h
+         bskvtLg6R8OKnJr9nCO9PzZsq3cD5aUimX5W1D9FhF248Pamp5SDrKoARysPYImy3ZT+
+         2O7OM29W1VRZqfC/3xKG0y+64LplfnKCaGXzX6QAvqECOgLBOy7CaZnqe033nfD11I6S
+         ylIFjVGdt9J3bFgm0yKPJ8T9Fm1P1+WPYgR+7dZaos7+ftq2eYzkJji67ZJPWt177/Y6
+         VEguRKbylplAnp2qXxgr6FRrMn3WMuLQWHXkh8JJF3soNlh9EWND3UTu8kgIxQOa7DS6
+         OrVA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@discord.com header.s=s1 header.b=Evd6IvoQ;
+       spf=pass (google.com: domain of bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com designates 149.72.251.68 as permitted sender) smtp.mailfrom="bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=discord.com
+Return-Path: <bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com>
+Received: from o16.ptr7471.discord.com (o16.ptr7471.discord.com. [149.72.251.68])
+        by mx.google.com with ESMTPS id g124si662174vkg.11.2021.05.27.05.59.34
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 27 May 2021 05:59:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com designates 149.72.251.68 as permitted sender) client-ip=149.72.251.68;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@discord.com header.s=s1 header.b=Evd6IvoQ;
+       spf=pass (google.com: domain of bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com designates 149.72.251.68 as permitted sender) smtp.mailfrom="bounces+12551241-f92f-sebastiao=relier.com.br@mail.discord.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=discord.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=discord.com; 
+	h=content-type:from:mime-version:to:subject; s=s1; 
+	bh=NSoiVp+d2nkjgKrNuNFgdkH9VhTfkF33qslJBFd0mBY=; b=Evd6IvoQ7dYmW
+	1gj8MQB9u+IRlWXFOpIUR6DuEozNNoIN/ZrnLVVOIYhvcaYez54yrGrfux12q9ua
+	leuP0J1DbNxndWD+wMmu4fZqxR/crzyCKr25/uMJsh6smBBbIDkQrO/62uJvVJmh
+	jZXEL9HL1/DZxnagM7PqpM2pVZ6Zsg=
+Received: by filter2966p1mdw1.sendgrid.net with SMTP id filter2966p1mdw1-25012-60AF97B5-22
+        2021-05-27 12:59:33.882076129 +0000 UTC m=+742361.006493465
+Received: from MTI1NTEyNDE (unknown)
+	by ismtpd0173p1mdw1.sendgrid.net (SG) with HTTP id lvOAwVlLQrOyWypC45WRsA
+	Thu, 27 May 2021 12:59:33.867 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=6c7744fc6744b4136cec6e0275597ea7e2718e305077edbfea4432834ae2
+Date: Thu, 27 May 2021 12:59:33 +0000 (UTC)
+From: "Discord" <noreply@discord.com>
+Mime-Version: 1.0
+To: sebastiao@relier.com.br
+Message-ID: <lvOAwVlLQrOyWypC45WRsA@ismtpd0173p1mdw1.sendgrid.net>
+Subject: =?UTF-8?B?VmVyaWZpY2FyIGVuZGVyZcOnbyBkZSBlLW1haWwgZG8gRGlzY29yZA==?=
+X-SG-EID: XBtBADc2SgQvVg5MvruDJEfglALSAqRAGnUeA+P8ZjURsLYJu30jfm1cLglGw78y7odrxmndOOLBWm
+ DgR+JiXyqjgmKU4usnczMEA7x+Se6CWe1ZQ5bOiHC90z+B01NiIi/oxQuknDWdIj4emD89IKYqVKHe
+ HFldVdeP4Bm5Q+AwOFydWR8xxnuRdcNVkof8yX+bYbTf0TyvU9jBqQ5lb8aRB1T4nT27wt9D9XF2I3
+ Y=
+X-Entity-ID: 4L3hxw1QFhr929+CeHVUJw==
+
+--6c7744fc6744b4136cec6e0275597ea7e2718e305077edbfea4432834ae2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+Ol=C3=A1, williansilva!
+
+Agradecemos por registrar uma conta no Discord! Antes de come=C3=A7armos, p=
+recisamos confirmar que =C3=A9 voc=C3=AA mesmo. Clique abaixo para verifica=
+r seu endere=C3=A7o de e-mail:
+
+Verificar e-mail: https://click.discord.com/ls/click?upn=3DqDOo8cnwIoKzt0aL=
+L1cBeFE1RlVCKJFF5zAq8ml-2BFh1dq-2FeX22E9yMPFmLMSO5CYrfr8MOVUnBr2bVkrFmtokdq=
+1c7xjfxpfPqlBn2Da1OK6VtnKmFu7A3p0u8YMXEtelks8feOPNixeXH24ov4mFmYTfPDe3Dj-2F=
+8jTyBiSqzVpm6IoXXonXNnCyflsELbzZXzGmLyfN2AO03XCTKOzq2w-3D-3DexLg_5zLnBF78PF=
+iWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2-2Bva2TboeXBdsQeNdcMeoyMYJskz8tk=
+g4kikiwma0RCLkP5lik8jEaM1xdVh6RMXW8284N06P-2B6mjURti7e-2FnJJ-2FmGjFXibjnCP7=
+Rc-2BqvPA4VHeLojkhfJqQJSj7xUhIblRqQNLBJnR4I30sZ2-2BbJy2rrQgjWVzR8hmc9SuOWSs=
+02mJk1VSTjTkihBI-3D
+
+
+--6c7744fc6744b4136cec6e0275597ea7e2718e305077edbfea4432834ae2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+  <title></title>
+  <!--[if !mso]><!-- -->
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <!--<![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<style type=3D"text/css">
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-si=
+ze-adjust: 100%; }
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rs=
+pace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-dec=
+oration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; margin: 13px 0; }
+</style>
+<!--[if !mso]><!-->
+<style type=3D"text/css">
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+</style>
+<!--<![endif]-->
+<!--[if mso]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type=3D"text/css">
+  .outlook-group-fix {
+    width:100% !important;
+  }
+</style>
+<![endif]-->
+
+<!--[if !mso]><!-->
+    <link href=3D"https://fonts.googleapis.com/css?family=3DUbuntu:300,400,=
+500,700" rel=3D"stylesheet" type=3D"text/css">
+    <style type=3D"text/css">
+
+        @import url(https://fonts.googleapis.com/css?family=3DUbuntu:300,40=
+0,500,700);
+
+    </style>
+  <!--<![endif]--><style type=3D"text/css">
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100, * [aria-labelledby=3D"mj-column-per-100"] { width:1=
+00%!important; }
+  }
+</style>
+</head>
+<body style=3D"background: #F9F9F9;">
+  <div style=3D"background-color:#F9F9F9;"><!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"640" align=3D"center" style=3D"width:640px;">
+        <tr>
+          <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:e=
+xactly;">
+      <![endif]-->
+  <style type=3D"text/css">
+    html, body, * {
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    }
+    a {
+      color:#1EB0F4;
+      text-decoration:none;
+    }
+    a:hover {
+      text-decoration:underline;
+    }
+  </style>
+<div style=3D"margin:0px auto;max-width:640px;background:transparent;"><tab=
+le role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-=
+size:0px;width:100%;background:transparent;" align=3D"center" border=3D"0">=
+<tbody><tr><td style=3D"text-align:center;vertical-align:top;direction:ltr;=
+font-size:0px;padding:40px 0px;"><!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td style=3D"vertical-align:top;width:640px;">
+      <![endif]--><div aria-labelledby=3D"mj-column-per-100" class=3D"mj-co=
+lumn-per-100 outlook-group-fix" style=3D"vertical-align:top;display:inline-=
+block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role=
+=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=
+=3D"0"><tbody><tr><td style=3D"word-break:break-word;font-size:0px;padding:=
+0px;" align=3D"center"><table role=3D"presentation" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"border-collapse:collapse;border-spacing:0px;" align=
+=3D"center" border=3D"0"><tbody><tr><td style=3D"width:138px;"><a href=3D"h=
+ttps://click.discord.com/ls/click?upn=3DqDOo8cnwIoKzt0aLL1cBeARJoBrGSa2vu41=
+A5vK-2B4us-3DnYJb_5zLnBF78PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2-2Bv=
+a2TboeXBdsQeN52w5KBaL5cb11EkWvv-2FeYjBT9PFzBDpDemS-2B2na-2BTPY4NY2aaxMB24lC=
+SgAo0lXna2D96ucLBuwqm4HvQ2LYXDtOV3ECri76Zscr8YMTdiOrBJK0d4RTYXs8sCKQLa9KauD=
+C-2B7Dfua6-2BytBMXXEjrOqZs76M6D35DRHc8Wcf98A-3D" target=3D"_blank"><img alt=
+=3D"" title=3D"" height=3D"38px" src=3D"https://cdn.discordapp.com/email_as=
+sets/a9c8d38f85de7064c6a181077ecd8718.png" style=3D"border:none;border-radi=
+us:;display:block;outline:none;text-decoration:none;width:100%;height:38px;=
+" width=3D"138"></a></td></tr></tbody></table></td></tr></tbody></table></d=
+iv><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+      <!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"640" align=3D"center" style=3D"width:640px;">
+        <tr>
+          <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:e=
+xactly;">
+      <![endif]--><div style=3D"max-width:640px;margin:0 auto;box-shadow:0p=
+x 1px 5px rgba(0,0,0,0.1);border-radius:4px;overflow:hidden"><div style=3D"=
+margin:0px auto;max-width:640px;background:#ffffff;"><table role=3D"present=
+ation" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-size:0px;width:100=
+%;background:#ffffff;" align=3D"center" border=3D"0"><tbody><tr><td style=
+=3D"text-align:center;vertical-align:top;direction:ltr;font-size:0px;paddin=
+g:40px 50px;"><!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td style=3D"vertical-align:top;width:640px;">
+      <![endif]--><div aria-labelledby=3D"mj-column-per-100" class=3D"mj-co=
+lumn-per-100 outlook-group-fix" style=3D"vertical-align:top;display:inline-=
+block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role=
+=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=
+=3D"0"><tbody><tr><td style=3D"word-break:break-word;font-size:0px;padding:=
+0px;" align=3D"left"><div style=3D"cursor:auto;color:#737F8D;font-family:Wh=
+itney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-siz=
+e:16px;line-height:24px;text-align:left;">
+=20=20=20=20=20=20=20=20=20=20=20=20
+  <h2 style=3D"font-family: Whitney, Helvetica Neue, Helvetica, Arial, Luci=
+da Grande, sans-serif;font-weight: 500;font-size: 20px;color: #4F545C;lette=
+r-spacing: 0.27px;">Ol=C3=A1, williansilva!</h2>
+<p>Agradecemos por registrar uma conta no Discord! Antes de come=C3=A7armos=
+, precisamos confirmar que =C3=A9 voc=C3=AA mesmo. Clique abaixo para verif=
+icar seu endere=C3=A7o de e-mail:</p>
+
+          </div></td></tr><tr><td style=3D"word-break:break-word;font-size:=
+0px;padding:10px 25px;padding-top:20px;" align=3D"center"><table role=3D"pr=
+esentation" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:se=
+parate;" align=3D"center" border=3D"0"><tbody><tr><td style=3D"border:none;=
+border-radius:3px;color:white;cursor:auto;padding:15px 19px;" align=3D"cent=
+er" valign=3D"middle" bgcolor=3D"#5865f2"><a href=3D"https://click.discord.=
+com/ls/click?upn=3DqDOo8cnwIoKzt0aLL1cBeFE1RlVCKJFF5zAq8ml-2BFh1dq-2FeX22E9=
+yMPFmLMSO5CYrfr8MOVUnBr2bVkrFmtokdq1c7xjfxpfPqlBn2Da1OK6VtnKmFu7A3p0u8YMXEt=
+elks8feOPNixeXH24ov4mFmYTfPDe3Dj-2F8jTyBiSqzVpm6IoXXonXNnCyflsELbzZXzGmLyfN=
+2AO03XCTKOzq2w-3D-3D3Fa9_5zLnBF78PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2=
+FT2-2Bva2TboeXBdsQeN52w5KBaL5cb11EkWvv-2FeYgkmHTii2BWrvIgZovJFOyZK-2BhIxcVp=
+xan966reDEdg7TZvmUAMdHd9pmJyYWNXWFBiOTb2KGfLFJlg8C76J1x6on6C6lRnAMq-2ByDMov=
+zgR-2F-2BF9C9ezOgSVFlwrBlPLsBroDGwx5oXPXIALLlj0O00E-3D" style=3D"text-decor=
+ation:none;line-height:100%;background:#5865f2;color:white;font-family:Ubun=
+tu, Helvetica, Arial, sans-serif;font-size:15px;font-weight:normal;text-tra=
+nsform:none;margin:0px;" target=3D"_blank">
+            Verificar e-mail
+          </a></td></tr></tbody></table></td></tr><tr><td style=3D"word-bre=
+ak:break-word;font-size:0px;padding:30px 0px;"><p style=3D"font-size:1px;ma=
+rgin:0px auto;border-top:1px solid #DCDDDE;width:100%;"></p><!--[if mso | I=
+E]><table role=3D"presentation" align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-size:1px;margin:0px auto;border-top:=
+1px solid #DCDDDE;width:100%;" width=3D"640"><tr><td style=3D"height:0;line=
+-height:0;">=C2=A0</td></tr></table><![endif]--></td></tr><tr><td style=3D"=
+word-break:break-word;font-size:0px;padding:0px;" align=3D"left"><div style=
+=3D"cursor:auto;color:#747F8D;font-family:Whitney, Helvetica Neue, Helvetic=
+a, Arial, Lucida Grande, sans-serif;font-size:13px;line-height:16px;text-al=
+ign:left;">
+<p>Precisa de ajuda? <a href=3D"https://click.discord.com/ls/click?upn=3DqD=
+Oo8cnwIoKzt0aLL1cBeNlOcN7VC1Mue2BSa5oqYEdKm-2BPBEvWHLEUfi61TfqfxuvBipSaAkPt=
+kAVPOEnBIzw-3D-3DiXPe_5zLnBF78PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2=
+-2Bva2TboeXBdsQeN52w5KBaL5cb11EkWvv-2FeYqIN-2FRNlVzbIxv80Mu8gWXWJih2pgGMGSF=
+gEl0TQcr5goxb-2BsaL4NFEs4nxy0fNxgKsaXeHiH9vMQVKTHUBx6WCHhvwdDd6ScXAMprLKHcm=
+kU7kQeBV89u3-2Foc12XmQORiNX4aEQtmxEupyck9o-2F7do-3D" style=3D"font-family: =
+Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;color:=
+ #5865f2;">Entre em contato com nossa equipe de assist=C3=AAncia</a> ou nos=
+ d=C3=AA um toque no Twitter <a href=3D"https://click.discord.com/ls/click?=
+upn=3DqDOo8cnwIoKzt0aLL1cBeHLasbud5D3vi74o1Q-2B2VLcLLCDOodJpEqop-2Fc-2F5Wr6=
+ZgJ4G_5zLnBF78PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2-2Bva2TboeXBdsQe=
+N52w5KBaL5cb11EkWvv-2FeYparZqtfEoqomODkg7VPBzd3-2BEfHnNOPYN9c-2FYFplqW9dJV-=
+2BdufBvSm6um-2FhNzMI7VQmQX9SUGyEJtTh5AYTKHJsj7Bf4qtpYjrdVKsne852B-2Fsg9Y-2F=
+Plc50CnPGfcQ7z-2FfYYIUZ8JhjJbNmHacBSk0-3D" style=3D"font-family: Whitney, H=
+elvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;color: #5865f2;"=
+>@discord</a>.<br>
+Quer nos dar sua opini=C3=A3o? Diga o que acha em nosso <a href=3D"https://=
+click.discord.com/ls/click?upn=3DqDOo8cnwIoKzt0aLL1cBeGtifxhyb-2FEeTgeN31uA=
+kBS2ZTvlNepPcLUnXgSC4-2BGKM1_e_5zLnBF78PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUr=
+nn75-2FT2-2Bva2TboeXBdsQeN52w5KBaL5cb11EkWvv-2FeYqDZJqeSo1hjDMD0MxUOFjkr9dN=
+byNCLQhjPGuRfesLAFGbHTWYJq60paFjHGaPH5yVi5kq8gPKSd7ZD3BCRQBfc5GgOi8G-2BUTuX=
+jwTR7alA2fxDLoIg9VA-2F5ocjbkkOclHOenYt5hMY9dyZl7nQQrg-3D" style=3D"font-fam=
+ily: Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;c=
+olor: #5865f2;">site de coment=C3=A1rios</a>.</p>
+
+</div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]-->
+      <!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"640" align=3D"center" style=3D"width:640px;">
+        <tr>
+          <td style=3D"line-height:0px;font-size:0px;mso-line-height-rule:e=
+xactly;">
+      <![endif]--></div><div style=3D"margin:0px auto;max-width:640px;backg=
+round:transparent;"><table role=3D"presentation" cellpadding=3D"0" cellspac=
+ing=3D"0" style=3D"font-size:0px;width:100%;background:transparent;" align=
+=3D"center" border=3D"0"><tbody><tr><td style=3D"text-align:center;vertical=
+-align:top;direction:ltr;font-size:0px;padding:20px 0px;"><!--[if mso | IE]>
+      <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0"><tr><td style=3D"vertical-align:top;width:640px;">
+      <![endif]--><div aria-labelledby=3D"mj-column-per-100" class=3D"mj-co=
+lumn-per-100 outlook-group-fix" style=3D"vertical-align:top;display:inline-=
+block;direction:ltr;font-size:13px;text-align:left;width:100%;"><table role=
+=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=
+=3D"0"><tbody><tr><td style=3D"word-break:break-word;font-size:0px;padding:=
+0px;" align=3D"center"><div style=3D"cursor:auto;color:#99AAB5;font-family:=
+Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;font-s=
+ize:12px;line-height:24px;text-align:center;">
+      Enviado pelo Discord =E2=80=A2
+      <a href=3D"https://click.discord.com/ls/click?upn=3DqDOo8cnwIoKzt0aLL=
+1cBeJH69ZST7vortkxRfT-2FA4A3VjNfCTRtqoYt2A-2FcqUeqS-1CD_5zLnBF78PFiWL6TQQil=
+Az-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2-2Bva2TboeXBdsQeN52w5KBaL5cb11EkWvv-2FeYv=
+tXWYG8iXzZmywP-2FDeiHLdqNAbHmLou3FFF-2FVS-2B-2BQC-2Bvuky-2Fj0TFo2ijNJnyVDzC=
+V3OLAdoJUGBvGmHc5WIykp9I7x7jopQPXqZoSdaOUdhboPfj47PROcG55tUApApH3warA7is2I-=
+2FcfrbVHqVTWw-3D" style=3D"color:#1EB0F4;text-decoration:none;">confira nos=
+so blog</a>
+      =E2=80=A2 <a href=3D"https://click.discord.com/ls/click?upn=3DqDOo8cn=
+wIoKzt0aLL1cBeHLasbud5D3vi74o1Q-2B2VLcLLCDOodJpEqop-2Fc-2F5Wr6ZvjRx_5zLnBF7=
+8PFiWL6TQQilAz-2BtQLSChgb8NMXeOyrBnUrnn75-2FT2-2Bva2TboeXBdsQeN52w5KBaL5cb1=
+1EkWvv-2FeYiEHLyOzTWE6jzgx6DLa1D29GmXQ-2FPv1bbdq5pFgXWXKN-2B0ADFU2sIjRd9MnT=
+iewbLhsfipSTOpqtGkRoECb0bY-2FiT-2FdI1P2wXOmQEBeU1T58oCVJpAI3PeMLLrkbLdEQeag=
+ydZqfjJ3Q-2BnQyNiqHJE-3D" style=3D"color:#1EB0F4;text-decoration:none;">@di=
+scord</a>
+    </div></td></tr><tr><td style=3D"word-break:break-word;font-size:0px;pa=
+dding:0px;" align=3D"center"><div style=3D"cursor:auto;color:#99AAB5;font-f=
+amily:Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;=
+font-size:12px;line-height:24px;text-align:center;">
+      444 De Haro Street, Suite 200, San Francisco, CA 94107
+    </div></td></tr><tr><td style=3D"word-break:break-word;font-size:0px;pa=
+dding:0px;" align=3D"left"><div style=3D"cursor:auto;color:#000000;font-fam=
+ily:Whitney, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;fo=
+nt-size:13px;line-height:22px;text-align:left;">
+      <img src=3D"https://discord.com/api/science/847457885184458785/183dca=
+35-b49c-44c6-bff1-29affa25be72.gif?properties=3DeyJlbWFpbF90eXBlIjogInVzZXJ=
+fdmVyaWZ5X2VtYWlsIn0%3D" width=3D"1" height=3D"1">
+    </div></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></td></tr></tbody></table></div><!--[if mso | IE]>
+      </td></tr></table>
+      <![endif]--></div>
+
+<img src=3D"https://click.discord.com/wf/open?upn=3DZxJ-2BkvrJhHN27NL7PpnXU=
+992cQwNwoYoGGBoi-2B75oarhTH-2BF-2B7BQ6LbyoQs0QwtyDoPI92KxVEkZc9P5llBuCcQs7b=
+geHZs7orxw35Cu-2FR-2B-2FIdq3STlHVKQJSmc6lnuHyLTS3jCG1RL2CjTz5timi2jHvdGfy-2=
+FCXDNJJANHQZUyApgN8a5txZsIOATrVdR2dXnxkcfFMqPkgmTH76rgIpQ3koB2QWC1zQ-2B3X8P=
+-2FlE98-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:=
+1px !important;width:1px !important;border-width:0 !important;margin-top:0 =
+!important;margin-bottom:0 !important;margin-right:0 !important;margin-left=
+:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-=
+right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+--6c7744fc6744b4136cec6e0275597ea7e2718e305077edbfea4432834ae2--
+From - Thu May 27 10:02:31 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:ab3:30b:0:0:0:0:0 with SMTP id n11csp471208ltg;
+        Thu, 27 May 2021 05:59:16 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJz+8iXeFzlPn8eAk9RjV6SIEpv8z2OfO8VNih7pYm1CULGkN+3MRXWrGwhAnjaLSrON9F0D
+X-Received: by 2002:a65:4109:: with SMTP id w9mr3596057pgp.24.1622120356190;
+        Thu, 27 May 2021 05:59:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1622120356; cv=none;
+        d=google.com; s=arc-20160816;
+        b=u7COBGA77PgxXJQ3t426mLdW+JmvdTyUR8SZdJO2RcHhDXXkK+jydvhOFYDPL5xSDx
+         YvPGaRjSslFMFyQnwdfk3K5shNKWI9Z0qRLdgbjm+cSvNC+yaP+nH0VddmBNEFcl/i2r
+         /trbSynlNoX1YayXustgkviDyoYeq7itVUsRkDAdAgnwXY/VSWLRkbTZNiTDlr5IDC32
+         bPqiafUGHgfqE5RVvHklkOMLIQS7P12HruNCWrz+/keRZz9z3sAYHvEbBnQK0E4D5hIj
+         zCybOjUas7gJDvUGeQ5z2y5vuVSMpJ8FGtqhlVLeY2LIncqYi2EVkFtqEOmx6TyDms8S
+         bgUA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:message-id:subject:to:from
+         :atlassianmail-dir-open-tracking:sender:dkim-signature;
+        bh=Og8kqKRP4az7+htxb2TrJc/+ISehS7RCsGMPjmQoOCU=;
+        b=umRUHCIinyx2g09V5vZrZf8QmKWAhTqWgmOj9DKlQ+5pjrTau5RVH/Zh8QHQ/nrY9p
+         oml9GmTGalV6nrDtzeQP9O0QTsIExAFBnvUhCC+qd8FMQaQLkznGRF3CNipM/d2raDcS
+         4W5e9EPGbTY1/WTRybTL+VLQkwJhQ5tjDsurUn5beLplCP4xdtOFgLHsgapXJmQFv0tj
+         UhwZ17sxLQXrftUjWflSeXImnhvJbcluvvBcuqDJT+BWLnnoWt+lUE1FHTGtF4nDyPnq
+         zM6ALrtJK6AnePE147fdMMuYZq8403VmPeA7cft/rAY6X9g4q1Ygajpnt+Tlfi21LcMv
+         cVTA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=UbLNPUEx;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+Return-Path: <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>
+Received: from mta-81-100.sparkpostmail.com (mta-81-100.sparkpostmail.com. [192.174.81.100])
+        by mx.google.com with ESMTPS id b4si2523132plh.185.2021.05.27.05.59.15
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 27 May 2021 05:59:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) client-ip=192.174.81.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=UbLNPUEx;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+X-MSFBL: 0+vgVUwTFlI2b8x+GxSv/0JAIOaEzxuUF7AdRu7/x/g=|eyJ0ZW5hbnRfaWQiOiJ
+	hdGxhc3NpYW51cyIsImN1c3RvbWVyX2lkIjoiMSIsInIiOiJzZWJhc3RpYW9AcmV
+	saWVyLmNvbS5iciIsInN1YmFjY291bnRfaWQiOiIzIiwibWVzc2FnZV9pZCI6IjY
+	wYWVhMjk3YWY2MDRhZDcyZWE3In0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=trello.com;
+	s=atl201708; t=1622120354; i=@trello.com;
+	bh=Og8kqKRP4az7+htxb2TrJc/+ISehS7RCsGMPjmQoOCU=;
+	h=Content-Type:From:To:Subject:Message-ID:Date;
+	b=UbLNPUEx8X++N6thciqeTVCROD07EvvQ0LMF/QLnugZX4nMVetD0xfdLyULBhG7GV
+	 oG02xwAEOqtZi3qfEUF0d7dxcg+BJoUbsaOO4bjYDAHl8/zsQLBiHRNxGxcs8OJ34g
+	 zs9ba51GTi8DrdHu+0MXH4hde+ua23jHxboiL9c4=
+Authentication-Results:  aa.mta2vsmtp.cc.prd.sparkpost smtp.user=<hidden>; auth=pass (LOGIN)
+Received: from [107.23.149.70] ([107.23.149.70:56949] helo=mailrelay9.prod.trello.local)
+	by aa.mta2vsmtp.cc.prd.sparkpost (envelope-from <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>)
+	(ecelerity 4.3.2.17933 r(msys-ecelerity:tags/4.3.2.6)) with ESMTPSA (cipher=AES-256-GCM) 
+	id E2/7A-06238-2A79FA06; Thu, 27 May 2021 12:59:14 +0000
+Content-Type: multipart/alternative;
+ boundary="--_NmP-ef4f28178539e136-Part_1"
+Sender: Trello <do-not-reply@trello.com>
+X-Auto-Response-Suppress: All
+X-Atl-Mail-Meta: template=notification
+Atlassianmail-Dir-Open-Tracking: true
+From: Trello <do-not-reply@trello.com>
+To: sebastiao@relier.com.br
+Subject: =?UTF-8?Q?5_novas_notifica=C3=A7=C3=B5es_em_Relier?=
+ =?UTF-8?Q?_desde_07=3A58_=2827_de_maio_de_2021=29?=
+Message-ID: <1622120353377e93f8a36@trello.com>
+Date: Thu, 27 May 2021 12:59:13 +0000
+MIME-Version: 1.0
+
+----_NmP-ef4f28178539e136-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Veja o que voc=C3=AA perdeu no Trello.=0D=0A=0D=0Aaubrym adicionou voc=C3=
+=AA ao cart=C3=A3o Curso C# (https://trello.com/c/CHfGqPVc/1217-curso-c) em=
+ Relier (https://trello.com/b/8GXVcp0D/relier)=0D=0A=0D=0A Responder por em=
+ail: sebastiaowill+2wefg204l5fh6gqhx83+2wfrvwzi5wwdtjmul86+2hrahxuad6@board=
+s.trello.com=0D=0A=0D=0Aaubrym adicionou voc=C3=AA ao cart=C3=A3o Curso ASP=
+=2ENET CORE (https://trello.com/c/6e7Z5jZF/1218-curso-aspnet-core) em Relie=
+r (https://trello.com/b/8GXVcp0D/relier)=0D=0A=0D=0A Responder por email: s=
+ebastiaowill+2wefg204l5fh6gqhx83+2wfrvyoffcvirzk38w2+0zw6ey15tv@boards.trel=
+lo.com=0D=0A=0D=0Aaubrym moveu o cart=C3=A3o Curso C# (https://trello.com/c=
+/CHfGqPVc/1217-curso-c) para Planejados em Relier (https://trello.com/b/8GX=
+Vcp0D/relier)=0D=0A=0D=0A Responder por email: sebastiaowill+2wefg204l5fh6g=
+qhx83+2wfrvwzi5wwdtjmul86+2hrahxuad6@boards.trello.com=0D=0A=0D=0Aaubrym mo=
+veu o cart=C3=A3o Curso C# (https://trello.com/c/CHfGqPVc/1217-curso-c) par=
+a Em Execu=C3=A7=C3=A3o em Relier (https://trello.com/b/8GXVcp0D/relier)=0D=
+=0A=0D=0A Responder por email: sebastiaowill+2wefg204l5fh6gqhx83+2wfrvwzi5w=
+wdtjmul86+2hrahxuad6@boards.trello.com=0D=0A=0D=0Aaubrym moveu o cart=C3=A3=
+o Curso C# (https://trello.com/c/CHfGqPVc/1217-curso-c) para Roadmap em Rel=
+ier (https://trello.com/b/8GXVcp0D/relier)=0D=0A=0D=0A Responder por email:=
+ sebastiaowill+2wefg204l5fh6gqhx83+2wfrvwzi5wwdtjmul86+2hrahxuad6@boards.tr=
+ello.com=0D=0A=0D=0A-- =0D=0A=0D=0AControle a frequ=C3=AAncia com que receb=
+e emails de notifica=C3=A7=C3=A3o na p=C3=A1gina da sua conta (https://trel=
+lo.com/my/account)=0D=0A=0D=0ASiga o @trello no Twitter (https://twitter.co=
+m/intent/follow=3Fuser_id=3D360831528)=0D=0A=0D=0AObtenha o Trello para o s=
+eu iPhone (http://itunes.com/apps/trello) ou o Trello para o seu Android (h=
+ttps://play.google.com/store/apps/details=3Fid=3Dcom.trello) =0D=0A
+----_NmP-ef4f28178539e136-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns=3D"http://www.w3.org/1999/x=
+html"> <head> <meta http-equiv=3D"Content-Type" content=3D"text/html; chars=
+et=3Dutf-8"> <meta name=3D"viewport" content=3D"width=3Ddevice-width">=0D=
+=0A=0D=0A <style type=3D"text/css">=0D=0A=0D=0A /**************************=
+******************** * Ink v1.0.5 - Copyright 2013 ZURB Inc * *************=
+*********************************/=0D=0A=0D=0A /* Client-specific Styles & =
+Reset */=0D=0A=0D=0A #outlook a { padding:0; } =0D=0A=0D=0A body{ width:100=
+% !important; min-width: 100%; -webkit-text-size-adjust:100%; -ms-text-size=
+-adjust:100%; margin:0; padding:0; }=0D=0A=0D=0A .ExternalClass { width:100=
+%; } =0D=0A=0D=0A .ExternalClass, .ExternalClass p, .ExternalClass span, .E=
+xternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100=
+%; } =0D=0A=0D=0A #backgroundTable { margin:0; padding:0; width:100% !impor=
+tant; line-height: 100% !important; }=0D=0A=0D=0A img { outline:none; text-=
+decoration:none; -ms-interpolation-mode: bicubic; width: auto; max-width: 1=
+00%; }=0D=0A=0D=0A center { width: 100%; }=0D=0A=0D=0A a img { border: none=
+; }=0D=0A=0D=0A p { margin: 0 0 0 10px; }=0D=0A=0D=0A table { border-spacin=
+g: 0; border-collapse: collapse; }=0D=0A=0D=0A td { word-break: break-word;=
+ -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse:=
+ collapse !important; }=0D=0A=0D=0A table, tr, td { padding: 0; vertical-al=
+ign: top; text-align: left; }=0D=0A=0D=0A hr { color: #d9d9d9; background-c=
+olor: #d9d9d9; height: 1px; border: none; }=0D=0A=0D=0A /* Responsive Grid =
+*/=0D=0A=0D=0A table.body { height: 100% !important; width: 100% !important=
+; padding: 0; margin: 0; }=0D=0A=0D=0A table.container { width: 580px; marg=
+in: 0 auto; text-align: inherit; }=0D=0A=0D=0A table.row { padding: 0px; wi=
+dth: 100%; position: relative; }=0D=0A=0D=0A table.container table.row { di=
+splay: block; }=0D=0A=0D=0A td.wrapper { padding: 10px 20px 0px 0px; positi=
+on: relative; }=0D=0A=0D=0A table.columns, table.column { margin: 0 auto; }=
+=0D=0A=0D=0A table.columns td, table.column td { padding: 0px 0px 10px; }=
+=0D=0A=0D=0A table.columns td.sub-columns, table.column td.sub-columns, tab=
+le.columns td.sub-column, table.column td.sub-column { padding-right: 10px;=
+ }=0D=0A=0D=0A td.sub-column, td.sub-columns { min-width: 0px; }=0D=0A=0D=
+=0A table.row td.last, table.container td.last { padding-right: 0px; }=0D=
+=0A=0D=0A table.one { width: 30px; } table.two { width: 80px; } table.three=
+ { width: 130px; } table.four { width: 180px; } table.five { width: 230px; =
+} table.six { width: 280px; } table.seven { width: 330px; } table.eight { w=
+idth: 380px; } table.nine { width: 430px; } table.ten { width: 480px; } tab=
+le.eleven { width: 530px; } table.twelve { width: 580px; }=0D=0A=0D=0A tabl=
+e.one center { min-width: 30px; } table.two center { min-width: 80px; } tab=
+le.three center { min-width: 130px; } table.four center { min-width: 180px;=
+ } table.five center { min-width: 230px; } table.six center { min-width: 28=
+0px; } table.seven center { min-width: 330px; } table.eight center { min-wi=
+dth: 380px; } table.nine center { min-width: 430px; } table.ten center { mi=
+n-width: 480px; } table.eleven center { min-width: 530px; } table.twelve ce=
+nter { min-width: 580px; }=0D=0A=0D=0A table.one .panel center { min-width:=
+ 10px; } table.two .panel center { min-width: 60px; } table.three .panel ce=
+nter { min-width: 110px; } table.four .panel center { min-width: 160px; } t=
+able.five .panel center { min-width: 210px; } table.six .panel center { min=
+-width: 260px; } table.seven .panel center { min-width: 310px; } table.eigh=
+t .panel center { min-width: 360px; } table.nine .panel center { min-width:=
+ 410px; } table.ten .panel center { min-width: 460px; } table.eleven .panel=
+ center { min-width: 510px; } table.twelve .panel center { min-width: 560px=
+; }=0D=0A=0D=0A .body .columns td.one, .body .column td.one { width: 8.3333=
+33%; } .body .columns td.two, .body .column td.two { width: 16.666666%; } .=
+body .columns td.three, .body .column td.three { width: 25%; } .body .colum=
+ns td.four, .body .column td.four { width: 33.333333%; } .body .columns td.=
+five, .body .column td.five { width: 41.666666%; } .body .columns td.six, .=
+body .column td.six { width: 50%; } .body .columns td.seven, .body .column =
+td.seven { width: 58.333333%; } .body .columns td.eight, .body .column td.e=
+ight { width: 66.666666%; } .body .columns td.nine, .body .column td.nine {=
+ width: 75%; } .body .columns td.ten, .body .column td.ten { width: 83.3333=
+33%; } .body .columns td.eleven, .body .column td.eleven { width: 91.666666=
+%; } .body .columns td.twelve, .body .column td.twelve { width: 100%; }=0D=
+=0A=0D=0A td.offset-by-one { padding-left: 50px; } td.offset-by-two { paddi=
+ng-left: 100px; } td.offset-by-three { padding-left: 150px; } td.offset-by-=
+four { padding-left: 200px; } td.offset-by-five { padding-left: 250px; } td=
+=2Eoffset-by-six { padding-left: 300px; } td.offset-by-seven { padding-left=
+: 350px; } td.offset-by-eight { padding-left: 400px; } td.offset-by-nine { =
+padding-left: 450px; } td.offset-by-ten { padding-left: 500px; } td.offset-=
+by-eleven { padding-left: 550px; }=0D=0A=0D=0A td.expander { visibility: hi=
+dden; width: 0px; padding: 0 !important; }=0D=0A=0D=0A table.columns .text-=
+pad, table.column .text-pad { padding-left: 10px; padding-right: 10px; }=0D=
+=0A=0D=0A table.columns .left-text-pad, table.columns .text-pad-left, table=
+=2Ecolumn .left-text-pad, table.column .text-pad-left { padding-left: 10px;=
+ }=0D=0A=0D=0A table.columns .right-text-pad, table.columns .text-pad-right=
+, table.column .right-text-pad, table.column .text-pad-right { padding-righ=
+t: 10px; }=0D=0A=0D=0A /* Block Grid */=0D=0A=0D=0A .block-grid { width: 10=
+0%; max-width: 580px; }=0D=0A=0D=0A .block-grid td { display: inline-block;=
+ padding:10px; }=0D=0A=0D=0A .two-up td { width:270px; }=0D=0A=0D=0A .three=
+-up td { width:173px; }=0D=0A=0D=0A .four-up td { width:125px; }=0D=0A=0D=
+=0A .five-up td { width:96px; }=0D=0A=0D=0A .six-up td { width:76px; }=0D=
+=0A=0D=0A .seven-up td { width:62px; }=0D=0A=0D=0A .eight-up td { width:52p=
+x; }=0D=0A=0D=0A /* Alignment & Visibility Classes */=0D=0A=0D=0A table.cen=
+ter, td.center { text-align: center; }=0D=0A=0D=0A h1.center, h2.center, h3=
+=2Ecenter, h4.center, h5.center, h6.center { text-align: center; }=0D=0A=0D=
+=0A span.center { display: block; width: 100%; text-align: center; }=0D=0A=
+=0D=0A img.center { margin: 0 auto; float: none; }=0D=0A=0D=0A .show-for-sm=
+all, .hide-for-desktop { display: none; }=0D=0A=0D=0A /* Typography */=0D=
+=0A=0D=0A body, table.body, h1, h2, h3, h4, h5, h6, p, td { color: #172B4D;=
+ font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; paddin=
+g: 0; margin: 0; text-align: left; line-height: 1.3; }=0D=0A=0D=0A h1, h2, =
+h3, h4, h5, h6 { word-break: normal; margin-bottom: 12px; }=0D=0A=0D=0A h1 =
+{font-size: 40px;} h2 {font-size: 36px;} h3 {font-size: 32px;} h4 {font-siz=
+e: 28px;} h5 {font-size: 24px;} h6 {font-size: 20px;} body, table.body, p, =
+td {font-size: 14px;line-height:19px;}=0D=0A=0D=0A p.lead, p.lede, p.leed {=
+ font-size: 18px; line-height:21px; }=0D=0A=0D=0A p { margin-bottom: 10px; =
+}=0D=0A=0D=0A small { font-size: 10px; }=0D=0A=0D=0A a { color: #0079BF; te=
+xt-decoration: underline; }=0D=0A=0D=0A a:active { color: #265F80; }=0D=0A=
+=0D=0A a:visited { color: #0079BF; }=0D=0A=0D=0A a:hover { color: #265F80; =
+}=0D=0A=0D=0A h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #0079BF; }=0D=0A=
+=0D=0A h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 =
+a:active { color: #0079BF !important; } =0D=0A=0D=0A h1 a:visited, h2 a:vis=
+ited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: #0079=
+BF !important; } =0D=0A=0D=0A /* Panels */=0D=0A=0D=0A .panel { background:=
+ #f2f2f2; border: 1px solid #d9d9d9; padding: 10px !important; }=0D=0A=0D=
+=0A .sub-grid table { width: 100%; }=0D=0A=0D=0A .sub-grid td.sub-columns {=
+ padding-bottom: 0; }=0D=0A=0D=0A /* Buttons */=0D=0A=0D=0A table.button, t=
+able.tiny-button, table.small-button, table.medium-button, table.large-butt=
+on { width: 100%; overflow: hidden; }=0D=0A=0D=0A table.button td, table.ti=
+ny-button td, table.small-button td, table.medium-button td, table.large-bu=
+tton td { display: block; width: auto !important; text-align: center; backg=
+round: #2ba6cb; border: 1px solid #2284a1; color: #ffffff; padding: 8px 0; =
+}=0D=0A=0D=0A table.tiny-button td { padding: 5px 0 4px; }=0D=0A=0D=0A tabl=
+e.small-button td { padding: 8px 0 7px; }=0D=0A=0D=0A table.medium-button t=
+d { padding: 12px 0 10px; }=0D=0A=0D=0A table.large-button td { padding: 21=
+px 0 18px; }=0D=0A=0D=0A table.button td a, table.tiny-button td a, table.s=
+mall-button td a, table.medium-button td a, table.large-button td a { font-=
+weight: bold; text-decoration: none; font-family: Helvetica, Arial, sans-se=
+rif; color: #ffffff; font-size: 16px; }=0D=0A=0D=0A table.tiny-button td a =
+{ font-size: 12px; font-weight: normal; }=0D=0A=0D=0A table.small-button td=
+ a { font-size: 16px; }=0D=0A=0D=0A table.medium-button td a { font-size: 2=
+0px; }=0D=0A=0D=0A table.large-button td a { font-size: 24px; }=0D=0A=0D=0A=
+ table.button:hover td, table.button:visited td, table.button:active td { b=
+ackground: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, table=
+=2Ebutton:visited td a, table.button:active td a { color: #fff !important; =
+}=0D=0A=0D=0A table.button:hover td, table.tiny-button:hover td, table.smal=
+l-button:hover td, table.medium-button:hover td, table.large-button:hover t=
+d { background: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, =
+table.button:active td a, table.button td a:visited, table.tiny-button:hove=
+r td a, table.tiny-button:active td a, table.tiny-button td a:visited, tabl=
+e.small-button:hover td a, table.small-button:active td a, table.small-butt=
+on td a:visited, table.medium-button:hover td a, table.medium-button:active=
+ td a, table.medium-button td a:visited, table.large-button:hover td a, tab=
+le.large-button:active td a, table.large-button td a:visited { color: #ffff=
+ff !important; }=0D=0A=0D=0A table.secondary td { background: #e9e9e9; bord=
+er-color: #d0d0d0; color: #555; }=0D=0A=0D=0A table.secondary td a { color:=
+ #555; }=0D=0A=0D=0A table.secondary:hover td { background: #d0d0d0 !import=
+ant; color: #555; }=0D=0A=0D=0A table.secondary:hover td a, table.secondary=
+ td a:visited, table.secondary:active td a { color: #555 !important; }=0D=
+=0A=0D=0A table.success td { background: #5da423; border-color: #457a1a; }=
+=0D=0A=0D=0A table.success:hover td { background: #457a1a !important; }=0D=
+=0A=0D=0A table.alert td { background: #c60f13; border-color: #970b0e; }=0D=
+=0A=0D=0A table.alert:hover td { background: #970b0e !important; }=0D=0A=0D=
+=0A table.radius td { -webkit-border-radius: 3px; -moz-border-radius: 3px; =
+border-radius: 3px; }=0D=0A=0D=0A table.round td { -webkit-border-radius: 5=
+00px; -moz-border-radius: 500px; border-radius: 500px; }=0D=0A=0D=0A /* Out=
+look First */=0D=0A=0D=0A body.outlook p { display: inline !important; }=0D=
+=0A=0D=0A /* Media Queries */=0D=0A=0D=0A @media only screen and (max-width=
+: 600px) {=0D=0A=0D=0A table[class=3D"body"] img { width: auto; height: aut=
+o; }=0D=0A=0D=0A table[class=3D"body"] center { min-width: 0 !important; }=
+=0D=0A=0D=0A table[class=3D"body"] .container { width: 95% !important; }=0D=
+=0A=0D=0A table[class=3D"body"] .row { width: 100% !important; display: blo=
+ck !important; }=0D=0A=0D=0A table[class=3D"body"] .wrapper { display: bloc=
+k !important; padding-right: 0 !important; }=0D=0A=0D=0A table[class=3D"bod=
+y"] .columns, table[class=3D"body"] .column { table-layout: fixed !importan=
+t; float: none !important; width: 100% !important; padding-right: 0px !impo=
+rtant; padding-left: 0px !important; display: block !important; }=0D=0A=0D=
+=0A table[class=3D"body"] .wrapper.first .columns, table[class=3D"body"] .w=
+rapper.first .column { display: table !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td, table[class=3D"body"] table.column td { width:=
+ 100% !important; }=0D=0A=0D=0A table[class=3D"body"] .columns td.one, tabl=
+e[class=3D"body"] .column td.one { width: 8.333333% !important; } table[cla=
+ss=3D"body"] .columns td.two, table[class=3D"body"] .column td.two { width:=
+ 16.666666% !important; } table[class=3D"body"] .columns td.three, table[cl=
+ass=3D"body"] .column td.three { width: 25% !important; } table[class=3D"bo=
+dy"] .columns td.four, table[class=3D"body"] .column td.four { width: 33.33=
+3333% !important; } table[class=3D"body"] .columns td.five, table[class=3D"=
+body"] .column td.five { width: 41.666666% !important; } table[class=3D"bod=
+y"] .columns td.six, table[class=3D"body"] .column td.six { width: 50% !imp=
+ortant; } table[class=3D"body"] .columns td.seven, table[class=3D"body"] .c=
+olumn td.seven { width: 58.333333% !important; } table[class=3D"body"] .col=
+umns td.eight, table[class=3D"body"] .column td.eight { width: 66.666666% !=
+important; } table[class=3D"body"] .columns td.nine, table[class=3D"body"] =
+=2Ecolumn td.nine { width: 75% !important; } table[class=3D"body"] .columns=
+ td.ten, table[class=3D"body"] .column td.ten { width: 83.333333% !importan=
+t; } table[class=3D"body"] .columns td.eleven, table[class=3D"body"] .colum=
+n td.eleven { width: 91.666666% !important; } table[class=3D"body"] .column=
+s td.twelve, table[class=3D"body"] .column td.twelve { width: 100% !importa=
+nt; }=0D=0A=0D=0A table[class=3D"body"] td.offset-by-one, table[class=3D"bo=
+dy"] td.offset-by-two, table[class=3D"body"] td.offset-by-three, table[clas=
+s=3D"body"] td.offset-by-four, table[class=3D"body"] td.offset-by-five, tab=
+le[class=3D"body"] td.offset-by-six, table[class=3D"body"] td.offset-by-sev=
+en, table[class=3D"body"] td.offset-by-eight, table[class=3D"body"] td.offs=
+et-by-nine, table[class=3D"body"] td.offset-by-ten, table[class=3D"body"] t=
+d.offset-by-eleven { padding-left: 0 !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td.expander { width: 1px !important; }=0D=0A=0D=0A=
+ table[class=3D"body"] .right-text-pad, table[class=3D"body"] .text-pad-rig=
+ht { padding-left: 10px !important; }=0D=0A=0D=0A table[class=3D"body"] .le=
+ft-text-pad, table[class=3D"body"] .text-pad-left { padding-right: 10px !im=
+portant; }=0D=0A=0D=0A table[class=3D"body"] .hide-for-small, table[class=
+=3D"body"] .show-for-desktop { display: none !important; }=0D=0A=0D=0A tabl=
+e[class=3D"body"] .show-for-small, table[class=3D"body"] .hide-for-desktop =
+{ display: inherit !important; } }=0D=0A=0D=0A</style>=0D=0A=0D=0A <style t=
+ype=3D"text/css"> /* Typography */=0D=0A=0D=0A body, table.body, h1, h2, h3=
+, h4, h5, h6, p, td, a { font-family: -apple-system, BlinkMacSystemFont, Se=
+goe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; =
+}=0D=0A=0D=0A /* Trello Block */=0D=0A=0D=0A .trello-block { width: 100%; t=
+ext-align: inherit; }=0D=0A=0D=0A .trello-block-single-column { display: bl=
+ock; margin: 0 auto; max-width: 580px; padding: 12px 16px; }=0D=0A=0D=0A /*=
+ Header */=0D=0A=0D=0A .header-logo-image { height: 25px; max-height: 25px;=
+ max-width: 122px; width: 122px; display: block; }=0D=0A=0D=0A /* Blog Post=
+ Link */=0D=0A=0D=0A .trello-block--blog-post p { text-align: center; }=0D=
+=0A=0D=0A /* Code */=0D=0A=0D=0A code { white-space: pre-wrap; }=0D=0A=0D=
+=0A /* Footer */=0D=0A=0D=0A .trello-block--footer p { color: #9B9B9B; text=
+-align: center; }=0D=0A=0D=0A .trello-block--footer a, .trello-block--foote=
+r a:visited, .trello-block--footer a:active { color: #9B9B9B; text-decorati=
+on: underline; }=0D=0A=0D=0A .trello-block--footer a:hover { color: #4d4d4d=
+; }=0D=0A=0D=0A /* Notifications */=0D=0A=0D=0A .phenom { margin: 12px 0; f=
+loat: left; clear: both; } =0D=0A=0D=0A .phenom-creator { width: 38px; }=0D=
+=0A=0D=0A .phenom-creator-avatar { -webkit-border-radius: 50%; border-radiu=
+s: 50%; height: 30px; width: 30px; }=0D=0A=0D=0A .phenom-member-initials { =
+-webkit-border-radius: 50%; border-radius: 50%; display: block; font-size: =
+12px; font-weight: bold; height: 30px; line-height: 30px; width: 85%; text-=
+align: center; background-color: #d6dadc; }=0D=0A=0D=0A .app-creator { font=
+-size: 12px; line-height: 16px; color: #5E6C84; display: inline-block; }=0D=
+=0A=0D=0A .app-creator a { color: inherit; text-decoration: none; }=0D=0A=
+=0D=0A .app-creator a:hover { text-decoration: underline; }=0D=0A=0D=0A .ap=
+p-creator img { width: 14px; height: 14px; margin-right: 1px; vertical-alig=
+n: middle !important; display: inline-block; float: none; }=0D=0A=0D=0A .ph=
+enom-details { /* max-width: 480px; */ }=0D=0A=0D=0A .phenom-details-commen=
+t { background-color: #fff; border: 1px solid #C1C7D0; -webkit-border-radiu=
+s: 3px; border-radius: 3px; display: block; margin: 6px 0; padding: 10px 12=
+px 0 12px; }=0D=0A=0D=0A /* Button */=0D=0A=0D=0A a.button { background: li=
+near-gradient(to bottom, #3FBF3F 0%, #37A637 100%); border-bottom: 2px soli=
+d #008000; border-radius: 3px; color: #fff; display: inline-block; font-wei=
+ght: bold; font-size: 18px; margin: 12px margin; padding: 16px 24px; text-d=
+ecoration: none; }=0D=0A=0D=0A a.button:hover { background: linear-gradient=
+(to bottom, #37A637 0%, #2E8C2E 100%); }=0D=0A=0D=0A /* Responsivication */=
+=0D=0A=0D=0A @media only screen and (min-width: 580px) {=0D=0A=0D=0A .trell=
+o-block-single-column { width: 560px !important; }=0D=0A=0D=0A }=0D=0A=0D=
+=0A @media only screen and (max-width: 559px) {=0D=0A=0D=0A .trello-block-s=
+ingle-column { width: 90% !important; padding: 12px 0; }=0D=0A=0D=0A }=0D=
+=0A=0D=0A @media screen and (max-width:480px) { .desktop-marketing { displa=
+y: none !important } .mobile-marketing { display: block !important } } </st=
+yle>=0D=0A=0D=0A </head> <body style=3D"min-width: 100%; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; color: #172B4D; font-weight: norm=
+al; padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: =
+19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Not=
+o Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 100%;"> <tab=
+le class=3D"body" style=3D"border-spacing: 0; border-collapse: collapse; ve=
+rtical-align: top; color: #172B4D; font-weight: normal; padding: 0; margin:=
+ 0; text-align: left; font-size: 14px; line-height: 19px; font-family: -app=
+le-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid S=
+ans, Helvetica Neue, sans-serif; height: 100%; width: 100%;" width=3D"100%"=
+ height=3D"100%" valign=3D"top" align=3D"left"> <tr style=3D"padding: 0; ve=
+rtical-align: top; text-align: left;" valign=3D"top" align=3D"left"> <td cl=
+ass=3D"center" align=3D"center" valign=3D"top" style=3D"word-break: break-w=
+ord; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-ali=
+gn: top; color: #172B4D; font-weight: normal; padding: 0; margin: 0; font-s=
+ize: 14px; line-height: 19px; font-family: -apple-system, BlinkMacSystemFon=
+t, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-se=
+rif; text-align: center; border-collapse: collapse;"> <center style=3D"widt=
+h: 100%;"> <!-- Email Content -->=0D=0A=0D=0A <!--[if (gte mso 9)|(IE)]> <t=
+able width=3D"560" align=3D"center"> <tr> <td> <![endif]-->=0D=0A=0D=0A <!-=
+- Header -->=0D=0A=0D=0A<table class=3D"trello-block trello-block-backgroun=
+d--trello-blue" style=3D"border-spacing: 0; border-collapse: collapse; padd=
+ing: 0; vertical-align: top; width: 100%; text-align: inherit;" width=3D"10=
+0%" valign=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; vertical-ali=
+gn: top; text-align: left;" valign=3D"top" align=3D"left"> <td style=3D"wor=
+d-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: au=
+to; vertical-align: top; color: #172B4D; font-weight: normal; padding: 0; m=
+argin: 0; text-align: left; font-size: 14px; line-height: 19px; font-family=
+: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, D=
+roid Sans, Helvetica Neue, sans-serif; border-collapse: collapse;" valign=
+=3D"top" align=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-single-colu=
+mn center" style=3D"display: block; margin: 0 auto; max-width: 580px; paddi=
+ng: 12px 16px;">=0D=0A=0D=0A <img class=3D"header-logo-image center" height=
+=3D"25" width=3D"122" src=3D"https://trello.com/images/logo-new-sm-2x.png" =
+alt=3D"Logotipo do Trello" title=3D"Logotipo do Trello" style=3D"outline: n=
+one; text-decoration: none; -ms-interpolation-mode: bicubic; height: 25px; =
+max-height: 25px; max-width: 122px; width: 122px; display: block; margin: 0=
+ auto; float: none;">=0D=0A=0D=0A </div>=0D=0A=0D=0A </td> </tr> </table>=
+=0D=0A=0D=0A <table class=3D"trello-block" style=3D"border-spacing: 0; bord=
+er-collapse: collapse; padding: 0; vertical-align: top; width: 100%; text-a=
+lign: inherit;" width=3D"100%" valign=3D"top" align=3D"inherit"> <tr style=
+=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"top" alig=
+n=3D"left"> <td style=3D"word-break: break-word; -webkit-hyphens: auto; -mo=
+z-hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-w=
+eight: normal; margin: 0; text-align: left; font-size: 14px; line-height: 1=
+9px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto=
+ Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; padding: 16px 0; bor=
+der-collapse: collapse;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div cl=
+ass=3D"trello-block-single-column" style=3D"display: block; margin: 0 auto;=
+ max-width: 580px; padding: 12px 16px;">=0D=0A=0D=0A <h6 style=3D"color: #1=
+72B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; line-h=
+eight: 1.3; word-break: normal; margin-bottom: 12px; font-size: 20px; font-=
+family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubu=
+ntu, Droid Sans, Helvetica Neue, sans-serif;">Veja o que voc=C3=AA perdeu..=
+=2E</h6>=0D=0A=0D=0A <table width=3D"100%" class=3D"phenom" style=3D"border=
+-spacing: 0; border-collapse: collapse; padding: 0; vertical-align: top; te=
+xt-align: left; margin: 12px 0; float: left; clear: both;" valign=3D"top" a=
+lign=3D"left"> <tr style=3D"padding: 0; vertical-align: top; text-align: le=
+ft;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <td class=3D"phenom-creator=
+" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: aut=
+o; hyphens: auto; vertical-align: top; color: #172B4D; font-weight: normal;=
+ padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: 19p=
+x; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto S=
+ans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 38px; border-co=
+llapse: collapse;" width=3D"38" valign=3D"top" align=3D"left"> <img class=
+=3D"phenom-creator-avatar" src=3D"https://trello-members.s3.amazonaws.com/5=
+0ba591246a43dbf61011267/6ab422202994da88f40545ce329be374/30.png" height=3D"=
+30" width=3D"30" style=3D"outline: none; text-decoration: none; -ms-interpo=
+lation-mode: bicubic; max-width: 100%; -webkit-border-radius: 50%; border-r=
+adius: 50%; height: 30px; width: 30px;">=0D=0A=0D=0A </td> <td class=3D"phe=
+nom-details" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-h=
+yphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weig=
+ht: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-=
+height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Rob=
+oto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-coll=
+apse: collapse;" valign=3D"top" align=3D"left"> <strong>aubrym</strong> adi=
+cionou voc=C3=AA ao cart=C3=A3o <a href=3D"https://trello.com/c/CHfGqPVc/12=
+17-curso-c" style=3D"color: #0079BF; text-decoration: underline; font-famil=
+y: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, =
+Droid Sans, Helvetica Neue, sans-serif;">Curso C#</a> em <a href=3D"https:/=
+/trello.com/b/8GXVcp0D/relier" style=3D"color: #0079BF; text-decoration: un=
+derline; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, =
+Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Relier</a> <spa=
+n class=3D"app-creator" style=3D"font-size: 12px; line-height: 16px; color:=
+ #5E6C84; display: inline-block;"> </span> <p style=3D"color: #172B4D; font=
+-weight: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; =
+line-height: 19px; margin-bottom: 10px; font-family: -apple-system, BlinkMa=
+cSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neu=
+e, sans-serif;"> <a href=3D"mailto:sebastiaowill+2wefg204l5fh6gqhx83+2wfrvw=
+zi5wwdtjmul86+2hrahxuad6@boards.trello.com=3Fsubject=3DRe%3A%20Curso%20C%23=
+" target=3D"_blank" style=3D"color: #0079BF; text-decoration: underline; fo=
+nt-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, =
+Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Responder por email</a> </=
+p> </td>=0D=0A=0D=0A </tr> </table>=0D=0A=0D=0A <table width=3D"100%" class=
+=3D"phenom" style=3D"border-spacing: 0; border-collapse: collapse; padding:=
+ 0; vertical-align: top; text-align: left; margin: 12px 0; float: left; cle=
+ar: both;" valign=3D"top" align=3D"left"> <tr style=3D"padding: 0; vertical=
+-align: top; text-align: left;" valign=3D"top" align=3D"left">=0D=0A=0D=0A =
+<td class=3D"phenom-creator" style=3D"word-break: break-word; -webkit-hyphe=
+ns: auto; -moz-hyphens: auto; hyphens: auto; vertical-align: top; color: #1=
+72B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; font-s=
+ize: 14px; line-height: 19px; font-family: -apple-system, BlinkMacSystemFon=
+t, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-se=
+rif; width: 38px; border-collapse: collapse;" width=3D"38" valign=3D"top" a=
+lign=3D"left"> <img class=3D"phenom-creator-avatar" src=3D"https://trello-m=
+embers.s3.amazonaws.com/50ba591246a43dbf61011267/6ab422202994da88f40545ce32=
+9be374/30.png" height=3D"30" width=3D"30" style=3D"outline: none; text-deco=
+ration: none; -ms-interpolation-mode: bicubic; max-width: 100%; -webkit-bor=
+der-radius: 50%; border-radius: 50%; height: 30px; width: 30px;">=0D=0A=0D=
+=0A </td> <td class=3D"phenom-details" style=3D"word-break: break-word; -we=
+bkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-align: top;=
+ color: #172B4D; font-weight: normal; padding: 0; margin: 0; text-align: le=
+ft; font-size: 14px; line-height: 19px; font-family: -apple-system, BlinkMa=
+cSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neu=
+e, sans-serif; border-collapse: collapse;" valign=3D"top" align=3D"left"> <=
+strong>aubrym</strong> adicionou voc=C3=AA ao cart=C3=A3o <a href=3D"https:=
+//trello.com/c/6e7Z5jZF/1218-curso-aspnet-core" style=3D"color: #0079BF; te=
+xt-decoration: underline; font-family: -apple-system, BlinkMacSystemFont, S=
+egoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;=
+">Curso ASP.NET CORE</a> em <a href=3D"https://trello.com/b/8GXVcp0D/relier=
+" style=3D"color: #0079BF; text-decoration: underline; font-family: -apple-=
+system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans=
+, Helvetica Neue, sans-serif;">Relier</a> <span class=3D"app-creator" style=
+=3D"font-size: 12px; line-height: 16px; color: #5E6C84; display: inline-blo=
+ck;"> </span> <p style=3D"color: #172B4D; font-weight: normal; padding: 0; =
+margin: 0; text-align: left; font-size: 14px; line-height: 19px; margin-bot=
+tom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto=
+, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;"> <a href=3D"m=
+ailto:sebastiaowill+2wefg204l5fh6gqhx83+2wfrvyoffcvirzk38w2+0zw6ey15tv@boar=
+ds.trello.com=3Fsubject=3DRe%3A%20Curso%20ASP.NET%20CORE" target=3D"_blank"=
+ style=3D"color: #0079BF; text-decoration: underline; font-family: -apple-s=
+ystem, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans,=
+ Helvetica Neue, sans-serif;">Responder por email</a> </p> </td>=0D=0A=0D=
+=0A </tr> </table>=0D=0A=0D=0A <table width=3D"100%" class=3D"phenom" style=
+=3D"border-spacing: 0; border-collapse: collapse; padding: 0; vertical-alig=
+n: top; text-align: left; margin: 12px 0; float: left; clear: both;" valign=
+=3D"top" align=3D"left"> <tr style=3D"padding: 0; vertical-align: top; text=
+-align: left;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <td class=3D"phen=
+om-creator" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hy=
+phens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weigh=
+t: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-h=
+eight: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robo=
+to, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 38px;=
+ border-collapse: collapse;" width=3D"38" valign=3D"top" align=3D"left"> <i=
+mg class=3D"phenom-creator-avatar" src=3D"https://trello-members.s3.amazona=
+ws.com/50ba591246a43dbf61011267/6ab422202994da88f40545ce329be374/30.png" he=
+ight=3D"30" width=3D"30" style=3D"outline: none; text-decoration: none; -ms=
+-interpolation-mode: bicubic; max-width: 100%; -webkit-border-radius: 50%; =
+border-radius: 50%; height: 30px; width: 30px;">=0D=0A=0D=0A </td> <td clas=
+s=3D"phenom-details" style=3D"word-break: break-word; -webkit-hyphens: auto=
+; -moz-hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; f=
+ont-weight: normal; padding: 0; margin: 0; text-align: left; font-size: 14p=
+x; line-height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe=
+ UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; bor=
+der-collapse: collapse;" valign=3D"top" align=3D"left"> <strong>aubrym</str=
+ong> moveu o cart=C3=A3o <a href=3D"https://trello.com/c/CHfGqPVc/1217-curs=
+o-c" style=3D"color: #0079BF; text-decoration: underline; font-family: -app=
+le-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid S=
+ans, Helvetica Neue, sans-serif;">Curso C#</a> para Planejados em <a href=
+=3D"https://trello.com/b/8GXVcp0D/relier" style=3D"color: #0079BF; text-dec=
+oration: underline; font-family: -apple-system, BlinkMacSystemFont, Segoe U=
+I, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Reli=
+er</a> <span class=3D"app-creator" style=3D"font-size: 12px; line-height: 1=
+6px; color: #5E6C84; display: inline-block;"> </span> <p style=3D"color: #1=
+72B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; font-s=
+ize: 14px; line-height: 19px; margin-bottom: 10px; font-family: -apple-syst=
+em, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, He=
+lvetica Neue, sans-serif;"> <a href=3D"mailto:sebastiaowill+2wefg204l5fh6gq=
+hx83+2wfrvwzi5wwdtjmul86+2hrahxuad6@boards.trello.com=3Fsubject=3DRe%3A%20C=
+urso%20C%23" target=3D"_blank" style=3D"color: #0079BF; text-decoration: un=
+derline; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, =
+Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Responder por e=
+mail</a> </p> </td>=0D=0A=0D=0A </tr> </table>=0D=0A=0D=0A <table width=3D"=
+100%" class=3D"phenom" style=3D"border-spacing: 0; border-collapse: collaps=
+e; padding: 0; vertical-align: top; text-align: left; margin: 12px 0; float=
+: left; clear: both;" valign=3D"top" align=3D"left"> <tr style=3D"padding: =
+0; vertical-align: top; text-align: left;" valign=3D"top" align=3D"left">=
+=0D=0A=0D=0A <td class=3D"phenom-creator" style=3D"word-break: break-word; =
+-webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-align: t=
+op; color: #172B4D; font-weight: normal; padding: 0; margin: 0; text-align:=
+ left; font-size: 14px; line-height: 19px; font-family: -apple-system, Blin=
+kMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica =
+Neue, sans-serif; width: 38px; border-collapse: collapse;" width=3D"38" val=
+ign=3D"top" align=3D"left"> <img class=3D"phenom-creator-avatar" src=3D"htt=
+ps://trello-members.s3.amazonaws.com/50ba591246a43dbf61011267/6ab422202994d=
+a88f40545ce329be374/30.png" height=3D"30" width=3D"30" style=3D"outline: no=
+ne; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100%=
+; -webkit-border-radius: 50%; border-radius: 50%; height: 30px; width: 30px=
+;">=0D=0A=0D=0A </td> <td class=3D"phenom-details" style=3D"word-break: bre=
+ak-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical=
+-align: top; color: #172B4D; font-weight: normal; padding: 0; margin: 0; te=
+xt-align: left; font-size: 14px; line-height: 19px; font-family: -apple-sys=
+tem, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, H=
+elvetica Neue, sans-serif; border-collapse: collapse;" valign=3D"top" align=
+=3D"left"> <strong>aubrym</strong> moveu o cart=C3=A3o <a href=3D"https://t=
+rello.com/c/CHfGqPVc/1217-curso-c" style=3D"color: #0079BF; text-decoration=
+: underline; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robo=
+to, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Curso C#</a=
+> para Em Execu=C3=A7=C3=A3o em <a href=3D"https://trello.com/b/8GXVcp0D/re=
+lier" style=3D"color: #0079BF; text-decoration: underline; font-family: -ap=
+ple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid =
+Sans, Helvetica Neue, sans-serif;">Relier</a> <span class=3D"app-creator" s=
+tyle=3D"font-size: 12px; line-height: 16px; color: #5E6C84; display: inline=
+-block;"> </span> <p style=3D"color: #172B4D; font-weight: normal; padding:=
+ 0; margin: 0; text-align: left; font-size: 14px; line-height: 19px; margin=
+-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Ro=
+boto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;"> <a href=
+=3D"mailto:sebastiaowill+2wefg204l5fh6gqhx83+2wfrvwzi5wwdtjmul86+2hrahxuad6=
+@boards.trello.com=3Fsubject=3DRe%3A%20Curso%20C%23" target=3D"_blank" styl=
+e=3D"color: #0079BF; text-decoration: underline; font-family: -apple-system=
+, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helv=
+etica Neue, sans-serif;">Responder por email</a> </p> </td>=0D=0A=0D=0A </t=
+r> </table>=0D=0A=0D=0A <table width=3D"100%" class=3D"phenom" style=3D"bor=
+der-spacing: 0; border-collapse: collapse; padding: 0; vertical-align: top;=
+ text-align: left; margin: 12px 0; float: left; clear: both;" valign=3D"top=
+" align=3D"left"> <tr style=3D"padding: 0; vertical-align: top; text-align:=
+ left;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <td class=3D"phenom-crea=
+tor" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: =
+auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weight: norm=
+al; padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: =
+19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Not=
+o Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 38px; border=
+-collapse: collapse;" width=3D"38" valign=3D"top" align=3D"left"> <img clas=
+s=3D"phenom-creator-avatar" src=3D"https://trello-members.s3.amazonaws.com/=
+50ba591246a43dbf61011267/6ab422202994da88f40545ce329be374/30.png" height=3D=
+"30" width=3D"30" style=3D"outline: none; text-decoration: none; -ms-interp=
+olation-mode: bicubic; max-width: 100%; -webkit-border-radius: 50%; border-=
+radius: 50%; height: 30px; width: 30px;">=0D=0A=0D=0A </td> <td class=3D"ph=
+enom-details" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-=
+hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-wei=
+ght: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line=
+-height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Ro=
+boto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-col=
+lapse: collapse;" valign=3D"top" align=3D"left"> <strong>aubrym</strong> mo=
+veu o cart=C3=A3o <a href=3D"https://trello.com/c/CHfGqPVc/1217-curso-c" st=
+yle=3D"color: #0079BF; text-decoration: underline; font-family: -apple-syst=
+em, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, He=
+lvetica Neue, sans-serif;">Curso C#</a> para Roadmap em <a href=3D"https://=
+trello.com/b/8GXVcp0D/relier" style=3D"color: #0079BF; text-decoration: und=
+erline; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, N=
+oto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Relier</a> <span=
+ class=3D"app-creator" style=3D"font-size: 12px; line-height: 16px; color: =
+#5E6C84; display: inline-block;"> </span> <p style=3D"color: #172B4D; font-=
+weight: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; l=
+ine-height: 19px; margin-bottom: 10px; font-family: -apple-system, BlinkMac=
+SystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue=
+, sans-serif;"> <a href=3D"mailto:sebastiaowill+2wefg204l5fh6gqhx83+2wfrvwz=
+i5wwdtjmul86+2hrahxuad6@boards.trello.com=3Fsubject=3DRe%3A%20Curso%20C%23"=
+ target=3D"_blank" style=3D"color: #0079BF; text-decoration: underline; fon=
+t-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, U=
+buntu, Droid Sans, Helvetica Neue, sans-serif;">Responder por email</a> </p=
+> </td>=0D=0A=0D=0A </tr> </table>=0D=0A=0D=0A </div>=0D=0A=0D=0A </td> </t=
+r> </table> <!-- End gray background -->=0D=0A=0D=0A <script type=3D"applic=
+ation/ld+json"> {"@context":"http:\u002f\u002fschema.org","@type":"EmailMes=
+sage","potentialAction":{"@type":"ViewAction","target":"https:\u002f\u002ft=
+rello.com\u002fb\u002f8GXVcp0D=3Futm_medium=3Demail&utm_source=3Dnotificati=
+on&utm_campaign=3Dnotification&utm_content=3Dgoogle_inbox","name":"Open Boa=
+rd in Trello"},"description":"Trello Board"} </script>=0D=0A=0D=0A <!-- Blo=
+g Post Link -->=0D=0A=0D=0A<table class=3D"trello-block trello-block--blog-=
+post" style=3D"border-spacing: 0; border-collapse: collapse; padding: 0; ve=
+rtical-align: top; width: 100%; text-align: inherit;" width=3D"100%" valign=
+=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; vertical-align: top; t=
+ext-align: left;" valign=3D"top" align=3D"left"> <td style=3D"word-break: b=
+reak-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertic=
+al-align: top; color: #172B4D; font-weight: normal; padding: 0; margin: 0; =
+text-align: left; font-size: 14px; line-height: 19px; font-family: -apple-s=
+ystem, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans,=
+ Helvetica Neue, sans-serif; border-collapse: collapse;" valign=3D"top" ali=
+gn=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-single-column center" s=
+tyle=3D"display: block; margin: 0 auto; max-width: 580px; padding: 12px 16p=
+x;">=0D=0A=0D=0A <p style=3D"color: #172B4D; font-weight: normal; padding: =
+0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom: 10px; font=
+-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ub=
+untu, Droid Sans, Helvetica Neue, sans-serif; text-align: center;"><a href=
+=3D"https://blog.trello.com/br/trello-cronograma-visualizacao=3Futm_source=
+=3Dalert-email&utm_medium=3Demail&utm_campaign=3Dtrello-br_timeline-post" s=
+tyle=3D"color: #0079BF; text-decoration: underline; font-family: -apple-sys=
+tem, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, H=
+elvetica Neue, sans-serif;">A visualiza=C3=A7=C3=A3o de Cronograma =C3=A9 a=
+ forma perfeita de ver tudo em um s=C3=B3 lugar! </a></p> </div>=0D=0A=0D=
+=0A </td> </tr> </table>=0D=0A=0D=0A <!-- Footer -->=0D=0A=0D=0A<table clas=
+s=3D"trello-block trello-block--footer" style=3D"border-spacing: 0; border-=
+collapse: collapse; padding: 0; vertical-align: top; width: 100%; text-alig=
+n: inherit;" width=3D"100%" valign=3D"top" align=3D"inherit"> <tr style=3D"=
+padding: 0; vertical-align: top; text-align: left;" valign=3D"top" align=3D=
+"left"> <td style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hy=
+phens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weigh=
+t: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-h=
+eight: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robo=
+to, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-colla=
+pse: collapse;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div class=3D"tr=
+ello-block-single-column center" style=3D"display: block; margin: 0 auto; m=
+ax-width: 580px; padding: 12px 16px;">=0D=0A=0D=0A<p style=3D"font-weight: =
+normal; padding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-b=
+ottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robo=
+to, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; text-align: =
+center; color: #9B9B9B;"><b>Fique por dentro de tudo onde quer que esteja! =
+Baixe o aplicativo do Trello e realize a=C3=A7=C3=B5es em qualquer lugar.</=
+b></p> <div class=3D"desktop-marketing"> <p style=3D"font-weight: normal; p=
+adding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom: 10=
+px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto =
+Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-=
+align: center;">Baixar o Trello para <a href=3D"https://itunes.apple.com/us=
+/app/trello-organize-anything/id461504587">iPhone e iPad</a>, <a href=3D"ht=
+tps://play.google.com/store/apps/details=3Fid=3Dcom.trello">Android</a> e m=
+uito <a href=3D"https://trello.com/platforms">mais</a>.</p> </div>=0D=0A=0D=
+=0A<div class=3D"mobile-marketing" style=3D"text-align: center; display: no=
+ne;"> <a href=3D"https://apps.apple.com/us/app/trello-organize-anything/id4=
+61504587=3Fitsct=3Dapps_box&itscg=3D30200" style=3D"font-family: -apple-sys=
+tem, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, H=
+elvetica Neue, sans-serif; color: #9B9B9B; text-decoration: underline; marg=
+in: auto; display: inline-block; overflow: hidden; border-radius: 13px; wid=
+th: 116px; height: 45px; vertical-align: middle; padding: 0px 13px;"> <img =
+width=3D"116" height=3D"45" alt=3D"Baixar na App Store da Apple" src=3D"htt=
+ps://trello.com/images/email/apple-app-store-badges/black-pt-br.png" style=
+=3D"outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; =
+max-width: 100%; border: none; border-radius: 13px; width: 116px; height: 4=
+5px;"> </a> <a href=3D"https://play.google.com/store/apps/details=3Fid=3Dco=
+m.trello&pcampaignid=3DpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadg=
+e-Mar2515-1" style=3D"font-family: -apple-system, BlinkMacSystemFont, Segoe=
+ UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; col=
+or: #9B9B9B; text-decoration: underline; margin: auto; display: inline-bloc=
+k; overflow: hidden; width: 142px; height: 55px; vertical-align: middle;"> =
+<img width=3D"142" height=3D"55" alt=3D"Baixar no Google Play" src=3D"https=
+://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_g=
+eneric.png" style=3D"outline: none; text-decoration: none; -ms-interpolatio=
+n-mode: bicubic; max-width: 100%; border: none; width: 142px; height: 55px;=
+"> </a> =0D=0A=0D=0A <p style=3D"font-weight: normal; padding: 0; margin: 0=
+; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Sego=
+e UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; co=
+lor: #9B9B9B; text-align: center; margin-top: 20px; font-size: 10px; line-h=
+eight: 12px;"> Google Play e o logotipo do Google Play s=C3=A3o marcas come=
+rciais da Google LLC. <br> Apple e o logotipo da Apple s=C3=A3o marcas come=
+rciais da Apple Inc. </p> </div>=0D=0A=0D=0A <p style=3D"font-weight: norma=
+l; padding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom=
+: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, N=
+oto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; t=
+ext-align: center;"><a href=3D"https://trello.com/my/account" style=3D"font=
+-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ub=
+untu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-decorati=
+on: underline;">Alterar prefer=C3=AAncias de email</a></p>=0D=0A=0D=0A </di=
+v>=0D=0A=0D=0A </td> </tr> </table>=0D=0A=0D=0A <!--[if (gte mso 9)|(IE)]> =
+</td> </tr> </table> <![endif]-->=0D=0A=0D=0A <!-- / Email Content --> </ce=
+nter> </td> </tr> </table> =0D=0A<img border=3D"0" width=3D"1" height=3D"1"=
+ alt=3D"" src=3D"http://sptrack.trello.com/q/KTaNFu10yaYPxeYQMVBILQ~~/AAAAA=
+QA~/RgRikMsiPlcLYXRsYXNzaWFudXNCCmCuopevYErXLqdSF3NlYmFzdGlhb0ByZWxpZXIuY29=
+tLmJyWAQAAAAD">=0D=0A</body> </html>=0D=0A=0D=0A=0D=0A
+----_NmP-ef4f28178539e136-Part_1--
+From - Thu May 27 10:02:32 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:a05:6838:aa95:0:0:0:0 with SMTP id ai21csp2747796nkc;
+        Thu, 20 May 2021 15:16:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxyEfKSjBxmASutQytpPRA7A0u3Jet8ipRDGYEePnjZZTQlB9bnQEZzr2U7znkjZRsdb3yB
+X-Received: by 2002:a63:ee10:: with SMTP id e16mr6688516pgi.135.1621549009360;
+        Thu, 20 May 2021 15:16:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1621549009; cv=none;
+        d=google.com; s=arc-20160816;
+        b=bB1Wpo2ykgdPgeWA/50ANS4ML0/qA5YGtsjJLXHDn3BbGlGpJfe/9m+2xJAy4GATER
+         7fMUxcH0NHnQ72VRgg1h8voOmZgOG+FaPO0+j/uiOCZ+IQTye+whoy97htSz3FmKdXAT
+         rLhLV/1TWd6nHzFp6S2zQi9pglfNcztBSfoY1H3hKd/Oow34hoa+onH+fiZXtAKBZaSF
+         /Z+f2ZJjQKzfpZ/uZDfh6S+VPs6C5UUT3yq+H0o7p28eoU0OifhBWVhNemf8S9iURlLX
+         r5lv/YnIBLBXzO6DUHvAn0aehF9rD0ezMp7SswkarBKrLymuN/azl4AF/a4e7TFdTiuf
+         Vyxw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:message-id:subject:reply-to:to:from
+         :atlassianmail-dir-open-tracking:sender:dkim-signature;
+        bh=ILU8DAPpL/GlAPq2BK1WrXjUHcdlsjBfoZ7D+8Y8PXw=;
+        b=Q5Mk1lqu9uHTqi61CvidmHPyqA8qJ2j4bZa1qmF3JZuUubAuTP+o7nz7psBmH117gW
+         QcXtf0xz9mCsDSTkI9aCllmDDGmzjk7xnUtY2uVP63mvNntrRtfe+PJo36b2aNr+g9co
+         eyTd8RpUp0LNAlYenul3MjRmYLQgq1L98LSoYJlnFp+X+8fwdO33+1/0QLHympjnFUO5
+         JnmQWVDxx5D+bC9vleqG5JMKKw83zfXnD/Ge1hBiK54fS9iHvjE/d/4KtUiqovlPLC8d
+         k9dZHDozXfkzmyCbXxsjunEm1mzimOte//jlTEN0YBmP8FGLtpwgr/Um2oorgJY8EG7B
+         l6kg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=YiSqhzUg;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+Return-Path: <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>
+Received: from mta-81-100.sparkpostmail.com (mta-81-100.sparkpostmail.com. [192.174.81.100])
+        by mx.google.com with ESMTPS id s10si4277106plr.275.2021.05.20.15.16.48
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 20 May 2021 15:16:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) client-ip=192.174.81.100;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=YiSqhzUg;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.100 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+X-MSFBL: GxWD133uoDPXBLJlPYx1xJYATvvFAbxTU8eYN8fFtEI=|eyJ0ZW5hbnRfaWQiOiJ
+	hdGxhc3NpYW51cyIsIm1lc3NhZ2VfaWQiOiI2MGE1Y2ZkZmE2NjA4ZmYwMGZjNSI
+	sInIiOiJzZWJhc3RpYW9AcmVsaWVyLmNvbS5iciIsImN1c3RvbWVyX2lkIjoiMSI
+	sInN1YmFjY291bnRfaWQiOiIzIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=trello.com;
+	s=atl201708; t=1621549007; i=@trello.com;
+	bh=ILU8DAPpL/GlAPq2BK1WrXjUHcdlsjBfoZ7D+8Y8PXw=;
+	h=Content-Type:From:To:Subject:Message-ID:Date;
+	b=YiSqhzUgZC3E3Df8ND5rVCewXosXmvr1XNR0xyi0Acj7hzqqFnNC/TLP75zBNJnfG
+	 WZhzljw2PMlmfxEqy4Daaorig+e9yZ2yIGs6dTJnxfe95uiFQCZVklUh/3topoL+I9
+	 yRnz2pemQAxMFs5zhxFybJJxCnvnDEmjJ3Af4INg=
+Authentication-Results:  ab.mta2vsmtp.cc.prd.sparkpost smtp.user=<hidden>; auth=pass (LOGIN)
+Received: from [107.23.149.70] ([107.23.149.70:2440] helo=mailrelay9.prod.trello.local)
+	by ab.mta2vsmtp.cc.prd.sparkpost (envelope-from <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>)
+	(ecelerity 4.3.2.17932 r(msys-ecelerity:tags/4.3.2.5)) with ESMTPSA (cipher=AES-256-GCM) 
+	id F0/5C-04866-FCFD6A06; Thu, 20 May 2021 22:16:47 +0000
+Content-Type: multipart/alternative;
+ boundary="--_NmP-195ba0acc93d9d04-Part_1"
+Sender: Trello <do-not-reply@trello.com>
+X-Auto-Response-Suppress: All
+X-Atl-Mail-Meta: template=notification
+Atlassianmail-Dir-Open-Tracking: true
+From: Trello <do-not-reply@trello.com>
+To: sebastiao@relier.com.br
+Reply-To:
+ sebastiaowill+2wefg204l5fh6gqhx83+2wefgienm83dthmzw0u+0k4b27lym7@boards.trello.com
+Subject: =?UTF-8?Q?_Reinaldo_Borin_arquivou_o_cart=C3=A3o_T?=
+ =?UTF-8?Q?este_em_Relier=20?=
+Message-ID: <16215490069294113031e@trello.com>
+Date: Thu, 20 May 2021 22:16:46 +0000
+MIME-Version: 1.0
+
+----_NmP-195ba0acc93d9d04-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Veja o que voc=C3=AA perdeu no Trello.=0D=0A=0D=0AReinaldo Borin arquivou o=
+ cart=C3=A3o Teste (https://trello.com/c/iiM4cUvB/1196-teste) em Relier (ht=
+tps://trello.com/b/8GXVcp0D/relier)=0D=0A=0D=0A Responder por email: sebast=
+iaowill+2wefg204l5fh6gqhx83+2wefgienm83dthmzw0u+0k4b27lym7@boards.trello.co=
+m=0D=0A=0D=0A-- =0D=0A=0D=0AControle a frequ=C3=AAncia com que recebe email=
+s de notifica=C3=A7=C3=A3o na p=C3=A1gina da sua conta (https://trello.com/=
+my/account)=0D=0A=0D=0ASiga o @trello no Twitter (https://twitter.com/inten=
+t/follow=3Fuser_id=3D360831528)=0D=0A=0D=0AObtenha o Trello para o seu iPho=
+ne (http://itunes.com/apps/trello) ou o Trello para o seu Android (https://=
+play.google.com/store/apps/details=3Fid=3Dcom.trello) =0D=0A
+----_NmP-195ba0acc93d9d04-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns=3D"http://www.w3.org/1999/x=
+html"> <head> <meta http-equiv=3D"Content-Type" content=3D"text/html; chars=
+et=3Dutf-8"> <meta name=3D"viewport" content=3D"width=3Ddevice-width">=0D=
+=0A=0D=0A <style type=3D"text/css">=0D=0A=0D=0A /**************************=
+******************** * Ink v1.0.5 - Copyright 2013 ZURB Inc * *************=
+*********************************/=0D=0A=0D=0A /* Client-specific Styles & =
+Reset */=0D=0A=0D=0A #outlook a { padding:0; } =0D=0A=0D=0A body{ width:100=
+% !important; min-width: 100%; -webkit-text-size-adjust:100%; -ms-text-size=
+-adjust:100%; margin:0; padding:0; }=0D=0A=0D=0A .ExternalClass { width:100=
+%; } =0D=0A=0D=0A .ExternalClass, .ExternalClass p, .ExternalClass span, .E=
+xternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100=
+%; } =0D=0A=0D=0A #backgroundTable { margin:0; padding:0; width:100% !impor=
+tant; line-height: 100% !important; }=0D=0A=0D=0A img { outline:none; text-=
+decoration:none; -ms-interpolation-mode: bicubic; width: auto; max-width: 1=
+00%; }=0D=0A=0D=0A center { width: 100%; }=0D=0A=0D=0A a img { border: none=
+; }=0D=0A=0D=0A p { margin: 0 0 0 10px; }=0D=0A=0D=0A table { border-spacin=
+g: 0; border-collapse: collapse; }=0D=0A=0D=0A td { word-break: break-word;=
+ -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse:=
+ collapse !important; }=0D=0A=0D=0A table, tr, td { padding: 0; vertical-al=
+ign: top; text-align: left; }=0D=0A=0D=0A hr { color: #d9d9d9; background-c=
+olor: #d9d9d9; height: 1px; border: none; }=0D=0A=0D=0A /* Responsive Grid =
+*/=0D=0A=0D=0A table.body { height: 100% !important; width: 100% !important=
+; padding: 0; margin: 0; }=0D=0A=0D=0A table.container { width: 580px; marg=
+in: 0 auto; text-align: inherit; }=0D=0A=0D=0A table.row { padding: 0px; wi=
+dth: 100%; position: relative; }=0D=0A=0D=0A table.container table.row { di=
+splay: block; }=0D=0A=0D=0A td.wrapper { padding: 10px 20px 0px 0px; positi=
+on: relative; }=0D=0A=0D=0A table.columns, table.column { margin: 0 auto; }=
+=0D=0A=0D=0A table.columns td, table.column td { padding: 0px 0px 10px; }=
+=0D=0A=0D=0A table.columns td.sub-columns, table.column td.sub-columns, tab=
+le.columns td.sub-column, table.column td.sub-column { padding-right: 10px;=
+ }=0D=0A=0D=0A td.sub-column, td.sub-columns { min-width: 0px; }=0D=0A=0D=
+=0A table.row td.last, table.container td.last { padding-right: 0px; }=0D=
+=0A=0D=0A table.one { width: 30px; } table.two { width: 80px; } table.three=
+ { width: 130px; } table.four { width: 180px; } table.five { width: 230px; =
+} table.six { width: 280px; } table.seven { width: 330px; } table.eight { w=
+idth: 380px; } table.nine { width: 430px; } table.ten { width: 480px; } tab=
+le.eleven { width: 530px; } table.twelve { width: 580px; }=0D=0A=0D=0A tabl=
+e.one center { min-width: 30px; } table.two center { min-width: 80px; } tab=
+le.three center { min-width: 130px; } table.four center { min-width: 180px;=
+ } table.five center { min-width: 230px; } table.six center { min-width: 28=
+0px; } table.seven center { min-width: 330px; } table.eight center { min-wi=
+dth: 380px; } table.nine center { min-width: 430px; } table.ten center { mi=
+n-width: 480px; } table.eleven center { min-width: 530px; } table.twelve ce=
+nter { min-width: 580px; }=0D=0A=0D=0A table.one .panel center { min-width:=
+ 10px; } table.two .panel center { min-width: 60px; } table.three .panel ce=
+nter { min-width: 110px; } table.four .panel center { min-width: 160px; } t=
+able.five .panel center { min-width: 210px; } table.six .panel center { min=
+-width: 260px; } table.seven .panel center { min-width: 310px; } table.eigh=
+t .panel center { min-width: 360px; } table.nine .panel center { min-width:=
+ 410px; } table.ten .panel center { min-width: 460px; } table.eleven .panel=
+ center { min-width: 510px; } table.twelve .panel center { min-width: 560px=
+; }=0D=0A=0D=0A .body .columns td.one, .body .column td.one { width: 8.3333=
+33%; } .body .columns td.two, .body .column td.two { width: 16.666666%; } .=
+body .columns td.three, .body .column td.three { width: 25%; } .body .colum=
+ns td.four, .body .column td.four { width: 33.333333%; } .body .columns td.=
+five, .body .column td.five { width: 41.666666%; } .body .columns td.six, .=
+body .column td.six { width: 50%; } .body .columns td.seven, .body .column =
+td.seven { width: 58.333333%; } .body .columns td.eight, .body .column td.e=
+ight { width: 66.666666%; } .body .columns td.nine, .body .column td.nine {=
+ width: 75%; } .body .columns td.ten, .body .column td.ten { width: 83.3333=
+33%; } .body .columns td.eleven, .body .column td.eleven { width: 91.666666=
+%; } .body .columns td.twelve, .body .column td.twelve { width: 100%; }=0D=
+=0A=0D=0A td.offset-by-one { padding-left: 50px; } td.offset-by-two { paddi=
+ng-left: 100px; } td.offset-by-three { padding-left: 150px; } td.offset-by-=
+four { padding-left: 200px; } td.offset-by-five { padding-left: 250px; } td=
+=2Eoffset-by-six { padding-left: 300px; } td.offset-by-seven { padding-left=
+: 350px; } td.offset-by-eight { padding-left: 400px; } td.offset-by-nine { =
+padding-left: 450px; } td.offset-by-ten { padding-left: 500px; } td.offset-=
+by-eleven { padding-left: 550px; }=0D=0A=0D=0A td.expander { visibility: hi=
+dden; width: 0px; padding: 0 !important; }=0D=0A=0D=0A table.columns .text-=
+pad, table.column .text-pad { padding-left: 10px; padding-right: 10px; }=0D=
+=0A=0D=0A table.columns .left-text-pad, table.columns .text-pad-left, table=
+=2Ecolumn .left-text-pad, table.column .text-pad-left { padding-left: 10px;=
+ }=0D=0A=0D=0A table.columns .right-text-pad, table.columns .text-pad-right=
+, table.column .right-text-pad, table.column .text-pad-right { padding-righ=
+t: 10px; }=0D=0A=0D=0A /* Block Grid */=0D=0A=0D=0A .block-grid { width: 10=
+0%; max-width: 580px; }=0D=0A=0D=0A .block-grid td { display: inline-block;=
+ padding:10px; }=0D=0A=0D=0A .two-up td { width:270px; }=0D=0A=0D=0A .three=
+-up td { width:173px; }=0D=0A=0D=0A .four-up td { width:125px; }=0D=0A=0D=
+=0A .five-up td { width:96px; }=0D=0A=0D=0A .six-up td { width:76px; }=0D=
+=0A=0D=0A .seven-up td { width:62px; }=0D=0A=0D=0A .eight-up td { width:52p=
+x; }=0D=0A=0D=0A /* Alignment & Visibility Classes */=0D=0A=0D=0A table.cen=
+ter, td.center { text-align: center; }=0D=0A=0D=0A h1.center, h2.center, h3=
+=2Ecenter, h4.center, h5.center, h6.center { text-align: center; }=0D=0A=0D=
+=0A span.center { display: block; width: 100%; text-align: center; }=0D=0A=
+=0D=0A img.center { margin: 0 auto; float: none; }=0D=0A=0D=0A .show-for-sm=
+all, .hide-for-desktop { display: none; }=0D=0A=0D=0A /* Typography */=0D=
+=0A=0D=0A body, table.body, h1, h2, h3, h4, h5, h6, p, td { color: #172B4D;=
+ font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; paddin=
+g: 0; margin: 0; text-align: left; line-height: 1.3; }=0D=0A=0D=0A h1, h2, =
+h3, h4, h5, h6 { word-break: normal; margin-bottom: 12px; }=0D=0A=0D=0A h1 =
+{font-size: 40px;} h2 {font-size: 36px;} h3 {font-size: 32px;} h4 {font-siz=
+e: 28px;} h5 {font-size: 24px;} h6 {font-size: 20px;} body, table.body, p, =
+td {font-size: 14px;line-height:19px;}=0D=0A=0D=0A p.lead, p.lede, p.leed {=
+ font-size: 18px; line-height:21px; }=0D=0A=0D=0A p { margin-bottom: 10px; =
+}=0D=0A=0D=0A small { font-size: 10px; }=0D=0A=0D=0A a { color: #0079BF; te=
+xt-decoration: underline; }=0D=0A=0D=0A a:active { color: #265F80; }=0D=0A=
+=0D=0A a:visited { color: #0079BF; }=0D=0A=0D=0A a:hover { color: #265F80; =
+}=0D=0A=0D=0A h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #0079BF; }=0D=0A=
+=0D=0A h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 =
+a:active { color: #0079BF !important; } =0D=0A=0D=0A h1 a:visited, h2 a:vis=
+ited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: #0079=
+BF !important; } =0D=0A=0D=0A /* Panels */=0D=0A=0D=0A .panel { background:=
+ #f2f2f2; border: 1px solid #d9d9d9; padding: 10px !important; }=0D=0A=0D=
+=0A .sub-grid table { width: 100%; }=0D=0A=0D=0A .sub-grid td.sub-columns {=
+ padding-bottom: 0; }=0D=0A=0D=0A /* Buttons */=0D=0A=0D=0A table.button, t=
+able.tiny-button, table.small-button, table.medium-button, table.large-butt=
+on { width: 100%; overflow: hidden; }=0D=0A=0D=0A table.button td, table.ti=
+ny-button td, table.small-button td, table.medium-button td, table.large-bu=
+tton td { display: block; width: auto !important; text-align: center; backg=
+round: #2ba6cb; border: 1px solid #2284a1; color: #ffffff; padding: 8px 0; =
+}=0D=0A=0D=0A table.tiny-button td { padding: 5px 0 4px; }=0D=0A=0D=0A tabl=
+e.small-button td { padding: 8px 0 7px; }=0D=0A=0D=0A table.medium-button t=
+d { padding: 12px 0 10px; }=0D=0A=0D=0A table.large-button td { padding: 21=
+px 0 18px; }=0D=0A=0D=0A table.button td a, table.tiny-button td a, table.s=
+mall-button td a, table.medium-button td a, table.large-button td a { font-=
+weight: bold; text-decoration: none; font-family: Helvetica, Arial, sans-se=
+rif; color: #ffffff; font-size: 16px; }=0D=0A=0D=0A table.tiny-button td a =
+{ font-size: 12px; font-weight: normal; }=0D=0A=0D=0A table.small-button td=
+ a { font-size: 16px; }=0D=0A=0D=0A table.medium-button td a { font-size: 2=
+0px; }=0D=0A=0D=0A table.large-button td a { font-size: 24px; }=0D=0A=0D=0A=
+ table.button:hover td, table.button:visited td, table.button:active td { b=
+ackground: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, table=
+=2Ebutton:visited td a, table.button:active td a { color: #fff !important; =
+}=0D=0A=0D=0A table.button:hover td, table.tiny-button:hover td, table.smal=
+l-button:hover td, table.medium-button:hover td, table.large-button:hover t=
+d { background: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, =
+table.button:active td a, table.button td a:visited, table.tiny-button:hove=
+r td a, table.tiny-button:active td a, table.tiny-button td a:visited, tabl=
+e.small-button:hover td a, table.small-button:active td a, table.small-butt=
+on td a:visited, table.medium-button:hover td a, table.medium-button:active=
+ td a, table.medium-button td a:visited, table.large-button:hover td a, tab=
+le.large-button:active td a, table.large-button td a:visited { color: #ffff=
+ff !important; }=0D=0A=0D=0A table.secondary td { background: #e9e9e9; bord=
+er-color: #d0d0d0; color: #555; }=0D=0A=0D=0A table.secondary td a { color:=
+ #555; }=0D=0A=0D=0A table.secondary:hover td { background: #d0d0d0 !import=
+ant; color: #555; }=0D=0A=0D=0A table.secondary:hover td a, table.secondary=
+ td a:visited, table.secondary:active td a { color: #555 !important; }=0D=
+=0A=0D=0A table.success td { background: #5da423; border-color: #457a1a; }=
+=0D=0A=0D=0A table.success:hover td { background: #457a1a !important; }=0D=
+=0A=0D=0A table.alert td { background: #c60f13; border-color: #970b0e; }=0D=
+=0A=0D=0A table.alert:hover td { background: #970b0e !important; }=0D=0A=0D=
+=0A table.radius td { -webkit-border-radius: 3px; -moz-border-radius: 3px; =
+border-radius: 3px; }=0D=0A=0D=0A table.round td { -webkit-border-radius: 5=
+00px; -moz-border-radius: 500px; border-radius: 500px; }=0D=0A=0D=0A /* Out=
+look First */=0D=0A=0D=0A body.outlook p { display: inline !important; }=0D=
+=0A=0D=0A /* Media Queries */=0D=0A=0D=0A @media only screen and (max-width=
+: 600px) {=0D=0A=0D=0A table[class=3D"body"] img { width: auto; height: aut=
+o; }=0D=0A=0D=0A table[class=3D"body"] center { min-width: 0 !important; }=
+=0D=0A=0D=0A table[class=3D"body"] .container { width: 95% !important; }=0D=
+=0A=0D=0A table[class=3D"body"] .row { width: 100% !important; display: blo=
+ck !important; }=0D=0A=0D=0A table[class=3D"body"] .wrapper { display: bloc=
+k !important; padding-right: 0 !important; }=0D=0A=0D=0A table[class=3D"bod=
+y"] .columns, table[class=3D"body"] .column { table-layout: fixed !importan=
+t; float: none !important; width: 100% !important; padding-right: 0px !impo=
+rtant; padding-left: 0px !important; display: block !important; }=0D=0A=0D=
+=0A table[class=3D"body"] .wrapper.first .columns, table[class=3D"body"] .w=
+rapper.first .column { display: table !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td, table[class=3D"body"] table.column td { width:=
+ 100% !important; }=0D=0A=0D=0A table[class=3D"body"] .columns td.one, tabl=
+e[class=3D"body"] .column td.one { width: 8.333333% !important; } table[cla=
+ss=3D"body"] .columns td.two, table[class=3D"body"] .column td.two { width:=
+ 16.666666% !important; } table[class=3D"body"] .columns td.three, table[cl=
+ass=3D"body"] .column td.three { width: 25% !important; } table[class=3D"bo=
+dy"] .columns td.four, table[class=3D"body"] .column td.four { width: 33.33=
+3333% !important; } table[class=3D"body"] .columns td.five, table[class=3D"=
+body"] .column td.five { width: 41.666666% !important; } table[class=3D"bod=
+y"] .columns td.six, table[class=3D"body"] .column td.six { width: 50% !imp=
+ortant; } table[class=3D"body"] .columns td.seven, table[class=3D"body"] .c=
+olumn td.seven { width: 58.333333% !important; } table[class=3D"body"] .col=
+umns td.eight, table[class=3D"body"] .column td.eight { width: 66.666666% !=
+important; } table[class=3D"body"] .columns td.nine, table[class=3D"body"] =
+=2Ecolumn td.nine { width: 75% !important; } table[class=3D"body"] .columns=
+ td.ten, table[class=3D"body"] .column td.ten { width: 83.333333% !importan=
+t; } table[class=3D"body"] .columns td.eleven, table[class=3D"body"] .colum=
+n td.eleven { width: 91.666666% !important; } table[class=3D"body"] .column=
+s td.twelve, table[class=3D"body"] .column td.twelve { width: 100% !importa=
+nt; }=0D=0A=0D=0A table[class=3D"body"] td.offset-by-one, table[class=3D"bo=
+dy"] td.offset-by-two, table[class=3D"body"] td.offset-by-three, table[clas=
+s=3D"body"] td.offset-by-four, table[class=3D"body"] td.offset-by-five, tab=
+le[class=3D"body"] td.offset-by-six, table[class=3D"body"] td.offset-by-sev=
+en, table[class=3D"body"] td.offset-by-eight, table[class=3D"body"] td.offs=
+et-by-nine, table[class=3D"body"] td.offset-by-ten, table[class=3D"body"] t=
+d.offset-by-eleven { padding-left: 0 !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td.expander { width: 1px !important; }=0D=0A=0D=0A=
+ table[class=3D"body"] .right-text-pad, table[class=3D"body"] .text-pad-rig=
+ht { padding-left: 10px !important; }=0D=0A=0D=0A table[class=3D"body"] .le=
+ft-text-pad, table[class=3D"body"] .text-pad-left { padding-right: 10px !im=
+portant; }=0D=0A=0D=0A table[class=3D"body"] .hide-for-small, table[class=
+=3D"body"] .show-for-desktop { display: none !important; }=0D=0A=0D=0A tabl=
+e[class=3D"body"] .show-for-small, table[class=3D"body"] .hide-for-desktop =
+{ display: inherit !important; } }=0D=0A=0D=0A</style>=0D=0A=0D=0A <style t=
+ype=3D"text/css"> /* Typography */=0D=0A=0D=0A body, table.body, h1, h2, h3=
+, h4, h5, h6, p, td, a { font-family: -apple-system, BlinkMacSystemFont, Se=
+goe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; =
+}=0D=0A=0D=0A /* Trello Block */=0D=0A=0D=0A .trello-block { width: 100%; t=
+ext-align: inherit; }=0D=0A=0D=0A .trello-block-single-column { display: bl=
+ock; margin: 0 auto; max-width: 580px; padding: 12px 16px; }=0D=0A=0D=0A /*=
+ Header */=0D=0A=0D=0A .header-logo-image { height: 25px; max-height: 25px;=
+ max-width: 122px; width: 122px; display: block; }=0D=0A=0D=0A /* Blog Post=
+ Link */=0D=0A=0D=0A .trello-block--blog-post p { text-align: center; }=0D=
+=0A=0D=0A /* Code */=0D=0A=0D=0A code { white-space: pre-wrap; }=0D=0A=0D=
+=0A /* Footer */=0D=0A=0D=0A .trello-block--footer p { color: #9B9B9B; text=
+-align: center; }=0D=0A=0D=0A .trello-block--footer a, .trello-block--foote=
+r a:visited, .trello-block--footer a:active { color: #9B9B9B; text-decorati=
+on: underline; }=0D=0A=0D=0A .trello-block--footer a:hover { color: #4d4d4d=
+; }=0D=0A=0D=0A /* Notifications */=0D=0A=0D=0A .phenom { margin: 12px 0; f=
+loat: left; clear: both; } =0D=0A=0D=0A .phenom-creator { width: 38px; }=0D=
+=0A=0D=0A .phenom-creator-avatar { -webkit-border-radius: 50%; border-radiu=
+s: 50%; height: 30px; width: 30px; }=0D=0A=0D=0A .phenom-member-initials { =
+-webkit-border-radius: 50%; border-radius: 50%; display: block; font-size: =
+12px; font-weight: bold; height: 30px; line-height: 30px; width: 85%; text-=
+align: center; background-color: #d6dadc; }=0D=0A=0D=0A .app-creator { font=
+-size: 12px; line-height: 16px; color: #5E6C84; display: inline-block; }=0D=
+=0A=0D=0A .app-creator a { color: inherit; text-decoration: none; }=0D=0A=
+=0D=0A .app-creator a:hover { text-decoration: underline; }=0D=0A=0D=0A .ap=
+p-creator img { width: 14px; height: 14px; margin-right: 1px; vertical-alig=
+n: middle !important; display: inline-block; float: none; }=0D=0A=0D=0A .ph=
+enom-details { /* max-width: 480px; */ }=0D=0A=0D=0A .phenom-details-commen=
+t { background-color: #fff; border: 1px solid #C1C7D0; -webkit-border-radiu=
+s: 3px; border-radius: 3px; display: block; margin: 6px 0; padding: 10px 12=
+px 0 12px; }=0D=0A=0D=0A /* Button */=0D=0A=0D=0A a.button { background: li=
+near-gradient(to bottom, #3FBF3F 0%, #37A637 100%); border-bottom: 2px soli=
+d #008000; border-radius: 3px; color: #fff; display: inline-block; font-wei=
+ght: bold; font-size: 18px; margin: 12px margin; padding: 16px 24px; text-d=
+ecoration: none; }=0D=0A=0D=0A a.button:hover { background: linear-gradient=
+(to bottom, #37A637 0%, #2E8C2E 100%); }=0D=0A=0D=0A /* Responsivication */=
+=0D=0A=0D=0A @media only screen and (min-width: 580px) {=0D=0A=0D=0A .trell=
+o-block-single-column { width: 560px !important; }=0D=0A=0D=0A }=0D=0A=0D=
+=0A @media only screen and (max-width: 559px) {=0D=0A=0D=0A .trello-block-s=
+ingle-column { width: 90% !important; padding: 12px 0; }=0D=0A=0D=0A }=0D=
+=0A=0D=0A @media screen and (max-width:480px) { .desktop-marketing { displa=
+y: none !important } .mobile-marketing { display: block !important } } </st=
+yle>=0D=0A=0D=0A </head> <body style=3D"min-width: 100%; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; color: #172B4D; font-weight: norm=
+al; padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: =
+19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Not=
+o Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 100%;"> <tab=
+le class=3D"body" style=3D"border-spacing: 0; border-collapse: collapse; ve=
+rtical-align: top; color: #172B4D; font-weight: normal; padding: 0; margin:=
+ 0; text-align: left; font-size: 14px; line-height: 19px; font-family: -app=
+le-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid S=
+ans, Helvetica Neue, sans-serif; height: 100%; width: 100%;" width=3D"100%"=
+ height=3D"100%" valign=3D"top" align=3D"left"> <tr style=3D"padding: 0; ve=
+rtical-align: top; text-align: left;" valign=3D"top" align=3D"left"> <td cl=
+ass=3D"center" align=3D"center" valign=3D"top" style=3D"word-break: break-w=
+ord; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-ali=
+gn: top; color: #172B4D; font-weight: normal; padding: 0; margin: 0; font-s=
+ize: 14px; line-height: 19px; font-family: -apple-system, BlinkMacSystemFon=
+t, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-se=
+rif; text-align: center; border-collapse: collapse;"> <center style=3D"widt=
+h: 100%;"> <!-- Email Content -->=0D=0A=0D=0A <!--[if (gte mso 9)|(IE)]> <t=
+able width=3D"560" align=3D"center"> <tr> <td> <![endif]-->=0D=0A=0D=0A <!-=
+- Header -->=0D=0A=0D=0A<table class=3D"trello-block trello-block-backgroun=
+d--trello-blue" style=3D"border-spacing: 0; border-collapse: collapse; padd=
+ing: 0; vertical-align: top; width: 100%; text-align: inherit;" width=3D"10=
+0%" valign=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; vertical-ali=
+gn: top; text-align: left;" valign=3D"top" align=3D"left"> <td style=3D"wor=
+d-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: au=
+to; vertical-align: top; color: #172B4D; font-weight: normal; padding: 0; m=
+argin: 0; text-align: left; font-size: 14px; line-height: 19px; font-family=
+: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, D=
+roid Sans, Helvetica Neue, sans-serif; border-collapse: collapse;" valign=
+=3D"top" align=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-single-colu=
+mn center" style=3D"display: block; margin: 0 auto; max-width: 580px; paddi=
+ng: 12px 16px;">=0D=0A=0D=0A <img class=3D"header-logo-image center" height=
+=3D"25" width=3D"122" src=3D"https://trello.com/images/logo-new-sm-2x.png" =
+alt=3D"Logotipo do Trello" title=3D"Logotipo do Trello" style=3D"outline: n=
+one; text-decoration: none; -ms-interpolation-mode: bicubic; height: 25px; =
+max-height: 25px; max-width: 122px; width: 122px; display: block; margin: 0=
+ auto; float: none;">=0D=0A=0D=0A </div>=0D=0A=0D=0A </td> </tr> </table>=
+=0D=0A=0D=0A <table class=3D"trello-block" style=3D"border-spacing: 0; bord=
+er-collapse: collapse; padding: 0; vertical-align: top; width: 100%; text-a=
+lign: inherit;" width=3D"100%" valign=3D"top" align=3D"inherit"> <tr style=
+=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"top" alig=
+n=3D"left"> <td style=3D"word-break: break-word; -webkit-hyphens: auto; -mo=
+z-hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-w=
+eight: normal; margin: 0; text-align: left; font-size: 14px; line-height: 1=
+9px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto=
+ Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; padding: 16px 0; bor=
+der-collapse: collapse;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div cl=
+ass=3D"trello-block-single-column" style=3D"display: block; margin: 0 auto;=
+ max-width: 580px; padding: 12px 16px;">=0D=0A=0D=0A <h6 style=3D"color: #1=
+72B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; line-h=
+eight: 1.3; word-break: normal; margin-bottom: 12px; font-size: 20px; font-=
+family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubu=
+ntu, Droid Sans, Helvetica Neue, sans-serif;">Veja o que voc=C3=AA perdeu..=
+=2E</h6>=0D=0A=0D=0A <table width=3D"100%" class=3D"phenom" style=3D"border=
+-spacing: 0; border-collapse: collapse; padding: 0; vertical-align: top; te=
+xt-align: left; margin: 12px 0; float: left; clear: both;" valign=3D"top" a=
+lign=3D"left"> <tr style=3D"padding: 0; vertical-align: top; text-align: le=
+ft;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <td class=3D"phenom-creator=
+" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: aut=
+o; hyphens: auto; vertical-align: top; color: #172B4D; font-weight: normal;=
+ padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: 19p=
+x; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto S=
+ans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 38px; border-co=
+llapse: collapse;" width=3D"38" valign=3D"top" align=3D"left"> <img class=
+=3D"phenom-creator-avatar" src=3D"https://trello-members.s3.amazonaws.com/5=
+2363f9de0eabac251000018/3b964207ceb61ff639acce89e5649172/30.png" height=3D"=
+30" width=3D"30" style=3D"outline: none; text-decoration: none; -ms-interpo=
+lation-mode: bicubic; max-width: 100%; -webkit-border-radius: 50%; border-r=
+adius: 50%; height: 30px; width: 30px;">=0D=0A=0D=0A </td> <td class=3D"phe=
+nom-details" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-h=
+yphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weig=
+ht: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-=
+height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Rob=
+oto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-coll=
+apse: collapse;" valign=3D"top" align=3D"left"> <strong>Reinaldo Borin</str=
+ong> arquivou o cart=C3=A3o <a href=3D"https://trello.com/c/iiM4cUvB/1196-t=
+este" style=3D"color: #0079BF; text-decoration: underline; font-family: -ap=
+ple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid =
+Sans, Helvetica Neue, sans-serif;">Teste</a> em <a href=3D"https://trello.c=
+om/b/8GXVcp0D/relier" style=3D"color: #0079BF; text-decoration: underline; =
+font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans=
+, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Relier</a> <span class=
+=3D"app-creator" style=3D"font-size: 12px; line-height: 16px; color: #5E6C8=
+4; display: inline-block;"> </span> <p style=3D"color: #172B4D; font-weight=
+: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-he=
+ight: 19px; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystem=
+Font, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans=
+-serif;"> <a href=3D"mailto:sebastiaowill+2wefg204l5fh6gqhx83+2wefgienm83dt=
+hmzw0u+0k4b27lym7@boards.trello.com=3Fsubject=3DRe%3A%20Teste" target=3D"_b=
+lank" style=3D"color: #0079BF; text-decoration: underline; font-family: -ap=
+ple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid =
+Sans, Helvetica Neue, sans-serif;">Responder por email</a> </p> </td>=0D=0A=
+=0D=0A </tr> </table>=0D=0A=0D=0A </div>=0D=0A=0D=0A </td> </tr> </table> <=
+!-- End gray background -->=0D=0A=0D=0A <script type=3D"application/ld+json=
+"> {"@context":"http:\u002f\u002fschema.org","@type":"EmailMessage","potent=
+ialAction":{"@type":"ViewAction","target":"https:\u002f\u002ftrello.com\u00=
+2fc\u002fiiM4cUvB=3Futm_medium=3Demail&utm_source=3Dnotification&utm_campai=
+gn=3Dnotification&utm_content=3Dgoogle_inbox","name":"Open Card in Trello"}=
+,"description":"Trello Board"} </script>=0D=0A=0D=0A <!-- Blog Post Link --=
+>=0D=0A=0D=0A<table class=3D"trello-block trello-block--blog-post" style=3D=
+"border-spacing: 0; border-collapse: collapse; padding: 0; vertical-align: =
+top; width: 100%; text-align: inherit;" width=3D"100%" valign=3D"top" align=
+=3D"inherit"> <tr style=3D"padding: 0; vertical-align: top; text-align: lef=
+t;" valign=3D"top" align=3D"left"> <td style=3D"word-break: break-word; -we=
+bkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-align: top;=
+ color: #172B4D; font-weight: normal; padding: 0; margin: 0; text-align: le=
+ft; font-size: 14px; line-height: 19px; font-family: -apple-system, BlinkMa=
+cSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neu=
+e, sans-serif; border-collapse: collapse;" valign=3D"top" align=3D"left">=
+=0D=0A=0D=0A <div class=3D"trello-block-single-column center" style=3D"disp=
+lay: block; margin: 0 auto; max-width: 580px; padding: 12px 16px;">=0D=0A=
+=0D=0A <p style=3D"color: #172B4D; font-weight: normal; padding: 0; margin:=
+ 0; font-size: 14px; line-height: 19px; margin-bottom: 10px; font-family: -=
+apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droi=
+d Sans, Helvetica Neue, sans-serif; text-align: center;"><a href=3D"https:/=
+/blog.trello.com/br/trello-cronograma-visualizacao=3Futm_source=3Dalert-ema=
+il&utm_medium=3Demail&utm_campaign=3Dtrello-br_timeline-post" style=3D"colo=
+r: #0079BF; text-decoration: underline; font-family: -apple-system, BlinkMa=
+cSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neu=
+e, sans-serif;">A visualiza=C3=A7=C3=A3o de Cronograma =C3=A9 a forma perfe=
+ita de ver tudo em um s=C3=B3 lugar! </a></p> </div>=0D=0A=0D=0A </td> </tr=
+> </table>=0D=0A=0D=0A <!-- Footer -->=0D=0A=0D=0A<table class=3D"trello-bl=
+ock trello-block--footer" style=3D"border-spacing: 0; border-collapse: coll=
+apse; padding: 0; vertical-align: top; width: 100%; text-align: inherit;" w=
+idth=3D"100%" valign=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; ve=
+rtical-align: top; text-align: left;" valign=3D"top" align=3D"left"> <td st=
+yle=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; h=
+yphens: auto; vertical-align: top; color: #172B4D; font-weight: normal; pad=
+ding: 0; margin: 0; text-align: left; font-size: 14px; line-height: 19px; f=
+ont-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,=
+ Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-collapse: collapse;=
+" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-sin=
+gle-column center" style=3D"display: block; margin: 0 auto; max-width: 580p=
+x; padding: 12px 16px;">=0D=0A=0D=0A<p style=3D"font-weight: normal; paddin=
+g: 0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom: 10px; f=
+ont-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,=
+ Ubuntu, Droid Sans, Helvetica Neue, sans-serif; text-align: center; color:=
+ #9B9B9B;"><b>Fique por dentro de tudo onde quer que esteja! Baixe o aplica=
+tivo do Trello e realize a=C3=A7=C3=B5es em qualquer lugar.</b></p> <div cl=
+ass=3D"desktop-marketing"> <p style=3D"font-weight: normal; padding: 0; mar=
+gin: 0; font-size: 14px; line-height: 19px; margin-bottom: 10px; font-famil=
+y: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, =
+Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-align: center;=
+">Baixar o Trello para <a href=3D"https://itunes.apple.com/us/app/trello-or=
+ganize-anything/id461504587">iPhone e iPad</a>, <a href=3D"https://play.goo=
+gle.com/store/apps/details=3Fid=3Dcom.trello">Android</a> e muito <a href=
+=3D"https://trello.com/platforms">mais</a>.</p> </div>=0D=0A=0D=0A<div clas=
+s=3D"mobile-marketing" style=3D"text-align: center; display: none;"> <a hre=
+f=3D"https://apps.apple.com/us/app/trello-organize-anything/id461504587=3Fi=
+tsct=3Dapps_box&itscg=3D30200" style=3D"font-family: -apple-system, BlinkMa=
+cSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neu=
+e, sans-serif; color: #9B9B9B; text-decoration: underline; margin: auto; di=
+splay: inline-block; overflow: hidden; border-radius: 13px; width: 116px; h=
+eight: 45px; vertical-align: middle; padding: 0px 13px;"> <img width=3D"116=
+" height=3D"45" alt=3D"Baixar na App Store da Apple" src=3D"https://trello.=
+com/images/email/apple-app-store-badges/black-pt-br.png" style=3D"outline: =
+none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 10=
+0%; border: none; border-radius: 13px; width: 116px; height: 45px;"> </a> <=
+a href=3D"https://play.google.com/store/apps/details=3Fid=3Dcom.trello&pcam=
+paignid=3DpcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" =
+style=3D"font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, =
+Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; =
+text-decoration: underline; margin: auto; display: inline-block; overflow: =
+hidden; width: 142px; height: 55px; vertical-align: middle;"> <img width=3D=
+"142" height=3D"55" alt=3D"Baixar no Google Play" src=3D"https://play.googl=
+e.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png" s=
+tyle=3D"outline: none; text-decoration: none; -ms-interpolation-mode: bicub=
+ic; max-width: 100%; border: none; width: 142px; height: 55px;"> </a> =0D=
+=0A=0D=0A <p style=3D"font-weight: normal; padding: 0; margin: 0; margin-bo=
+ttom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Robot=
+o, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9=
+B; text-align: center; margin-top: 20px; font-size: 10px; line-height: 12px=
+;"> Google Play e o logotipo do Google Play s=C3=A3o marcas comerciais da G=
+oogle LLC. <br> Apple e o logotipo da Apple s=C3=A3o marcas comerciais da A=
+pple Inc. </p> </div>=0D=0A=0D=0A <p style=3D"font-weight: normal; padding:=
+ 0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom: 10px; fon=
+t-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, U=
+buntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-align: =
+center;"><a href=3D"https://trello.com/my/account" style=3D"font-family: -a=
+pple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid=
+ Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-decoration: underli=
+ne;">Alterar prefer=C3=AAncias de email</a></p>=0D=0A=0D=0A </div>=0D=0A=0D=
+=0A </td> </tr> </table>=0D=0A=0D=0A <!--[if (gte mso 9)|(IE)]> </td> </tr>=
+ </table> <![endif]-->=0D=0A=0D=0A <!-- / Email Content --> </center> </td>=
+ </tr> </table> =0D=0A<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" s=
+rc=3D"http://sptrack.trello.com/q/YST49mwTGfFA6Di9QMySuQ~~/AAAAAQA~/RgRiiBN=
+PPlcLYXRsYXNzaWFudXNCCmClz9-mYI_wD8VSF3NlYmFzdGlhb0ByZWxpZXIuY29tLmJyWAQAAA=
+AD">=0D=0A</body> </html>=0D=0A=0D=0A=0D=0A
+----_NmP-195ba0acc93d9d04-Part_1--
+From - Thu May 27 10:02:32 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:a05:6838:aa95:0:0:0:0 with SMTP id ai21csp2657922nkc;
+        Thu, 20 May 2021 12:53:48 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxl5xYUs3SQbzuPAdlRNbupGw2GkXNyiYAFB1LXAgjZQ9b/fOhsFCbffVAY9iAQg4kj4Xls
+X-Received: by 2002:a63:ed17:: with SMTP id d23mr6019566pgi.107.1621540428304;
+        Thu, 20 May 2021 12:53:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1621540428; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ttbVqdzV5cZ80R3RENGdaIXmpL3lvk4ikdOroHpKBuo800mBby4fOWr2VpblOFa6uH
+         LmsXpL3EHEpss8bhu/jLwCn/TubaTikBvLg7DDcHiQZAAeFPJ5chndq6mRfRVAr9t0Hp
+         ATxpaPjK0OSHKQyeQfiko36SapTs1INb4VxIfNFMMD/RQAvtfTG/mtP5iFCDZhQfJgQL
+         rgwvRi/LETLBiBkSFOthMU4JgPr2jeMirg2RlqNgpP5F0rHK23GuuiURu1RhzOc6/pl+
+         BTduwXmAjCYmMw8+AenL6c1seTBl0A7FQxu20RLkIRYIj4lfFW6fvFcd9OVgaUVinb2z
+         pIlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:date:message-id:subject:reply-to:to:from
+         :atlassianmail-dir-open-tracking:sender:dkim-signature;
+        bh=1KjtglY7cs9Vl6BbHeYXcum5HJwYfdytYtii6xq14NM=;
+        b=pYMp1goaAEj1UdRU0TFhiLUUyN+AwOf50udEKxKFnnPUviyfehZfRdRTsxgM3dcpWV
+         XuQJdL7anb4ApxUJS530xOZUZe+6H0vAsIsSfGBVl/Qy7e2aTcri6dJTEwo0BbnKnllm
+         aTiZnSNVb8RQ1xtu4nBpIosMRYfa1J6yeOdpnPZ5KJHA253NDclI4/ZUJcCiwTrd6kTk
+         09u0plB4PdIw8ZZk58rnD+RDeaPjsvZCADaiZuGCK3XZXrYj1GgIYERh7+fob7EK2/iL
+         uFWdy/G7oZI7pXQ/nKH1UTrVbt8dw1mhYzTcR0Ti+TWBU1Rha0XRExd6vj9b+yBsUO4V
+         iACA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=klKo15wC;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.99 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+Return-Path: <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>
+Received: from mta-81-99.sparkpostmail.com (mta-81-99.sparkpostmail.com. [192.174.81.99])
+        by mx.google.com with ESMTPS id c15si3935471pfv.239.2021.05.20.12.53.47
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 20 May 2021 12:53:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.99 as permitted sender) client-ip=192.174.81.99;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@trello.com header.s=atl201708 header.b=klKo15wC;
+       spf=pass (google.com: domain of bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com designates 192.174.81.99 as permitted sender) smtp.mailfrom=bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=trello.com
+X-MSFBL: 2y2wR5bE5GJSUA8zF1/pBr0BV6R4pjmnhrDXDHF0zuA=|eyJzdWJhY2NvdW50X2l
+	kIjoiMyIsImN1c3RvbWVyX2lkIjoiMSIsInIiOiJzZWJhc3RpYW9AcmVsaWVyLmN
+	vbS5iciIsInRlbmFudF9pZCI6ImF0bGFzc2lhbnVzIiwibWVzc2FnZV9pZCI6IjY
+	wYTY0YmJlYTY2MDM4ZDM4NmY3In0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=trello.com;
+	s=atl201708; t=1621540427; i=@trello.com;
+	bh=1KjtglY7cs9Vl6BbHeYXcum5HJwYfdytYtii6xq14NM=;
+	h=Content-Type:From:To:Subject:Message-ID:Date;
+	b=klKo15wCnaP3Kw3SA9bb5pVC7VrISoqracKqOPey5TCyxXnIAfhhzmod5BltFmJaF
+	 b/qFzIPtMUWr3Baa2qKCpsZIcqAtEvB4n4rb69g2oEBBu3Dr7sMFV5In19I7+46M5M
+	 Ltryn8LXizYTvGSdc1YxoNisrrZ9+L2OOp8/8GvQ=
+Authentication-Results:  aa.mta2vsmtp.cc.prd.sparkpost smtp.user=<hidden>; auth=pass (LOGIN)
+Received: from [54.152.166.250] ([54.152.166.250:19787] helo=mailrelay11.prod.trello.local)
+	by aa.mta2vsmtp.cc.prd.sparkpost (envelope-from <bounces.notification+60a6adc0e840927db960fc73@spemail.trello.com>)
+	(ecelerity 4.3.2.17932 r(msys-ecelerity:tags/4.3.2.5)) with ESMTPSA (cipher=AES-256-GCM) 
+	id 68/7F-04561-B4EB6A06; Thu, 20 May 2021 19:53:47 +0000
+Content-Type: multipart/alternative;
+ boundary="--_NmP-baa575f2ab301ea1-Part_1"
+Sender: Trello <do-not-reply@trello.com>
+X-Auto-Response-Suppress: All
+X-Atl-Mail-Meta: template=notification
+Atlassianmail-Dir-Open-Tracking: true
+From: Trello <do-not-reply@trello.com>
+To: sebastiao@relier.com.br
+Reply-To:
+ sebastiaowill+2wefg204l5fh6gqhx83+2wefgienm83dthmzw0u+0k4b27lym7@boards.trello.com
+Subject: =?UTF-8?Q?_Reinaldo_Borin_moveu_o_cart=C3=A3o_Test?=
+ =?UTF-8?Q?e_para_Em_Execu=C3=A7=C3=A3o_em_Relier?= =?UTF-8?Q?=20?=
+Message-ID: <16215404262351663d58a@trello.com>
+Date: Thu, 20 May 2021 19:53:46 +0000
+MIME-Version: 1.0
+
+----_NmP-baa575f2ab301ea1-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Veja o que voc=C3=AA perdeu no Trello.=0D=0A=0D=0AReinaldo Borin moveu o ca=
+rt=C3=A3o Teste (https://trello.com/c/iiM4cUvB/1196-teste) para Em Execu=C3=
+=A7=C3=A3o em Relier (https://trello.com/b/8GXVcp0D/relier)=0D=0A=0D=0A Res=
+ponder por email: sebastiaowill+2wefg204l5fh6gqhx83+2wefgienm83dthmzw0u+0k4=
+b27lym7@boards.trello.com=0D=0A=0D=0A-- =0D=0A=0D=0AControle a frequ=C3=AAn=
+cia com que recebe emails de notifica=C3=A7=C3=A3o na p=C3=A1gina da sua co=
+nta (https://trello.com/my/account)=0D=0A=0D=0ASiga o @trello no Twitter (h=
+ttps://twitter.com/intent/follow=3Fuser_id=3D360831528)=0D=0A=0D=0AObtenha =
+o Trello para o seu iPhone (http://itunes.com/apps/trello) ou o Trello para=
+ o seu Android (https://play.google.com/store/apps/details=3Fid=3Dcom.trell=
+o) =0D=0A
+----_NmP-baa575f2ab301ea1-Part_1
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd"> <html xmlns=3D"http://www.w3.org/1999/x=
+html"> <head> <meta http-equiv=3D"Content-Type" content=3D"text/html; chars=
+et=3Dutf-8"> <meta name=3D"viewport" content=3D"width=3Ddevice-width">=0D=
+=0A=0D=0A <style type=3D"text/css">=0D=0A=0D=0A /**************************=
+******************** * Ink v1.0.5 - Copyright 2013 ZURB Inc * *************=
+*********************************/=0D=0A=0D=0A /* Client-specific Styles & =
+Reset */=0D=0A=0D=0A #outlook a { padding:0; } =0D=0A=0D=0A body{ width:100=
+% !important; min-width: 100%; -webkit-text-size-adjust:100%; -ms-text-size=
+-adjust:100%; margin:0; padding:0; }=0D=0A=0D=0A .ExternalClass { width:100=
+%; } =0D=0A=0D=0A .ExternalClass, .ExternalClass p, .ExternalClass span, .E=
+xternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100=
+%; } =0D=0A=0D=0A #backgroundTable { margin:0; padding:0; width:100% !impor=
+tant; line-height: 100% !important; }=0D=0A=0D=0A img { outline:none; text-=
+decoration:none; -ms-interpolation-mode: bicubic; width: auto; max-width: 1=
+00%; }=0D=0A=0D=0A center { width: 100%; }=0D=0A=0D=0A a img { border: none=
+; }=0D=0A=0D=0A p { margin: 0 0 0 10px; }=0D=0A=0D=0A table { border-spacin=
+g: 0; border-collapse: collapse; }=0D=0A=0D=0A td { word-break: break-word;=
+ -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse:=
+ collapse !important; }=0D=0A=0D=0A table, tr, td { padding: 0; vertical-al=
+ign: top; text-align: left; }=0D=0A=0D=0A hr { color: #d9d9d9; background-c=
+olor: #d9d9d9; height: 1px; border: none; }=0D=0A=0D=0A /* Responsive Grid =
+*/=0D=0A=0D=0A table.body { height: 100% !important; width: 100% !important=
+; padding: 0; margin: 0; }=0D=0A=0D=0A table.container { width: 580px; marg=
+in: 0 auto; text-align: inherit; }=0D=0A=0D=0A table.row { padding: 0px; wi=
+dth: 100%; position: relative; }=0D=0A=0D=0A table.container table.row { di=
+splay: block; }=0D=0A=0D=0A td.wrapper { padding: 10px 20px 0px 0px; positi=
+on: relative; }=0D=0A=0D=0A table.columns, table.column { margin: 0 auto; }=
+=0D=0A=0D=0A table.columns td, table.column td { padding: 0px 0px 10px; }=
+=0D=0A=0D=0A table.columns td.sub-columns, table.column td.sub-columns, tab=
+le.columns td.sub-column, table.column td.sub-column { padding-right: 10px;=
+ }=0D=0A=0D=0A td.sub-column, td.sub-columns { min-width: 0px; }=0D=0A=0D=
+=0A table.row td.last, table.container td.last { padding-right: 0px; }=0D=
+=0A=0D=0A table.one { width: 30px; } table.two { width: 80px; } table.three=
+ { width: 130px; } table.four { width: 180px; } table.five { width: 230px; =
+} table.six { width: 280px; } table.seven { width: 330px; } table.eight { w=
+idth: 380px; } table.nine { width: 430px; } table.ten { width: 480px; } tab=
+le.eleven { width: 530px; } table.twelve { width: 580px; }=0D=0A=0D=0A tabl=
+e.one center { min-width: 30px; } table.two center { min-width: 80px; } tab=
+le.three center { min-width: 130px; } table.four center { min-width: 180px;=
+ } table.five center { min-width: 230px; } table.six center { min-width: 28=
+0px; } table.seven center { min-width: 330px; } table.eight center { min-wi=
+dth: 380px; } table.nine center { min-width: 430px; } table.ten center { mi=
+n-width: 480px; } table.eleven center { min-width: 530px; } table.twelve ce=
+nter { min-width: 580px; }=0D=0A=0D=0A table.one .panel center { min-width:=
+ 10px; } table.two .panel center { min-width: 60px; } table.three .panel ce=
+nter { min-width: 110px; } table.four .panel center { min-width: 160px; } t=
+able.five .panel center { min-width: 210px; } table.six .panel center { min=
+-width: 260px; } table.seven .panel center { min-width: 310px; } table.eigh=
+t .panel center { min-width: 360px; } table.nine .panel center { min-width:=
+ 410px; } table.ten .panel center { min-width: 460px; } table.eleven .panel=
+ center { min-width: 510px; } table.twelve .panel center { min-width: 560px=
+; }=0D=0A=0D=0A .body .columns td.one, .body .column td.one { width: 8.3333=
+33%; } .body .columns td.two, .body .column td.two { width: 16.666666%; } .=
+body .columns td.three, .body .column td.three { width: 25%; } .body .colum=
+ns td.four, .body .column td.four { width: 33.333333%; } .body .columns td.=
+five, .body .column td.five { width: 41.666666%; } .body .columns td.six, .=
+body .column td.six { width: 50%; } .body .columns td.seven, .body .column =
+td.seven { width: 58.333333%; } .body .columns td.eight, .body .column td.e=
+ight { width: 66.666666%; } .body .columns td.nine, .body .column td.nine {=
+ width: 75%; } .body .columns td.ten, .body .column td.ten { width: 83.3333=
+33%; } .body .columns td.eleven, .body .column td.eleven { width: 91.666666=
+%; } .body .columns td.twelve, .body .column td.twelve { width: 100%; }=0D=
+=0A=0D=0A td.offset-by-one { padding-left: 50px; } td.offset-by-two { paddi=
+ng-left: 100px; } td.offset-by-three { padding-left: 150px; } td.offset-by-=
+four { padding-left: 200px; } td.offset-by-five { padding-left: 250px; } td=
+=2Eoffset-by-six { padding-left: 300px; } td.offset-by-seven { padding-left=
+: 350px; } td.offset-by-eight { padding-left: 400px; } td.offset-by-nine { =
+padding-left: 450px; } td.offset-by-ten { padding-left: 500px; } td.offset-=
+by-eleven { padding-left: 550px; }=0D=0A=0D=0A td.expander { visibility: hi=
+dden; width: 0px; padding: 0 !important; }=0D=0A=0D=0A table.columns .text-=
+pad, table.column .text-pad { padding-left: 10px; padding-right: 10px; }=0D=
+=0A=0D=0A table.columns .left-text-pad, table.columns .text-pad-left, table=
+=2Ecolumn .left-text-pad, table.column .text-pad-left { padding-left: 10px;=
+ }=0D=0A=0D=0A table.columns .right-text-pad, table.columns .text-pad-right=
+, table.column .right-text-pad, table.column .text-pad-right { padding-righ=
+t: 10px; }=0D=0A=0D=0A /* Block Grid */=0D=0A=0D=0A .block-grid { width: 10=
+0%; max-width: 580px; }=0D=0A=0D=0A .block-grid td { display: inline-block;=
+ padding:10px; }=0D=0A=0D=0A .two-up td { width:270px; }=0D=0A=0D=0A .three=
+-up td { width:173px; }=0D=0A=0D=0A .four-up td { width:125px; }=0D=0A=0D=
+=0A .five-up td { width:96px; }=0D=0A=0D=0A .six-up td { width:76px; }=0D=
+=0A=0D=0A .seven-up td { width:62px; }=0D=0A=0D=0A .eight-up td { width:52p=
+x; }=0D=0A=0D=0A /* Alignment & Visibility Classes */=0D=0A=0D=0A table.cen=
+ter, td.center { text-align: center; }=0D=0A=0D=0A h1.center, h2.center, h3=
+=2Ecenter, h4.center, h5.center, h6.center { text-align: center; }=0D=0A=0D=
+=0A span.center { display: block; width: 100%; text-align: center; }=0D=0A=
+=0D=0A img.center { margin: 0 auto; float: none; }=0D=0A=0D=0A .show-for-sm=
+all, .hide-for-desktop { display: none; }=0D=0A=0D=0A /* Typography */=0D=
+=0A=0D=0A body, table.body, h1, h2, h3, h4, h5, h6, p, td { color: #172B4D;=
+ font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; paddin=
+g: 0; margin: 0; text-align: left; line-height: 1.3; }=0D=0A=0D=0A h1, h2, =
+h3, h4, h5, h6 { word-break: normal; margin-bottom: 12px; }=0D=0A=0D=0A h1 =
+{font-size: 40px;} h2 {font-size: 36px;} h3 {font-size: 32px;} h4 {font-siz=
+e: 28px;} h5 {font-size: 24px;} h6 {font-size: 20px;} body, table.body, p, =
+td {font-size: 14px;line-height:19px;}=0D=0A=0D=0A p.lead, p.lede, p.leed {=
+ font-size: 18px; line-height:21px; }=0D=0A=0D=0A p { margin-bottom: 10px; =
+}=0D=0A=0D=0A small { font-size: 10px; }=0D=0A=0D=0A a { color: #0079BF; te=
+xt-decoration: underline; }=0D=0A=0D=0A a:active { color: #265F80; }=0D=0A=
+=0D=0A a:visited { color: #0079BF; }=0D=0A=0D=0A a:hover { color: #265F80; =
+}=0D=0A=0D=0A h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #0079BF; }=0D=0A=
+=0D=0A h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 =
+a:active { color: #0079BF !important; } =0D=0A=0D=0A h1 a:visited, h2 a:vis=
+ited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited { color: #0079=
+BF !important; } =0D=0A=0D=0A /* Panels */=0D=0A=0D=0A .panel { background:=
+ #f2f2f2; border: 1px solid #d9d9d9; padding: 10px !important; }=0D=0A=0D=
+=0A .sub-grid table { width: 100%; }=0D=0A=0D=0A .sub-grid td.sub-columns {=
+ padding-bottom: 0; }=0D=0A=0D=0A /* Buttons */=0D=0A=0D=0A table.button, t=
+able.tiny-button, table.small-button, table.medium-button, table.large-butt=
+on { width: 100%; overflow: hidden; }=0D=0A=0D=0A table.button td, table.ti=
+ny-button td, table.small-button td, table.medium-button td, table.large-bu=
+tton td { display: block; width: auto !important; text-align: center; backg=
+round: #2ba6cb; border: 1px solid #2284a1; color: #ffffff; padding: 8px 0; =
+}=0D=0A=0D=0A table.tiny-button td { padding: 5px 0 4px; }=0D=0A=0D=0A tabl=
+e.small-button td { padding: 8px 0 7px; }=0D=0A=0D=0A table.medium-button t=
+d { padding: 12px 0 10px; }=0D=0A=0D=0A table.large-button td { padding: 21=
+px 0 18px; }=0D=0A=0D=0A table.button td a, table.tiny-button td a, table.s=
+mall-button td a, table.medium-button td a, table.large-button td a { font-=
+weight: bold; text-decoration: none; font-family: Helvetica, Arial, sans-se=
+rif; color: #ffffff; font-size: 16px; }=0D=0A=0D=0A table.tiny-button td a =
+{ font-size: 12px; font-weight: normal; }=0D=0A=0D=0A table.small-button td=
+ a { font-size: 16px; }=0D=0A=0D=0A table.medium-button td a { font-size: 2=
+0px; }=0D=0A=0D=0A table.large-button td a { font-size: 24px; }=0D=0A=0D=0A=
+ table.button:hover td, table.button:visited td, table.button:active td { b=
+ackground: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, table=
+=2Ebutton:visited td a, table.button:active td a { color: #fff !important; =
+}=0D=0A=0D=0A table.button:hover td, table.tiny-button:hover td, table.smal=
+l-button:hover td, table.medium-button:hover td, table.large-button:hover t=
+d { background: #2795b6 !important; }=0D=0A=0D=0A table.button:hover td a, =
+table.button:active td a, table.button td a:visited, table.tiny-button:hove=
+r td a, table.tiny-button:active td a, table.tiny-button td a:visited, tabl=
+e.small-button:hover td a, table.small-button:active td a, table.small-butt=
+on td a:visited, table.medium-button:hover td a, table.medium-button:active=
+ td a, table.medium-button td a:visited, table.large-button:hover td a, tab=
+le.large-button:active td a, table.large-button td a:visited { color: #ffff=
+ff !important; }=0D=0A=0D=0A table.secondary td { background: #e9e9e9; bord=
+er-color: #d0d0d0; color: #555; }=0D=0A=0D=0A table.secondary td a { color:=
+ #555; }=0D=0A=0D=0A table.secondary:hover td { background: #d0d0d0 !import=
+ant; color: #555; }=0D=0A=0D=0A table.secondary:hover td a, table.secondary=
+ td a:visited, table.secondary:active td a { color: #555 !important; }=0D=
+=0A=0D=0A table.success td { background: #5da423; border-color: #457a1a; }=
+=0D=0A=0D=0A table.success:hover td { background: #457a1a !important; }=0D=
+=0A=0D=0A table.alert td { background: #c60f13; border-color: #970b0e; }=0D=
+=0A=0D=0A table.alert:hover td { background: #970b0e !important; }=0D=0A=0D=
+=0A table.radius td { -webkit-border-radius: 3px; -moz-border-radius: 3px; =
+border-radius: 3px; }=0D=0A=0D=0A table.round td { -webkit-border-radius: 5=
+00px; -moz-border-radius: 500px; border-radius: 500px; }=0D=0A=0D=0A /* Out=
+look First */=0D=0A=0D=0A body.outlook p { display: inline !important; }=0D=
+=0A=0D=0A /* Media Queries */=0D=0A=0D=0A @media only screen and (max-width=
+: 600px) {=0D=0A=0D=0A table[class=3D"body"] img { width: auto; height: aut=
+o; }=0D=0A=0D=0A table[class=3D"body"] center { min-width: 0 !important; }=
+=0D=0A=0D=0A table[class=3D"body"] .container { width: 95% !important; }=0D=
+=0A=0D=0A table[class=3D"body"] .row { width: 100% !important; display: blo=
+ck !important; }=0D=0A=0D=0A table[class=3D"body"] .wrapper { display: bloc=
+k !important; padding-right: 0 !important; }=0D=0A=0D=0A table[class=3D"bod=
+y"] .columns, table[class=3D"body"] .column { table-layout: fixed !importan=
+t; float: none !important; width: 100% !important; padding-right: 0px !impo=
+rtant; padding-left: 0px !important; display: block !important; }=0D=0A=0D=
+=0A table[class=3D"body"] .wrapper.first .columns, table[class=3D"body"] .w=
+rapper.first .column { display: table !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td, table[class=3D"body"] table.column td { width:=
+ 100% !important; }=0D=0A=0D=0A table[class=3D"body"] .columns td.one, tabl=
+e[class=3D"body"] .column td.one { width: 8.333333% !important; } table[cla=
+ss=3D"body"] .columns td.two, table[class=3D"body"] .column td.two { width:=
+ 16.666666% !important; } table[class=3D"body"] .columns td.three, table[cl=
+ass=3D"body"] .column td.three { width: 25% !important; } table[class=3D"bo=
+dy"] .columns td.four, table[class=3D"body"] .column td.four { width: 33.33=
+3333% !important; } table[class=3D"body"] .columns td.five, table[class=3D"=
+body"] .column td.five { width: 41.666666% !important; } table[class=3D"bod=
+y"] .columns td.six, table[class=3D"body"] .column td.six { width: 50% !imp=
+ortant; } table[class=3D"body"] .columns td.seven, table[class=3D"body"] .c=
+olumn td.seven { width: 58.333333% !important; } table[class=3D"body"] .col=
+umns td.eight, table[class=3D"body"] .column td.eight { width: 66.666666% !=
+important; } table[class=3D"body"] .columns td.nine, table[class=3D"body"] =
+=2Ecolumn td.nine { width: 75% !important; } table[class=3D"body"] .columns=
+ td.ten, table[class=3D"body"] .column td.ten { width: 83.333333% !importan=
+t; } table[class=3D"body"] .columns td.eleven, table[class=3D"body"] .colum=
+n td.eleven { width: 91.666666% !important; } table[class=3D"body"] .column=
+s td.twelve, table[class=3D"body"] .column td.twelve { width: 100% !importa=
+nt; }=0D=0A=0D=0A table[class=3D"body"] td.offset-by-one, table[class=3D"bo=
+dy"] td.offset-by-two, table[class=3D"body"] td.offset-by-three, table[clas=
+s=3D"body"] td.offset-by-four, table[class=3D"body"] td.offset-by-five, tab=
+le[class=3D"body"] td.offset-by-six, table[class=3D"body"] td.offset-by-sev=
+en, table[class=3D"body"] td.offset-by-eight, table[class=3D"body"] td.offs=
+et-by-nine, table[class=3D"body"] td.offset-by-ten, table[class=3D"body"] t=
+d.offset-by-eleven { padding-left: 0 !important; }=0D=0A=0D=0A table[class=
+=3D"body"] table.columns td.expander { width: 1px !important; }=0D=0A=0D=0A=
+ table[class=3D"body"] .right-text-pad, table[class=3D"body"] .text-pad-rig=
+ht { padding-left: 10px !important; }=0D=0A=0D=0A table[class=3D"body"] .le=
+ft-text-pad, table[class=3D"body"] .text-pad-left { padding-right: 10px !im=
+portant; }=0D=0A=0D=0A table[class=3D"body"] .hide-for-small, table[class=
+=3D"body"] .show-for-desktop { display: none !important; }=0D=0A=0D=0A tabl=
+e[class=3D"body"] .show-for-small, table[class=3D"body"] .hide-for-desktop =
+{ display: inherit !important; } }=0D=0A=0D=0A</style>=0D=0A=0D=0A <style t=
+ype=3D"text/css"> /* Typography */=0D=0A=0D=0A body, table.body, h1, h2, h3=
+, h4, h5, h6, p, td, a { font-family: -apple-system, BlinkMacSystemFont, Se=
+goe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; =
+}=0D=0A=0D=0A /* Trello Block */=0D=0A=0D=0A .trello-block { width: 100%; t=
+ext-align: inherit; }=0D=0A=0D=0A .trello-block-single-column { display: bl=
+ock; margin: 0 auto; max-width: 580px; padding: 12px 16px; }=0D=0A=0D=0A /*=
+ Header */=0D=0A=0D=0A .header-logo-image { height: 25px; max-height: 25px;=
+ max-width: 122px; width: 122px; display: block; }=0D=0A=0D=0A /* Blog Post=
+ Link */=0D=0A=0D=0A .trello-block--blog-post p { text-align: center; }=0D=
+=0A=0D=0A /* Code */=0D=0A=0D=0A code { white-space: pre-wrap; }=0D=0A=0D=
+=0A /* Footer */=0D=0A=0D=0A .trello-block--footer p { color: #9B9B9B; text=
+-align: center; }=0D=0A=0D=0A .trello-block--footer a, .trello-block--foote=
+r a:visited, .trello-block--footer a:active { color: #9B9B9B; text-decorati=
+on: underline; }=0D=0A=0D=0A .trello-block--footer a:hover { color: #4d4d4d=
+; }=0D=0A=0D=0A /* Notifications */=0D=0A=0D=0A .phenom { margin: 12px 0; f=
+loat: left; clear: both; } =0D=0A=0D=0A .phenom-creator { width: 38px; }=0D=
+=0A=0D=0A .phenom-creator-avatar { -webkit-border-radius: 50%; border-radiu=
+s: 50%; height: 30px; width: 30px; }=0D=0A=0D=0A .phenom-member-initials { =
+-webkit-border-radius: 50%; border-radius: 50%; display: block; font-size: =
+12px; font-weight: bold; height: 30px; line-height: 30px; width: 85%; text-=
+align: center; background-color: #d6dadc; }=0D=0A=0D=0A .app-creator { font=
+-size: 12px; line-height: 16px; color: #5E6C84; display: inline-block; }=0D=
+=0A=0D=0A .app-creator a { color: inherit; text-decoration: none; }=0D=0A=
+=0D=0A .app-creator a:hover { text-decoration: underline; }=0D=0A=0D=0A .ap=
+p-creator img { width: 14px; height: 14px; margin-right: 1px; vertical-alig=
+n: middle !important; display: inline-block; float: none; }=0D=0A=0D=0A .ph=
+enom-details { /* max-width: 480px; */ }=0D=0A=0D=0A .phenom-details-commen=
+t { background-color: #fff; border: 1px solid #C1C7D0; -webkit-border-radiu=
+s: 3px; border-radius: 3px; display: block; margin: 6px 0; padding: 10px 12=
+px 0 12px; }=0D=0A=0D=0A /* Button */=0D=0A=0D=0A a.button { background: li=
+near-gradient(to bottom, #3FBF3F 0%, #37A637 100%); border-bottom: 2px soli=
+d #008000; border-radius: 3px; color: #fff; display: inline-block; font-wei=
+ght: bold; font-size: 18px; margin: 12px margin; padding: 16px 24px; text-d=
+ecoration: none; }=0D=0A=0D=0A a.button:hover { background: linear-gradient=
+(to bottom, #37A637 0%, #2E8C2E 100%); }=0D=0A=0D=0A /* Responsivication */=
+=0D=0A=0D=0A @media only screen and (min-width: 580px) {=0D=0A=0D=0A .trell=
+o-block-single-column { width: 560px !important; }=0D=0A=0D=0A }=0D=0A=0D=
+=0A @media only screen and (max-width: 559px) {=0D=0A=0D=0A .trello-block-s=
+ingle-column { width: 90% !important; padding: 12px 0; }=0D=0A=0D=0A }=0D=
+=0A=0D=0A @media screen and (max-width:480px) { .desktop-marketing { displa=
+y: none !important } .mobile-marketing { display: block !important } } </st=
+yle>=0D=0A=0D=0A </head> <body style=3D"min-width: 100%; -webkit-text-size-=
+adjust: 100%; -ms-text-size-adjust: 100%; color: #172B4D; font-weight: norm=
+al; padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: =
+19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Not=
+o Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 100%;"> <tab=
+le class=3D"body" style=3D"border-spacing: 0; border-collapse: collapse; ve=
+rtical-align: top; color: #172B4D; font-weight: normal; padding: 0; margin:=
+ 0; text-align: left; font-size: 14px; line-height: 19px; font-family: -app=
+le-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid S=
+ans, Helvetica Neue, sans-serif; height: 100%; width: 100%;" width=3D"100%"=
+ height=3D"100%" valign=3D"top" align=3D"left"> <tr style=3D"padding: 0; ve=
+rtical-align: top; text-align: left;" valign=3D"top" align=3D"left"> <td cl=
+ass=3D"center" align=3D"center" valign=3D"top" style=3D"word-break: break-w=
+ord; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; vertical-ali=
+gn: top; color: #172B4D; font-weight: normal; padding: 0; margin: 0; font-s=
+ize: 14px; line-height: 19px; font-family: -apple-system, BlinkMacSystemFon=
+t, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-se=
+rif; text-align: center; border-collapse: collapse;"> <center style=3D"widt=
+h: 100%;"> <!-- Email Content -->=0D=0A=0D=0A <!--[if (gte mso 9)|(IE)]> <t=
+able width=3D"560" align=3D"center"> <tr> <td> <![endif]-->=0D=0A=0D=0A <!-=
+- Header -->=0D=0A=0D=0A<table class=3D"trello-block trello-block-backgroun=
+d--trello-blue" style=3D"border-spacing: 0; border-collapse: collapse; padd=
+ing: 0; vertical-align: top; width: 100%; text-align: inherit;" width=3D"10=
+0%" valign=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; vertical-ali=
+gn: top; text-align: left;" valign=3D"top" align=3D"left"> <td style=3D"wor=
+d-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: au=
+to; vertical-align: top; color: #172B4D; font-weight: normal; padding: 0; m=
+argin: 0; text-align: left; font-size: 14px; line-height: 19px; font-family=
+: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, D=
+roid Sans, Helvetica Neue, sans-serif; border-collapse: collapse;" valign=
+=3D"top" align=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-single-colu=
+mn center" style=3D"display: block; margin: 0 auto; max-width: 580px; paddi=
+ng: 12px 16px;">=0D=0A=0D=0A <img class=3D"header-logo-image center" height=
+=3D"25" width=3D"122" src=3D"https://trello.com/images/logo-new-sm-2x.png" =
+alt=3D"Logotipo do Trello" title=3D"Logotipo do Trello" style=3D"outline: n=
+one; text-decoration: none; -ms-interpolation-mode: bicubic; height: 25px; =
+max-height: 25px; max-width: 122px; width: 122px; display: block; margin: 0=
+ auto; float: none;">=0D=0A=0D=0A </div>=0D=0A=0D=0A </td> </tr> </table>=
+=0D=0A=0D=0A <table class=3D"trello-block" style=3D"border-spacing: 0; bord=
+er-collapse: collapse; padding: 0; vertical-align: top; width: 100%; text-a=
+lign: inherit;" width=3D"100%" valign=3D"top" align=3D"inherit"> <tr style=
+=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"top" alig=
+n=3D"left"> <td style=3D"word-break: break-word; -webkit-hyphens: auto; -mo=
+z-hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-w=
+eight: normal; margin: 0; text-align: left; font-size: 14px; line-height: 1=
+9px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto=
+ Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; padding: 16px 0; bor=
+der-collapse: collapse;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div cl=
+ass=3D"trello-block-single-column" style=3D"display: block; margin: 0 auto;=
+ max-width: 580px; padding: 12px 16px;">=0D=0A=0D=0A <h6 style=3D"color: #1=
+72B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; line-h=
+eight: 1.3; word-break: normal; margin-bottom: 12px; font-size: 20px; font-=
+family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubu=
+ntu, Droid Sans, Helvetica Neue, sans-serif;">Veja o que voc=C3=AA perdeu..=
+=2E</h6>=0D=0A=0D=0A <table width=3D"100%" class=3D"phenom" style=3D"border=
+-spacing: 0; border-collapse: collapse; padding: 0; vertical-align: top; te=
+xt-align: left; margin: 12px 0; float: left; clear: both;" valign=3D"top" a=
+lign=3D"left"> <tr style=3D"padding: 0; vertical-align: top; text-align: le=
+ft;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <td class=3D"phenom-creator=
+" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: aut=
+o; hyphens: auto; vertical-align: top; color: #172B4D; font-weight: normal;=
+ padding: 0; margin: 0; text-align: left; font-size: 14px; line-height: 19p=
+x; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto S=
+ans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; width: 38px; border-co=
+llapse: collapse;" width=3D"38" valign=3D"top" align=3D"left"> <img class=
+=3D"phenom-creator-avatar" src=3D"https://trello-members.s3.amazonaws.com/5=
+2363f9de0eabac251000018/3b964207ceb61ff639acce89e5649172/30.png" height=3D"=
+30" width=3D"30" style=3D"outline: none; text-decoration: none; -ms-interpo=
+lation-mode: bicubic; max-width: 100%; -webkit-border-radius: 50%; border-r=
+adius: 50%; height: 30px; width: 30px;">=0D=0A=0D=0A </td> <td class=3D"phe=
+nom-details" style=3D"word-break: break-word; -webkit-hyphens: auto; -moz-h=
+yphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font-weig=
+ht: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; line-=
+height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Rob=
+oto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border-coll=
+apse: collapse;" valign=3D"top" align=3D"left"> <strong>Reinaldo Borin</str=
+ong> moveu o cart=C3=A3o <a href=3D"https://trello.com/c/iiM4cUvB/1196-test=
+e" style=3D"color: #0079BF; text-decoration: underline; font-family: -apple=
+-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid San=
+s, Helvetica Neue, sans-serif;">Teste</a> para Em Execu=C3=A7=C3=A3o em <a =
+href=3D"https://trello.com/b/8GXVcp0D/relier" style=3D"color: #0079BF; text=
+-decoration: underline; font-family: -apple-system, BlinkMacSystemFont, Seg=
+oe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">=
+Relier</a> <span class=3D"app-creator" style=3D"font-size: 12px; line-heigh=
+t: 16px; color: #5E6C84; display: inline-block;"> </span> <p style=3D"color=
+: #172B4D; font-weight: normal; padding: 0; margin: 0; text-align: left; fo=
+nt-size: 14px; line-height: 19px; margin-bottom: 10px; font-family: -apple-=
+system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans=
+, Helvetica Neue, sans-serif;"> <a href=3D"mailto:sebastiaowill+2wefg204l5f=
+h6gqhx83+2wefgienm83dthmzw0u+0k4b27lym7@boards.trello.com=3Fsubject=3DRe%3A=
+%20Teste" target=3D"_blank" style=3D"color: #0079BF; text-decoration: under=
+line; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Not=
+o Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;">Responder por emai=
+l</a> </p> </td>=0D=0A=0D=0A </tr> </table>=0D=0A=0D=0A </div>=0D=0A=0D=0A =
+</td> </tr> </table> <!-- End gray background -->=0D=0A=0D=0A <script type=
+=3D"application/ld+json"> {"@context":"http:\u002f\u002fschema.org","@type"=
+:"EmailMessage","potentialAction":{"@type":"ViewAction","target":"https:\u0=
+02f\u002ftrello.com\u002fc\u002fiiM4cUvB=3Futm_medium=3Demail&utm_source=3D=
+notification&utm_campaign=3Dnotification&utm_content=3Dgoogle_inbox","name"=
+:"Open Card in Trello"},"description":"Trello Board"} </script>=0D=0A=0D=0A=
+ <!-- Blog Post Link -->=0D=0A=0D=0A<table class=3D"trello-block trello-blo=
+ck--blog-post" style=3D"border-spacing: 0; border-collapse: collapse; paddi=
+ng: 0; vertical-align: top; width: 100%; text-align: inherit;" width=3D"100=
+%" valign=3D"top" align=3D"inherit"> <tr style=3D"padding: 0; vertical-alig=
+n: top; text-align: left;" valign=3D"top" align=3D"left"> <td style=3D"word=
+-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: aut=
+o; vertical-align: top; color: #172B4D; font-weight: normal; padding: 0; ma=
+rgin: 0; text-align: left; font-size: 14px; line-height: 19px; font-family:=
+ -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Dr=
+oid Sans, Helvetica Neue, sans-serif; border-collapse: collapse;" valign=3D=
+"top" align=3D"left">=0D=0A=0D=0A <div class=3D"trello-block-single-column =
+center" style=3D"display: block; margin: 0 auto; max-width: 580px; padding:=
+ 12px 16px;">=0D=0A=0D=0A <p style=3D"color: #172B4D; font-weight: normal; =
+padding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-bottom: 1=
+0px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto=
+ Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; text-align: center;"=
+><a href=3D"https://blog.trello.com/br/trello-cronograma-visualizacao=3Futm=
+_source=3Dalert-email&utm_medium=3Demail&utm_campaign=3Dtrello-br_timeline-=
+post" style=3D"color: #0079BF; text-decoration: underline; font-family: -ap=
+ple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid =
+Sans, Helvetica Neue, sans-serif;">A visualiza=C3=A7=C3=A3o de Cronograma =
+=C3=A9 a forma perfeita de ver tudo em um s=C3=B3 lugar! </a></p> </div>=0D=
+=0A=0D=0A </td> </tr> </table>=0D=0A=0D=0A <!-- Footer -->=0D=0A=0D=0A<tabl=
+e class=3D"trello-block trello-block--footer" style=3D"border-spacing: 0; b=
+order-collapse: collapse; padding: 0; vertical-align: top; width: 100%; tex=
+t-align: inherit;" width=3D"100%" valign=3D"top" align=3D"inherit"> <tr sty=
+le=3D"padding: 0; vertical-align: top; text-align: left;" valign=3D"top" al=
+ign=3D"left"> <td style=3D"word-break: break-word; -webkit-hyphens: auto; -=
+moz-hyphens: auto; hyphens: auto; vertical-align: top; color: #172B4D; font=
+-weight: normal; padding: 0; margin: 0; text-align: left; font-size: 14px; =
+line-height: 19px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI=
+, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; border=
+-collapse: collapse;" valign=3D"top" align=3D"left">=0D=0A=0D=0A <div class=
+=3D"trello-block-single-column center" style=3D"display: block; margin: 0 a=
+uto; max-width: 580px; padding: 12px 16px;">=0D=0A=0D=0A<p style=3D"font-we=
+ight: normal; padding: 0; margin: 0; font-size: 14px; line-height: 19px; ma=
+rgin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI=
+, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; text-a=
+lign: center; color: #9B9B9B;"><b>Fique por dentro de tudo onde quer que es=
+teja! Baixe o aplicativo do Trello e realize a=C3=A7=C3=B5es em qualquer lu=
+gar.</b></p> <div class=3D"desktop-marketing"> <p style=3D"font-weight: nor=
+mal; padding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-bott=
+om: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,=
+ Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B;=
+ text-align: center;">Baixar o Trello para <a href=3D"https://itunes.apple.=
+com/us/app/trello-organize-anything/id461504587">iPhone e iPad</a>, <a href=
+=3D"https://play.google.com/store/apps/details=3Fid=3Dcom.trello">Android</=
+a> e muito <a href=3D"https://trello.com/platforms">mais</a>.</p> </div>=0D=
+=0A=0D=0A<div class=3D"mobile-marketing" style=3D"text-align: center; displ=
+ay: none;"> <a href=3D"https://apps.apple.com/us/app/trello-organize-anythi=
+ng/id461504587=3Fitsct=3Dapps_box&itscg=3D30200" style=3D"font-family: -app=
+le-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid S=
+ans, Helvetica Neue, sans-serif; color: #9B9B9B; text-decoration: underline=
+; margin: auto; display: inline-block; overflow: hidden; border-radius: 13p=
+x; width: 116px; height: 45px; vertical-align: middle; padding: 0px 13px;">=
+ <img width=3D"116" height=3D"45" alt=3D"Baixar na App Store da Apple" src=
+=3D"https://trello.com/images/email/apple-app-store-badges/black-pt-br.png"=
+ style=3D"outline: none; text-decoration: none; -ms-interpolation-mode: bic=
+ubic; max-width: 100%; border: none; border-radius: 13px; width: 116px; hei=
+ght: 45px;"> </a> <a href=3D"https://play.google.com/store/apps/details=3Fi=
+d=3Dcom.trello&pcampaignid=3DpcampaignidMKT-Other-global-all-co-prtnr-py-Pa=
+rtBadge-Mar2515-1" style=3D"font-family: -apple-system, BlinkMacSystemFont,=
+ Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-seri=
+f; color: #9B9B9B; text-decoration: underline; margin: auto; display: inlin=
+e-block; overflow: hidden; width: 142px; height: 55px; vertical-align: midd=
+le;"> <img width=3D"142" height=3D"55" alt=3D"Baixar no Google Play" src=3D=
+"https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge=
+_web_generic.png" style=3D"outline: none; text-decoration: none; -ms-interp=
+olation-mode: bicubic; max-width: 100%; border: none; width: 142px; height:=
+ 55px;"> </a> =0D=0A=0D=0A <p style=3D"font-weight: normal; padding: 0; mar=
+gin: 0; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont=
+, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-ser=
+if; color: #9B9B9B; text-align: center; margin-top: 20px; font-size: 10px; =
+line-height: 12px;"> Google Play e o logotipo do Google Play s=C3=A3o marca=
+s comerciais da Google LLC. <br> Apple e o logotipo da Apple s=C3=A3o marca=
+s comerciais da Apple Inc. </p> </div>=0D=0A=0D=0A <p style=3D"font-weight:=
+ normal; padding: 0; margin: 0; font-size: 14px; line-height: 19px; margin-=
+bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Rob=
+oto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9=
+B9B; text-align: center;"><a href=3D"https://trello.com/my/account" style=
+=3D"font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto =
+Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif; color: #9B9B9B; text-=
+decoration: underline;">Alterar prefer=C3=AAncias de email</a></p>=0D=0A=0D=
+=0A </div>=0D=0A=0D=0A </td> </tr> </table>=0D=0A=0D=0A <!--[if (gte mso 9)=
+|(IE)]> </td> </tr> </table> <![endif]-->=0D=0A=0D=0A <!-- / Email Content =
+--> </center> </td> </tr> </table> =0D=0A<img border=3D"0" width=3D"1" heig=
+ht=3D"1" alt=3D"" src=3D"http://sptrack.trello.com/q/ECwY_9F3GJn92lnB2nw3nA=
+~~/AAAAAQA~/RgRih_HLPlcLYXRsYXNzaWFudXNCCmCmS76mYDjThvdSF3NlYmFzdGlhb0ByZWx=
+pZXIuY29tLmJyWAQAAAAD">=0D=0A</body> </html>=0D=0A=0D=0A=0D=0A
+----_NmP-baa575f2ab301ea1-Part_1--
+From - Thu May 27 10:02:33 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+MIME-Version: 1.0
+x-no-auto-attachment: 1
+Received: by 2002:a05:6839:1c93:0:0:0:0; Thu, 20 May 2021 11:43:17 -0700 (PDT)
+Date: Thu, 20 May 2021 11:43:17 -0700
+Message-ID: <CADYSPFnQdAn+SXZD8_FPzCkVY=ndhQFiUmiapidyuC04ubjteg@mail.gmail.com>
+Subject: Get the official Gmail app
+From: Gmail Team <mail-noreply@google.com>
+To: =?UTF-8?Q?Sebasti=C3=A3o_William?= <sebastiao@relier.com.br>
+Content-Type: multipart/alternative; boundary="0000000000000c6cbd05c2c751bc"
+
+--0000000000000c6cbd05c2c751bc
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Get the official Gmail app
+[image: Gmail]
+
+Get the official Gmail app
+The best features of Relier IT Solutions Mail are only available on your
+phone and tablet with the official Gmail app. Download the app or go to
+gmail.com on your computer or mobile device to get started.
+
+[image: Get it on Google Play]
+<https://play.google.com/store/apps/details?id=3Dcom.google.android.gm&hl=
+=3Den>
+[image:
+Apple App Store]
+<https://apps.apple.com/app/gmail-email-by-google/id422689480?l=3Den>
+
+Happy emailing,
+The Gmail Team
+[image: Google Cloud]
+
+=C2=A9 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
+
+*You=E2=80=99re receiving this mandatory email service announcement to upda=
+te you
+about important changes to your Google Cloud product or account.*
+
+--0000000000000c6cbd05c2c751bc
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"content-type" content=3D"tex=
+t/html;charset=3DUTF-8"/><title>Get the official Gmail app</title></head><b=
+ody style=3D"direction:ltr;text-align:left;background-color:#f8f9fa; margin=
+:20px 0;"><br/><div style=3D"margin:2%;"><div style=3D"width:100%;margin:0 =
+auto 0 auto;"><table style=3D"vertical-align:middle;width:580px;margin:0 au=
+to 0 auto;border:1px; border-color:black;"><tr><td><img src=3D"https://ssl.=
+gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" srcse=
+t=3D"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default=
+_1x_r2.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lock=
+up_default_2x_r2.png 2x" alt=3D"Gmail" style=3D"float:left;max-height:40px;=
+margin:0 20px 10px 20px;"/></td></tr></table></div><div style=3D"font-famil=
+y:Roboto,'Open sans',Arial,sans-serif;color:#444; background-color:#fff;max=
+-width:600px;margin:10px auto 0 auto;"><table style=3D"background:#fff;widt=
+h:100%;border-collapse:collapse;border-color:#e8eaed; border-spacing:0;bord=
+er-style:solid;border-width:1px;display:table; padding:0 20px 0 20px;positi=
+on:relative;"><tr><td style=3D"padding:5px 20px 0 20px;"><div style=3D"widt=
+h:90%;padding-left:15px;"><p><span style=3D"font-family:'Google sans',Arial=
+,sans-serif;font-weight:700;line-height:32px; font-size:24px;">Get the offi=
+cial Gmail app</span></p></div><table><tr><td style=3D"font-family:Roboto,'=
+Open sans',Arial,sans-serif;padding-left:15px; padding-right:25px;width:60%=
+;"><span style=3D"color:#3c4043;font-family:Roboto,Helvetica,Arial,sans-ser=
+if;font-size:14px; font-weight:400;line-height:24px;">The best features of =
+Relier IT Solutions Mail are only available on your phone and tablet with t=
+he official Gmail app. Download the app or go to <a href=3D"https://gmail.c=
+om" style=3D"text-decoration:none;color:#15c;">gmail.com</a> on your comput=
+er or mobile device to get started.</span></td><td><img src=3D"https://ssl.=
+gstatic.com/accounts/services/mail/msa/gmail-app-mobile-ui2x.png" srcset=3D=
+"https://ssl.gstatic.com/accounts/services/mail/msa/gmail-app-mobile-ui1x.p=
+ng 1x, https://ssl.gstatic.com/accounts/services/mail/msa/gmail-app-mobile-=
+ui2x.png 2x" style=3D"padding:0 0 0 0;display:inline;margin-left:auto;max-h=
+eight:150px;"></td></tr></table></td></tr><tr><td style=3D"padding:0 20px 0=
+ 20px;"><div style=3D"margin:0 20px 20px 15px;"><table style=3D"width:100%;=
+border-collapse:collapse;border:0;"><tr><td style=3D"width:50%;padding-left=
+:0;"><a href=3D"https://play.google.com/store/apps/details?id=3Dcom.google.=
+android.gm&amp;hl=3Den"><img src=3D"https://ssl.gstatic.com/accounts/servic=
+es/mail/msa/google_play_store_badge_en.png" alt=3D"Get it on Google Play" s=
+tyle=3D"display:block;height:45px;padding-left:30px;"/></a></td><td style=
+=3D"width:50%;padding-right:20px;"><a href=3D"https://apps.apple.com/app/gm=
+ail-email-by-google/id422689480?l=3Den"><img src=3D"https://ssl.gstatic.com=
+/accounts/services/mail/msa/apple_app_store_badge_en.png" alt=3D"Apple App =
+Store" style=3D"display:block;height:45px;padding-right:60px;"/></a></td></=
+tr><tr><td style=3D"text-align:left;font-family:Roboto,'Open sans',Arial,sa=
+ns-serif; vertical-align:bottom;"><br/><span style=3D"color:#3c4043;font-fa=
+mily:'Google Sans',Helvetica,Arial,sans-serif;font-size:14px; font-weight:7=
+00;line-height:24px;">Happy emailing,</span><br/><span style=3D"color:#3c40=
+43;font-family:'Google Sans',Helvetica,Arial,sans-serif;font-size:14px; fon=
+t-weight:700;line-height:24px;">The Gmail Team</span></td></tr></table></di=
+v></td></tr></table></div><div style=3D"text-align:left;"><table style=3D"v=
+ertical-align:middle;width:580px;margin:0 auto 0 auto;"><tr><td><img src=3D=
+"https://storage.googleapis.com/support-kms-prod/Yd1rPlunjtOKzNDXcw3eFmVCjI=
+828xhBZqQy" alt=3D"Google Cloud" style=3D"float:left;width:140px;height:aut=
+o;margin:24px 20px 0 20px;"/></td></tr><tr><td style=3D"margin-top:12px;"><=
+p style=3D"line-height:20px;color:#6c737f;font-size:12px;font-weight:400; m=
+argin:12px 20px 12px 20px;font-family:Roboto,Arial,Helvetica,sans-serif; te=
+xt-align:left;">=C2=A9 2021 Google LLC 1600 Amphitheatre Parkway, Mountain =
+View, CA 94043</p><p style=3D"line-height:20px;color:#6c737f;font-size:12px=
+;font-weight:400; margin:12px 20px 12px 20px;font-family:Roboto,Arial,Helve=
+tica,sans-serif; text-align:left;"><em>You=E2=80=99re receiving this mandat=
+ory email service announcement to update you about important changes to you=
+r Google Cloud product or account.</em></p></td></tr></table></div></div></=
+body></html>
+
+--0000000000000c6cbd05c2c751bc--
+From - Thu May 27 10:02:33 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+MIME-Version: 1.0
+x-no-auto-attachment: 1
+Received: by 2002:a05:6839:1c93:0:0:0:0; Thu, 20 May 2021 11:43:18 -0700 (PDT)
+Date: Thu, 20 May 2021 11:43:18 -0700
+Message-ID: <CADYSPFkQaCkSbkXX6rCFusoJM0C=Zq_50tYSQZa=dctYezma4g@mail.gmail.com>
+Subject: Tips for using your new inbox
+From: Gmail Team <mail-noreply@google.com>
+To: =?UTF-8?Q?Sebasti=C3=A3o_William?= <sebastiao@relier.com.br>
+Content-Type: multipart/alternative; boundary="00000000000014164a05c2c751bd"
+
+--00000000000014164a05c2c751bd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Tips for using your new inbox
+[image: Gmail]
+
+Welcome to your inbox
+[image: Search]
+Find emails fast
+With the power of Google Search in your inbox, you can archive
+<https://support.google.com/mail/answer/6576?hl=3Den&utm_source=3Dgmailwelc=
+omeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+all your email and find it
+<https://support.google.com/mail/answer/6593?hl=3Den&utm_source=3Dgmailwelc=
+omeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+later in a flash. Your inbox stays tidy, and you never need to worry about
+what to keep.
+[image: Personalize]
+Personalize Relier IT Solutions Mail
+Customize inbox backgrounds, email signatures, and other options in Relier
+IT Solutions Mail settings
+<https://support.google.com/mail/answer/6562?hl=3Den&utm_source=3Dgmailwelc=
+omeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>.
+Review and adjust your privacy and security settings at My Account
+<https://myaccount.google.com/>.
+[image: Organize]
+Organize your email
+You can organize email with labels
+<https://support.google.com/mail/answer/118708?hl=3Den&utm_source=3Dgmailwe=
+lcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>,
+which are like folders, but you can add more than one label to a message.
+You can also use filters
+<https://support.google.com/mail/answer/6579?hl=3Den&utm_source=3Dgmailwelc=
+omeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+to automatically sort and categorize messages as they come in.
+[image: Social]
+Chat and meet from your inbox
+Chat with contacts and start video meetings with up to 25 people in Google
+Hangouts
+<https://support.google.com/hangouts/answer/3115176?hl=3Den&utm_source=3Dgm=
+ailwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+.
+
+Get training and tips
+Find Gmail guides, tips, cheat sheets, help switching from Microsoft=C2=AE
+Outlook=C2=AE, and more at the Google Workspace Learning Center
+<https://support.google.com/a/users/answer/9259748?hl=3Den&utm_source=3Dgma=
+ilwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+.
+Visit the Learning Center
+<https://support.google.com/a/users/answer/9259748?hl=3Den&utm_source=3Dgma=
+ilwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome>
+
+Happy emailing,
+The Gmail Team
+[image: Google Cloud]
+
+=C2=A9 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
+
+*You=E2=80=99re receiving this mandatory email service announcement to upda=
+te you
+about important changes to your Google Cloud product or account.*
+
+--00000000000014164a05c2c751bd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"content-type" content=3D"tex=
+t/html;charset=3DUTF-8"/><title>Tips for using your new inbox</title></head=
+><body style=3D"direction:ltr;text-align:left;background-color:#f8f9fa; mar=
+gin:20px 0;"><br/><div style=3D"margin:2%;"><div style=3D"width:100%;margin=
+:0 auto 0 auto;"><table style=3D"vertical-align:middle;width:580px;margin:0=
+ auto 0 auto;border:1px; border-color:black;"><tr><td><img src=3D"https://s=
+sl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" sr=
+cset=3D"https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_defa=
+ult_1x_r2.png 1x, https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_l=
+ockup_default_2x_r2.png 2x" alt=3D"Gmail" style=3D"float:left;max-height:40=
+px;margin:0 20px 10px 20px;"/></td></tr></table></div><div style=3D"font-fa=
+mily:Roboto,'Open sans',Arial,sans-serif;color:#444; background-color:#fff;=
+max-width:600px;margin:10px auto 0 auto;"><table style=3D"background:#fff;w=
+idth:100%;border-collapse:collapse;border-color:#e8eaed; border-spacing:0;b=
+order-style:solid;border-width:1px;display:table; position:relative;"><tr><=
+td style=3D"padding:5px 20px 0 20px;"><div style=3D"width:90%;padding-left:=
+15px;"><p><span style=3D"font-family:'Google sans',Arial,sans-serif;font-we=
+ight:700;line-height:32px; font-size:24px;">Welcome to your inbox</span></p=
+></div><div style=3D"float:left;clear:both;padding:10px 5px 10px 10px;"><im=
+g src=3D"https://ssl.gstatic.com/accounts/services/mail/msa/gmail-welcome-g=
+raphic1-2x.png" srcset=3D"https://ssl.gstatic.com/accounts/services/mail/ms=
+a/gmail-welcome-graphic1-1x.png 1x, https://ssl.gstatic.com/accounts/servic=
+es/mail/msa/gmail-welcome-graphic1-2x.png 2x" alt=3D"Search" style=3D"displ=
+ay:block;width:112px;height:auto;"/></div><div style=3D"float:left;vertical=
+-align:middle;padding:10px;max-width:398px;"><table style=3D"vertical-align=
+:middle;"><tr><td style=3D"font-family:Roboto,'Open sans',Arial,sans-serif;=
+"><span style=3D"color:#3c4043;font-family:'Google Sans',Helvetica,Arial,sa=
+ns-serif; font-size:16px;font-weight:700;line-height:20px;">Find emails fas=
+t</span><br/><span style=3D"color:#3c4043;font-family:Roboto,Helvetica,Aria=
+l,sans-serif;font-size:14px; font-weight:400;line-height:24px;">With the po=
+wer of Google Search in your inbox, you can <a href=3D"https://support.goog=
+le.com/mail/answer/6576?hl=3Den&utm_source=3Dgmailwelcomeemail&utm_medium=
+=3Demail&utm_campaign=3Dgmailwelcome" style=3D"text-decoration:none;color:#=
+15c;">archive</a> all your email and <a href=3D"https://support.google.com/=
+mail/answer/6593?hl=3Den&utm_source=3Dgmailwelcomeemail&utm_medium=3Demail&=
+utm_campaign=3Dgmailwelcome" style=3D"text-decoration:none;color:#15c;">fin=
+d it</a> later in a flash. Your inbox stays tidy, and you never need to wor=
+ry about what to keep.</span></td></tr></table></div><div style=3D"float:le=
+ft;clear:both;padding:10px 5px 10px 10px;"><img src=3D"https://ssl.gstatic.=
+com/accounts/services/mail/msa/gmail-welcome-graphic2-2x.png" srcset=3D"htt=
+ps://ssl.gstatic.com/accounts/services/mail/msa/gmail-welcome-graphic2-1x.p=
+ng 1x, https://ssl.gstatic.com/accounts/services/mail/msa/gmail-welcome-gra=
+phic2-2x.png 2x" alt=3D"Personalize" style=3D"display:block;width:112px;hei=
+ght:auto;"/></div><div style=3D"float:left;vertical-align:middle;padding:10=
+px;max-width:398px;"><table style=3D"vertical-align:middle;"><tr><td style=
+=3D"font-family:Roboto,'Open sans',Arial,sans-serif;"><span style=3D"color:=
+#3c4043;font-family:'Google Sans',Helvetica,Arial,sans-serif; font-size:16p=
+x;font-weight:700;line-height:20px;">Personalize Relier IT Solutions Mail</=
+span><br/><span style=3D"color:#3c4043;font-family:Roboto,Helvetica,Arial,s=
+ans-serif;font-size:14px; font-weight:400;line-height:24px;">Customize inbo=
+x backgrounds, email signatures, and other options in <a href=3D"https://su=
+pport.google.com/mail/answer/6562?hl=3Den&utm_source=3Dgmailwelcomeemail&ut=
+m_medium=3Demail&utm_campaign=3Dgmailwelcome" style=3D"text-decoration:none=
+;color:#15c;">Relier IT Solutions Mail settings</a>. Review and adjust your=
+ privacy and security settings at <a href=3D"https://myaccount.google.com/"=
+ style=3D"text-decoration:none;color:#15c;">My Account</a>.</span></td></tr=
+></table></div><div style=3D"float:left;clear:both;padding:10px 5px 10px 10=
+px;"><img src=3D"https://ssl.gstatic.com/accounts/services/mail/msa/gmail-w=
+elcome-graphic3-2x.png" srcset=3D"https://ssl.gstatic.com/accounts/services=
+/mail/msa/gmail-welcome-graphic3-1x.png 1x, https://ssl.gstatic.com/account=
+s/services/mail/msa/gmail-welcome-graphic3-2x.png 2x" alt=3D"Organize" styl=
+e=3D"display:block;width:112px;height:auto;"/></div><div style=3D"float:lef=
+t;vertical-align:middle;padding:10px;max-width:398px;"><table style=3D"vert=
+ical-align:middle;"><tr><td style=3D"font-family:Roboto,'Open sans',Arial,s=
+ans-serif;"><span style=3D"color:#3c4043;font-family:'Google Sans',Helvetic=
+a,Arial,sans-serif; font-size:16px;font-weight:700;line-height:20px;">Organ=
+ize your email</span><br/><span style=3D"color:#3c4043;font-family:Roboto,H=
+elvetica,Arial,sans-serif;font-size:14px; font-weight:400;line-height:24px;=
+">You can organize email with <a href=3D"https://support.google.com/mail/an=
+swer/118708?hl=3Den&utm_source=3Dgmailwelcomeemail&utm_medium=3Demail&utm_c=
+ampaign=3Dgmailwelcome" style=3D"text-decoration:none;color:#15c;">labels</=
+a>, which are like folders, but you can add more than one label to a messag=
+e. You can also use <a href=3D"https://support.google.com/mail/answer/6579?=
+hl=3Den&utm_source=3Dgmailwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgm=
+ailwelcome" style=3D"text-decoration:none;color:#15c;">filters</a> to autom=
+atically sort and categorize messages as they come in.</span></td></tr></ta=
+ble></div><div style=3D"float:left;clear:both;padding:10px 5px 10px 10px;">=
+<img src=3D"https://ssl.gstatic.com/accounts/services/mail/msa/gmail-welcom=
+e-graphic4-2x.png" srcset=3D"https://ssl.gstatic.com/accounts/services/mail=
+/msa/gmail-welcome-graphic4-1x.png 1x, https://ssl.gstatic.com/accounts/ser=
+vices/mail/msa/gmail-welcome-graphic4-2x.png 2x" alt=3D"Social" style=3D"di=
+splay:block;width:112px;height:auto;"/></div><div style=3D"float:left;verti=
+cal-align:middle;padding:10px;max-width:398px;"><table style=3D"vertical-al=
+ign:middle;"><tr><td style=3D"font-family:Roboto,'Open sans',Arial,sans-ser=
+if;"><span style=3D"color:#3c4043;font-family:'Google Sans',Helvetica,Arial=
+,sans-serif; font-size:16px;font-weight:700;line-height:20px;">Chat and mee=
+t from your inbox</span><br/><span style=3D"color:#3c4043;font-family:Robot=
+o,Helvetica,Arial,sans-serif;font-size:14px; font-weight:400;line-height:24=
+px;">Chat with contacts and start video meetings with up to 25 people in <a=
+ href=3D"https://support.google.com/hangouts/answer/3115176?hl=3Den&utm_sou=
+rce=3Dgmailwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome" sty=
+le=3D"text-decoration:none;color:#15c;">Google Hangouts</a>.</span></td></t=
+r></table></div></td></tr><tr><td style=3D"padding:0 20px 0 20px;"><div sty=
+le=3D"margin:0 20px 20px 15px;"><table style=3D"width:100%;border-collapse:=
+collapse;border:0;"><tr><td style=3D"font-family:Roboto,'Open sans',Arial,s=
+ans-serif;"><br/><span style=3D"color:#3c4043;font-family:'Google Sans',Hel=
+vetica,Arial,sans-serif;font-size:16px; font-weight:700;line-height:24px;">=
+Get training and tips</span><br/><span style=3D"color:#3c4043;font-family:R=
+oboto,Helvetica,Arial,sans-serif;font-size:14px; font-weight:400;line-heigh=
+t:24px;">Find Gmail guides, tips, cheat sheets, help switching from Microso=
+ft<sup>=C2=AE</sup> Outlook<sup>=C2=AE</sup>, and more at the <a href=3D"ht=
+tps://support.google.com/a/users/answer/9259748?hl=3Den&utm_source=3Dgmailw=
+elcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome" style=3D"text-d=
+ecoration:none;color:#15c;">Google&nbsp;Workspace Learning Center</a>.</spa=
+n></td></tr><tr><td><table style=3D"margin:20px 0 0 0;border:none;border-co=
+llapse:collapse;border-radius:3px; border-spacing:0;display:inline-block;li=
+ne-height:0;max-width:100%;padding:0; transition:box-shadow .2s ease-out;ve=
+rtical-align:top;width:auto;"><tr style=3D"padding:0;vertical-align:top;"><=
+td style=3D"-moz-hyphens:none;-webkit-hyphens:none;margin:0;border-collapse=
+:collapse!important; line-height:inherit;margin:0;padding:0;vertical-align:=
+top;"><table style=3D"border-collapse:collapse;border-spacing:0;padding:0; =
+vertical-align:top;width:100%;"><tr style=3D"padding:0;vertical-align:top;"=
+><td style=3D"-moz-hyphens:none;-webkit-hyphens:none;margin:0;background:#2=
+979ff; border:none;border-collapse:collapse!important;border-radius:3px; li=
+ne-height:inherit;margin:0;padding:0;vertical-align:top; word-wrap:keep-all=
+;"><a href=3D"https://support.google.com/a/users/answer/9259748?hl=3Den&utm=
+_source=3Dgmailwelcomeemail&utm_medium=3Demail&utm_campaign=3Dgmailwelcome"=
+ style=3D"margin:0;border:0 solid #2979ff;border-radius:3px;color:#fff; dis=
+play:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif; font-size:=
+14px;font-weight:500;line-height:24px;margin:0; padding:8px 16px 8px 16px;t=
+ext-decoration:none;">Visit the Learning Center</a></td></tr></table></td><=
+/tr></table></td></tr><tr><td style=3D"font-family:Roboto,'Open sans',Arial=
+,sans-serif; vertical-align:bottom;"><br/><span style=3D"color:#3c4043;font=
+-family:'Google Sans',Helvetica,Arial,sans-serif;font-size:14px; font-weigh=
+t:700;line-height:24px;">Happy emailing,</span><br/><span style=3D"color:#3=
+c4043;font-family:'Google Sans',Helvetica,Arial,sans-serif;font-size:14px; =
+font-weight:700;line-height:24px;">The Gmail Team</span></td></tr></table><=
+/div></td></tr></table></div><div style=3D"text-align:left;"><table style=
+=3D"vertical-align:middle;width:580px;margin:0 auto 0 auto;"><tr><td><img s=
+rc=3D"https://storage.googleapis.com/support-kms-prod/Yd1rPlunjtOKzNDXcw3eF=
+mVCjI828xhBZqQy" alt=3D"Google Cloud" style=3D"float:left;width:140px;heigh=
+t:auto;margin:24px 20px 0 20px;"/></td></tr><tr><td style=3D"margin-top:12p=
+x;"><p style=3D"line-height:20px;color:#6c737f;font-size:12px;font-weight:4=
+00; margin:12px 20px 12px 20px;font-family:Roboto,Arial,Helvetica,sans-seri=
+f; text-align:left;">=C2=A9 2021 Google LLC 1600 Amphitheatre Parkway, Moun=
+tain View, CA 94043</p><p style=3D"line-height:20px;color:#6c737f;font-size=
+:12px;font-weight:400; margin:12px 20px 12px 20px;font-family:Roboto,Arial,=
+Helvetica,sans-serif; text-align:left;"><em>You=E2=80=99re receiving this m=
+andatory email service announcement to update you about important changes t=
+o your Google Cloud product or account.</em></p></td></tr></table></div></d=
+iv></body></html>
+
+--00000000000014164a05c2c751bd--
+From - Thu May 27 10:02:33 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:a05:6838:aa95:0:0:0:0 with SMTP id ai21csp2611196nkc;
+        Thu, 20 May 2021 11:43:16 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJy1G8mVU9yylFWQRsfRaURj3tjdgdRypyJ31/e1Vevoh67mMZonRplAkCc/xe2MPRudub4V
+X-Received: by 2002:a05:6a00:1630:b029:2c0:a1eb:d77 with SMTP id e16-20020a056a001630b02902c0a1eb0d77mr5765696pfc.81.1621536196086;
+        Thu, 20 May 2021 11:43:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1621536196; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wGIcrz5C01s+Ow6IGsqKalrChqSIAncaasOqD8m5ofAc3W+uxaSA7gH2XB7Qyz9/t+
+         8VDLJBM47xjPY/9YAeH3A2MBUFKIjScae7/BYE3w64U5OXeegEpDspiPllTkTDPSuqkT
+         avG+tu1G81vw/9SO1mLpDULs2OOBuRduD6Yt3Ky5EbY/tkNCa7jvz0KlgmYKp9620bQi
+         w45npS30t6YtlzWUisXXaIgxOT+Dvc8E6ZoyawDsD21b1CXiTdEIb9JrgIE/JmU6w0iM
+         VVDT6aSuETnZP08X9fHXneUl3V7Y9T9oxnKihN7sSb3fNwLWc0IanQDJpl7V9GSTGbjd
+         zdCw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:atlassianmail-meta-obsolete-id
+         :atlassianmail-meta-transaction-id:message-id:subject:to:from:date
+         :dkim-signature;
+        bh=hUkqcPn0zxrwO+QZBfrxHVUXjP7/ygvYMNuRzusIz0Q=;
+        b=CCQImuRwtFr/w3NziTnxVdQNkACOgA3e5uZag/5+ot71LdDSqUOLWYoX9fdo/gvhbi
+         kiOIa1cepjuWcrN1RfrBGbUUqo+0qu/0BARptx3hGNDgcjr/M9ab2nODNjbRWk0nZh3m
+         VISe2D6Bd/DNnnZr13Ub4asJkZ2W/Y9/uJdruFWtpSywRhbjhIaHsumGJf+D5VD0weIg
+         R5TE+Ls6chdJVff3yTQaVUtHpTFv+3/R5iJc6LbtOKYmv5l3AQjRVoZr0eOQ83y9azgI
+         bjkJy9YDCxLO0wxuH4Bo2/R3zcI+kKOsWdOOSsk09cPZFH2B7pH+4q2muF6y0anSWj1P
+         xBGw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@am.atlassian.com header.s=atl201804 header.b=Wmw+XTJt;
+       spf=pass (google.com: domain of noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com designates 192.174.81.96 as permitted sender) smtp.mailfrom=noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=atlassian.com
+Return-Path: <noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com>
+Received: from mta-81-96.sparkpostmail.com (mta-81-96.sparkpostmail.com. [192.174.81.96])
+        by mx.google.com with ESMTPS id u124si4643760pfc.157.2021.05.20.11.43.06
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 20 May 2021 11:43:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com designates 192.174.81.96 as permitted sender) client-ip=192.174.81.96;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@am.atlassian.com header.s=atl201804 header.b=Wmw+XTJt;
+       spf=pass (google.com: domain of noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com designates 192.174.81.96 as permitted sender) smtp.mailfrom=noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=atlassian.com
+X-MSFBL: sEBUH58GoRywnPDXvDrgIdZB3UhTdZuJaUjs6VB0vec=|eyJjdXN0b21lcl9pZCI
+	6IjEiLCJ0ZW5hbnRfaWQiOiJhdGxhc3NpYW51cyIsInN1YmFjY291bnRfaWQiOiI
+	3IiwiciI6InNlYmFzdGlhb0ByZWxpZXIuY29tLmJyIiwibWVzc2FnZV9pZCI6IjY
+	wYTViYWFkYTY2MDYyZDVmYjY1In0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=am.atlassian.com;
+	s=atl201804; t=1621536186; i=@am.atlassian.com;
+	bh=hUkqcPn0zxrwO+QZBfrxHVUXjP7/ygvYMNuRzusIz0Q=;
+	h=Date:From:To:Subject:Message-ID:Content-Type;
+	b=Wmw+XTJtUvZbf4KaYQBZkh5JObypk9BTwvTGeS1peE7JhYBrcqrf4BBv4Kc0sfg5h
+	 1bNj3pkfDBCf26eZWNY4JVUS6/5fQaDB7wa3RyvC8WVLjE/TpRMCDSndFW79/Vn8s6
+	 uyVNdBInFq658mJP5hGbUqIvee7eTZrI+dxdu1Qs=
+Date: Thu, 20 May 2021 18:43:06 +0000
+From: "Trello" <noreply+a507ecc59557a472b19076bc4c8613f9a169e0d50441bc4872e5e341@am.atlassian.com>
+To: <sebastiao@relier.com.br>
+Subject: Confirmar meu e-mail no Trello
+Message-ID: <01F65HD7GY44JS5BYW1F5YAGE7@am.atlassian.com>
+AtlassianMail-Meta-Transaction-ID: 01F65HD7GY44JS5BYW1F5YAGE7
+AtlassianMail-Meta-Obsolete-ID: 01F65HD7GY44JS5BYW1F5YAGE7
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary=enmime-5916135b-11f3-4e5e-8e26-9d2039e9266b
+
+--enmime-5916135b-11f3-4e5e-8e26-9d2039e9266b
+Content-Type: multipart/related;
+ boundary=enmime-0b8178dc-f060-49c2-83c9-4e5a1c48fec7
+
+--enmime-0b8178dc-f060-49c2-83c9-4e5a1c48fec7
+Content-Type: multipart/alternative;
+ boundary=enmime-0b2af80d-bbb7-4334-9197-1ba7657cd74b
+
+--enmime-0b2af80d-bbb7-4334-9197-1ba7657cd74b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Ol=C3=A1 Sebasti=C3=A3o William, voc=C3=AA est=C3=A1 quase l=C3=A1! Antes d=
+e come=C3=A7ar a usar o Trello, confirme se o seu e-mail est=C3=A1 correto.=
+ Sua conta da Atlassian. Facilite as coisas usando uma s=C3=B3 conta em tod=
+os os produtos da Atlassian. Saiba mais. Esta mensagem foi enviada pelo Atl=
+assian Cloud.=0D=0A=0D=0ATrello ( https://www.atlassian.com/software/trello=
+ )=0D=0A=0D=0A*******************=0D=0AVoc=C3=AA est=C3=A1 quase l=C3=A1!=
+=0D=0A*******************=0D=0A=0D=0AOl=C3=A1, Sebasti=C3=A3o William,=0D=
+=0A=0D=0APara concluir a configura=C3=A7=C3=A3o da sua conta e come=C3=A7ar=
+ a usar o Trello, confirme que a gente tem seu e-mail certo.=0D=0A=0D=0ACon=
+firmar meu e-mail ( https://id.atlassian.com/signup/welcome=3Fapplication=
+=3Dtrello&continue=3Dhttps%3A//trello.com/auth/atlassian/callback=3FreturnU=
+rl%3D%252F%26display%3DeyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNvZnQifQ%253D%253D=
+%26aaOnboarding%3D%26migrateGoogle%3D&token=3DeyJraWQiOiJtaWNyb3NcL2FpZC1za=
+WdudXBcL3JyOTYwYmQydTFqZ3BnM2ciLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJsaW5rLXNpZ25=
+hdHVyZS12YWxpZGF0b3IiLCJzdWIiOiJzZWJhc3RpYW9AcmVsaWVyLmNvbS5iciIsIm5iZiI6MT=
+YyMTUzNjE4NSwic2NvcGUiOiJ3ZWxjb21lIiwiaXNzIjoibWljcm9zXC9haWQtc2lnbnVwIiwic=
+mVkaXJlY3RUeXBlIjoic2lnbnVwIiwiZXhwIjoxNjIyMTQwOTg1LCJpYXQiOjE2MjE1MzYxODUs=
+Imp0aSI6IjY2NTE4NzEwLWFiMTEtNDE1Ny1hMzBkLWVlOTg1NmU5MzNkOSJ9.BZ3yJJZosJ7v0a=
+kejDyjQbEVHyCk7DIaJtFOG1HEjUPQjX48g119TteLsHzhz_hRc3ixDyvnJuySTG4RXqw4_jE5U=
+rYFPTfWrwBtHug9dnNjtKe_VqYClNDD5vKfKiROQD_d--aMhwg1IJC8zgrkP6vo251JtnGBHH0I=
+gAU5_wGVk9MkPEYdxMN__efCXI5ay6DbqRVkUf_iv-KyQswR7Kxv8kNGTR-N2S3XXqHMjDY6An-=
+uDbdxS5xs_xVN6SGyT25sFbEprVzmwUBkJsWvVcJzynKcjRrmICoQNqZZsouQX3g4uHiA-FpdUV=
+aonO6fC8iiUBKPv7g7tYKQl91AbQ&display=3DeyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNv=
+ZnQifQ%3D%3D&source=3Df27c2f50974749ac8ffe229ba04f9564 )=0D=0ASua conta da =
+Atlassian=0D=0A=0D=0AFacilite as coisas usando uma s=C3=B3 conta em todos o=
+s produtos da Atlassian. Saiba mais. ( https://confluence.atlassian.com/clo=
+ud/your-atlassian-account-976161169.html )=0D=0A=0D=0AEsta mensagem foi env=
+iada pelo Atlassian Cloud=0D=0AAtlassian ( https://www.atlassian.com )=0D=
+=0A
+--enmime-0b2af80d-bbb7-4334-9197-1ba7657cd74b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html><head><style type=3D"text/css">=0D=0A/* CLIENT-SPECIFIC STYLES */=0D=
+=0A#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" m=
+essage */=0D=0A.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* For=
+ce Hotmail to display emails at full width */=0D=0A.ExternalClass, .Externa=
+lClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .Ext=
+ernalClass div {line-height: 100%;} /* Force Hotmail to display normal line=
+ spacing */=0D=0Abody, table, td, a{-webkit-text-size-adjust:100%; -ms-text=
+-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default t=
+ext sizes */=0D=0Atable, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /*=
+ Remove spacing between tables in Outlook 2007 and up */=0D=0Aimg{-ms-inter=
+polation-mode:bicubic;} /* Allow smoother rendering of resized image in Int=
+ernet Explorer */=0D=0A/* RESET STYLES */=0D=0Abody{margin:0; padding:0;}=
+=0D=0Aimg{border:0; line-height:100%; outline:none; text-decoration:none;}=
+=0D=0Atable{border-collapse:collapse !important;}=0D=0Abody{height:100% !im=
+portant; margin:0; padding:0; width:100% !important;}=0D=0A/* iOS BLUE LINK=
+S */=0D=0A.appleBody a {color:#68440a; text-decoration: none;}=0D=0A.appleF=
+ooter a {color:#999999; text-decoration: none;}=0D=0A</style></head><body s=
+tyle=3D"font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen=
+,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;font-=
+weight:400;character-spacing:-0.005em;color:#091E42;line-height:20px;backgr=
+ound:#FFFFFF;margin-left:8px;margin-right:8px"><span style=3D"display:none =
+!important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-=
+height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;position:=
+absolute">Ol=C3=A1 Sebasti=C3=A3o William, voc=C3=AA est=C3=A1 quase l=C3=
+=A1! Antes de come=C3=A7ar a usar o Trello, confirme se o seu e-mail est=C3=
+=A1 correto. Sua conta da Atlassian. Facilite as coisas usando uma s=C3=B3 =
+conta em todos os produtos da Atlassian. Saiba mais. Esta mensagem foi envi=
+ada pelo Atlassian Cloud.</span><table width=3D"100%" border=3D"0" cellSpac=
+ing=3D"0" cellPadding=3D"0"><tr><td align=3D"center"><div style=3D"max-widt=
+h:520px;margin:0 auto"><div style=3D"vertical-align:top;text-align:left;fon=
+t-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fir=
+a Sans,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;font-weight:400;=
+character-spacing:-0.005em;color:#091E42;line-height:20px"><div style=3D"pa=
+dding-top:30px;padding-bottom:20px;vertical-align:top;text-align:center"><a=
+ href=3D"https://www.atlassian.com/software/trello"><img src=3D"https://id-=
+mail-assets.atlassian.com/shared/logo/adg3/product/trello/logo-blue-new-2x.=
+png" height=3D"30" alt=3D"Trello" style=3D"align:center;border:0"/></a></di=
+v><hr style=3D"margin-top:24px;margin-bottom:24px;border:0;border-bottom:1p=
+x solid #C1C7D0"/><table width=3D"100%" border=3D"0" cellSpacing=3D"0" cell=
+Padding=3D"0"><tr><td align=3D"center"><img src=3D"https://id-mail-assets.a=
+tlassian.com/template/aid_signup_welcome_verify_cobranded_adg/trello-people=
+=2Epng" height=3D"175" border=3D"0" alt=3D""/></td></tr></table><h1 style=
+=3D"margin-bottom:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,R=
+oboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-siz=
+e:24px;font-weight:500;character-spacing:-0.01em;color:#172B4D;line-height:=
+28px;margin-top:40px">Voc=C3=AA est=C3=A1 quase l=C3=A1!</h1><p style=3D"fo=
+nt-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fi=
+ra Sans,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;font-weight:400=
+;character-spacing:-0.005em;color:#091E42;line-height:20px;margin-top:12px"=
+>Ol=C3=A1, Sebasti=C3=A3o William,</p><p style=3D"font-family:-apple-system=
+,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helv=
+etica Neue,sans-serif;font-size:14px;font-weight:400;character-spacing:-0.0=
+05em;color:#091E42;line-height:20px;margin-top:12px">Para concluir a config=
+ura=C3=A7=C3=A3o da sua conta e come=C3=A7ar a usar o Trello, confirme que =
+a gente tem seu e-mail certo.</p><div style=3D"margin-top:28px"><a href=3D"=
+https://id.atlassian.com/signup/welcome=3Fapplication=3Dtrello&continue=3Dh=
+ttps%3A//trello.com/auth/atlassian/callback=3FreturnUrl%3D%252F%26display%3=
+DeyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNvZnQifQ%253D%253D%26aaOnboarding%3D%26m=
+igrateGoogle%3D&token=3DeyJraWQiOiJtaWNyb3NcL2FpZC1zaWdudXBcL3JyOTYwYmQydTF=
+qZ3BnM2ciLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJsaW5rLXNpZ25hdHVyZS12YWxpZGF0b3IiL=
+CJzdWIiOiJzZWJhc3RpYW9AcmVsaWVyLmNvbS5iciIsIm5iZiI6MTYyMTUzNjE4NSwic2NvcGUi=
+OiJ3ZWxjb21lIiwiaXNzIjoibWljcm9zXC9haWQtc2lnbnVwIiwicmVkaXJlY3RUeXBlIjoic2l=
+nbnVwIiwiZXhwIjoxNjIyMTQwOTg1LCJpYXQiOjE2MjE1MzYxODUsImp0aSI6IjY2NTE4NzEwLW=
+FiMTEtNDE1Ny1hMzBkLWVlOTg1NmU5MzNkOSJ9.BZ3yJJZosJ7v0akejDyjQbEVHyCk7DIaJtFO=
+G1HEjUPQjX48g119TteLsHzhz_hRc3ixDyvnJuySTG4RXqw4_jE5UrYFPTfWrwBtHug9dnNjtKe=
+_VqYClNDD5vKfKiROQD_d--aMhwg1IJC8zgrkP6vo251JtnGBHH0IgAU5_wGVk9MkPEYdxMN__e=
+fCXI5ay6DbqRVkUf_iv-KyQswR7Kxv8kNGTR-N2S3XXqHMjDY6An-uDbdxS5xs_xVN6SGyT25sF=
+bEprVzmwUBkJsWvVcJzynKcjRrmICoQNqZZsouQX3g4uHiA-FpdUVaonO6fC8iiUBKPv7g7tYKQ=
+l91AbQ&display=3DeyJ2ZXJpZmljYXRpb25TdHJhdGVneSI6InNvZnQifQ%3D%3D&source=3D=
+f27c2f50974749ac8ffe229ba04f9564" style=3D"align-items:baseline;box-sizing:=
+border-box;border-radius:3px;border-width:0;border:none;display:inline-flex=
+;font-style:normal;font-size:inherit;height:2.28571429em;line-height:2.2857=
+1429em;margin:0;outline:none;padding:0 12px;text-align:center;user-select:n=
+one;vertical-align:middle;white-space:nowrap;text-decoration:none;backgroun=
+d:#0052CC;color:#FFFFFF">Confirmar meu e-mail</a></div><hr style=3D"margin-=
+top:24px;margin-bottom:24px;border:0;border-bottom:1px solid #C1C7D0"/><h4 =
+style=3D"margin-bottom:0;font-family:-apple-system,BlinkMacSystemFont,Segoe=
+ UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;fon=
+t-size:14px;font-weight:600;character-spacing:-0.003em;color:#172B4D;line-h=
+eight:16px;margin-top:16px">Sua conta da Atlassian</h4><p style=3D"font-fam=
+ily:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira San=
+s,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;font-weight:400;chara=
+cter-spacing:-0.005em;color:#091E42;line-height:20px;margin-top:12px">Facil=
+ite as coisas usando uma s=C3=B3 conta em todos os produtos da Atlassian. <=
+a href=3D"https://confluence.atlassian.com/cloud/your-atlassian-account-976=
+161169.html" style=3D"border:none;background:transparent;color:#0052CC;text=
+-decoration:none">Saiba mais.</a></p><hr style=3D"margin-top:24px;margin-bo=
+ttom:24px;border:0;border-bottom:1px solid #C1C7D0"/><div style=3D"color:#7=
+07070;font-size:13px;line-height:19px;text-align:center;margin-top:10px"><t=
+able width=3D"100%" cellPadding=3D"0" cellSpacing=3D"0" border=3D"0" bgcolo=
+r=3D"#ffffff" class=3D"table_shrink" align=3D"center"><tr><td valign=3D"top=
+" align=3D"center" style=3D"padding-top:10px;line-height:18px;text-align:ce=
+nter;font-weight:none;font-size:12px;color:#505F79"><span>Esta mensagem foi=
+ enviada pelo Atlassian Cloud</span><br/></td></tr><tr valign=3D"top"><td a=
+lign=3D"center" style=3D"padding-top:15px;padding-bottom:30px"><a href=3D"h=
+ttps://www.atlassian.com" alias=3D"atlassian footer logo"><img src=3D"https=
+://id-mail-assets.atlassian.com/shared/id-summit/id-summit-email_logo_360x8=
+0_NEW.png" width=3D"114" border=3D"0" alt=3D"Atlassian" style=3D"display:bl=
+ock;color:#4c9ac9"/></a></td></tr></table></div></div></div></td></tr></tab=
+le>=0D=0A<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://=
+atlassian.et.e.sparkpost.com/q/e45pjpb0xTsEHonKG8H1KA~~/AAAAAQA~/RgRiiTK6Pl=
+cLYXRsYXNzaWFudXNCCmCluq2mYGLV-2VSF3NlYmFzdGlhb0ByZWxpZXIuY29tLmJyWAQAAAAH"=
+>=0D=0A</body></html>=0D=0A
+--enmime-0b2af80d-bbb7-4334-9197-1ba7657cd74b--
+
+--enmime-0b8178dc-f060-49c2-83c9-4e5a1c48fec7--
+
+--enmime-5916135b-11f3-4e5e-8e26-9d2039e9266b--
+From - Thu May 27 10:24:52 2021
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: sebastiao@relier.com.br
+Received: by 2002:ab3:30b:0:0:0:0:0 with SMTP id n11csp493801ltg;
+        Thu, 27 May 2021 06:24:43 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJxfoPBedvP9fS0+YGd3kiM7pfQgiRAfcZdYa4lyk8LT6LQ/BICxgDIyszDWkSQPwR78AmQq
+X-Received: by 2002:a17:90b:1b0a:: with SMTP id nu10mr3756377pjb.70.1622121883670;
+        Thu, 27 May 2021 06:24:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1622121883; cv=none;
+        d=google.com; s=arc-20160816;
+        b=OiPcjAkUH6aGRrcxD2LcXjfxSM9M0X+3kWVjGWrssbDE1q7K513P6XM9HR4c2vbD5S
+         T9572BGu6+tpwQjXdUfztiNXKsuf9oAFHQI5zwEWQJkp32l5Vp9sGjGsZI1kWmwOmOdt
+         HVg8Pm7L/60/0iPvzk/k//HqaM4NoWHxeZNxJV6LWEXsaCKb+CRDUQjTxZzxIL3cumrw
+         32/PdlvaDtppnTZTtw6SomWa3iECqzr4V+gOQLtj0acOVh2HhX0Ukbl6xWYEmGdnqrcX
+         DTlI+p0JNXuyNZT9+JdpaVZYwU66pM9PXE9H7EvJAJiP8HjLWVblulAeIIoNCzwFMTe+
+         2F6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:atlassianmail-meta-obsolete-id
+         :atlassianmail-meta-transaction-id:message-id:subject:to:from:date
+         :dkim-signature;
+        bh=6yIzrxuCTlIvl5dz9n7ypKsiSKND0dpt0XY3b1uGhII=;
+        b=krFGEkAmIa5f6lDGGCgumHxWT+3xfsOKtaCLkpuThGb7peSJLsobtytL8ZRfCoDiZo
+         +NlXwKpArReFUwx9iGb20EpU27NQE6NXwPyMUFJyUWSMfBo3IZT0RsHnHcYu9ufoWTol
+         47/0BrP7Um9X3pl2Du62Ob7TxsR5h/4HogRexZQHXWPcW1ayVgFdi2Zv+2nEJ5YQ4ZvV
+         Vmi7ZuueYBbAyFGnyIpnxGWdoUCqEbQxynFlLOf1hDSlAthhf+fSVW9oaCUqOwClvKwb
+         jliU05xxaReoN1rmoNwl2O2xrWo4zYCaYVzjD80TPJmtp2FsY6pbiCZPByzp1+P1d1UK
+         wZCg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@am.atlassian.com header.s=atl201804 header.b=oz6IIzff;
+       spf=pass (google.com: domain of noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com designates 192.174.81.96 as permitted sender) smtp.mailfrom=noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=atlassian.com
+Return-Path: <noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com>
+Received: from mta-81-96.sparkpostmail.com (mta-81-96.sparkpostmail.com. [192.174.81.96])
+        by mx.google.com with ESMTPS id v3si1743402plg.257.2021.05.27.06.24.43
+        for <sebastiao@relier.com.br>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 27 May 2021 06:24:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com designates 192.174.81.96 as permitted sender) client-ip=192.174.81.96;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@am.atlassian.com header.s=atl201804 header.b=oz6IIzff;
+       spf=pass (google.com: domain of noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com designates 192.174.81.96 as permitted sender) smtp.mailfrom=noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=atlassian.com
+X-MSFBL: 05tZNdak9YrtZ/ay/e/fxrKnFgSPQcCwy+UrhcA51rk=|eyJyIjoic2ViYXN0aWF
+	vQHJlbGllci5jb20uYnIiLCJ0ZW5hbnRfaWQiOiJhdGxhc3NpYW51cyIsIm1lc3N
+	hZ2VfaWQiOiI2MGFlOWE5ZGFmNjA4ZTliMjFhOCIsInN1YmFjY291bnRfaWQiOiI
+	3IiwiY3VzdG9tZXJfaWQiOiIxIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=am.atlassian.com;
+	s=atl201804; t=1622121882; i=@am.atlassian.com;
+	bh=6yIzrxuCTlIvl5dz9n7ypKsiSKND0dpt0XY3b1uGhII=;
+	h=Date:From:To:Subject:Message-ID:Content-Type;
+	b=oz6IIzffSFFoVgQ/j3GkGa5EHSILrmKz0y6A0n2uTKJjHDgJ1M9e/6FV7I3qymhys
+	 x6VPc+tZihb5WOmPf3Ltr7bklfLwHAv8gDJX2BMsy2h79xL2khFpbKuecGT1zuwQUU
+	 3RwBfsAGd81vCS5IJFqosZKs3eYMQnlpLI1cArYY=
+Date: Thu, 27 May 2021 13:24:42 +0000
+From: "Atlassian" <noreply+a70125fe9652b0ac6872a2347127afdc98c527a9895a7476f0824a0f@am.atlassian.com>
+To: <sebastiao@relier.com.br>
+Subject: A senha da sua conta da Atlassian foi alterada
+Message-ID: <01F6PZZ8GA58AGPCQNFGZHWPTG@am.atlassian.com>
+AtlassianMail-Meta-Transaction-ID: 01F6PZZ8GA58AGPCQNFGZHWPTG
+AtlassianMail-Meta-Obsolete-ID: 01F6PZZ8GA58AGPCQNFGZHWPTG
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary=enmime-92991edd-f2d8-4428-9ffc-a5c92bae487b
+
+--enmime-92991edd-f2d8-4428-9ffc-a5c92bae487b
+Content-Type: multipart/related;
+ boundary=enmime-0a5434ec-4f15-48b2-8f01-7d5ea7b911b8
+
+--enmime-0a5434ec-4f15-48b2-8f01-7d5ea7b911b8
+Content-Type: multipart/alternative;
+ boundary=enmime-e1915d70-ab85-4633-b03b-4a7aedefc06e
+
+--enmime-e1915d70-ab85-4633-b03b-4a7aedefc06e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+
+Atlassian ( https://www.atlassian.com )=0D=0AA senha da sua conta da Atlass=
+ian foi alterada=0D=0A=0D=0AOl=C3=A1, Sebasti&atilde;o Willian,=0D=0A=0D=0A=
+Estamos confirmando que voc=C3=AA alterou a senha da sua conta da Atlassian=
+ do *sebastiao@relier.com.br*.=0D=0A=0D=0ASe voc=C3=AA n=C3=A3o fez essa al=
+tera=C3=A7=C3=A3o, diga agora mesmo ( https://www.atlassian.com/company/con=
+tact/general-inquiries ).=0D=0A=0D=0AEsta mensagem foi enviada pelo Atlassi=
+an Cloud=0D=0AAtlassian ( https://www.atlassian.com )=0D=0A
+--enmime-e1915d70-ab85-4633-b03b-4a7aedefc06e
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html><head><style type=3D"text/css">=0D=0A/* CLIENT-SPECIFIC STYLES */=0D=
+=0A#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" m=
+essage */=0D=0A.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* For=
+ce Hotmail to display emails at full width */=0D=0A.ExternalClass, .Externa=
+lClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .Ext=
+ernalClass div {line-height: 100%;} /* Force Hotmail to display normal line=
+ spacing */=0D=0Abody, table, td, a{-webkit-text-size-adjust:100%; -ms-text=
+-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default t=
+ext sizes */=0D=0Atable, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /*=
+ Remove spacing between tables in Outlook 2007 and up */=0D=0Aimg{-ms-inter=
+polation-mode:bicubic;} /* Allow smoother rendering of resized image in Int=
+ernet Explorer */=0D=0A/* RESET STYLES */=0D=0Abody{margin:0; padding:0;}=
+=0D=0Aimg{border:0; line-height:100%; outline:none; text-decoration:none;}=
+=0D=0Atable{border-collapse:collapse !important;}=0D=0Abody{height:100% !im=
+portant; margin:0; padding:0; width:100% !important;}=0D=0A/* iOS BLUE LINK=
+S */=0D=0A.appleBody a {color:#68440a; text-decoration: none;}=0D=0A.appleF=
+ooter a {color:#999999; text-decoration: none;}=0D=0A</style></head><body s=
+tyle=3D"font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen=
+,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;font-=
+weight:400;character-spacing:-0.005em;color:#091E42;line-height:20px;backgr=
+ound:#FFFFFF;margin-left:8px;margin-right:8px"><table width=3D"100%" border=
+=3D"0" cellSpacing=3D"0" cellPadding=3D"0"><tr><td align=3D"center"><div st=
+yle=3D"max-width:520px;margin:0 auto"><div style=3D"vertical-align:top;text=
+-align:left;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ox=
+ygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-size:14px;f=
+ont-weight:400;character-spacing:-0.005em;color:#091E42;line-height:20px"><=
+div style=3D"padding-top:30px;padding-bottom:20px;vertical-align:top;text-a=
+lign:center"><a href=3D"https://www.atlassian.com"><img src=3D"https://id-m=
+ail-assets.atlassian.com/shared/id-summit/id-summit-email_logo_360x80_NEW.p=
+ng" height=3D"30" alt=3D"Atlassian" style=3D"align:center;border:0"/></a></=
+div><hr style=3D"margin-top:24px;margin-bottom:24px;border:0;border-bottom:=
+1px solid #C1C7D0"/><h4 style=3D"margin-bottom:0;font-family:-apple-system,=
+BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helve=
+tica Neue,sans-serif;font-size:14px;font-weight:600;character-spacing:-0.00=
+3em;color:#172B4D;line-height:16px;margin-top:16px">A senha da sua conta da=
+ Atlassian foi alterada</h4><p style=3D"font-family:-apple-system,BlinkMacS=
+ystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue=
+,sans-serif;font-size:14px;font-weight:400;character-spacing:-0.005em;color=
+:#091E42;line-height:20px;margin-top:12px">Ol=C3=A1, Sebasti&amp;atilde;o W=
+illian,</p><p style=3D"font-family:-apple-system,BlinkMacSystemFont,Segoe U=
+I,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-=
+size:14px;font-weight:400;character-spacing:-0.005em;color:#091E42;line-hei=
+ght:20px;margin-top:12px">Estamos confirmando que voc=C3=AA alterou a senha=
+ da sua conta da Atlassian do <a style=3D"text-decoration:none;color:inheri=
+t"><strong>sebastiao@relier.com.br</strong></a>.</p><p style=3D"font-family=
+:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,D=
+roid Sans,Helvetica Neue,sans-serif;font-size:14px;font-weight:400;characte=
+r-spacing:-0.005em;color:#091E42;line-height:20px;margin-top:12px">Se voc=
+=C3=AA n=C3=A3o fez essa altera=C3=A7=C3=A3o, <a href=3D"https://www.atlass=
+ian.com/company/contact/general-inquiries" style=3D"border:none;background:=
+transparent;color:#0052CC;text-decoration:none">diga agora mesmo</a>.</p><h=
+r style=3D"margin-top:24px;margin-bottom:24px;border:0;border-bottom:1px so=
+lid #C1C7D0"/><div style=3D"color:#707070;font-size:13px;line-height:19px;t=
+ext-align:center;margin-top:10px"><table width=3D"100%" cellPadding=3D"0" c=
+ellSpacing=3D"0" border=3D"0" bgcolor=3D"#ffffff" class=3D"table_shrink" al=
+ign=3D"center"><tr><td valign=3D"top" align=3D"center" style=3D"padding-top=
+:10px;line-height:18px;text-align:center;font-weight:none;font-size:12px;co=
+lor:#505F79"><span>Esta mensagem foi enviada pelo Atlassian Cloud</span><br=
+/></td></tr><tr valign=3D"top"><td align=3D"center" style=3D"padding-top:15=
+px;padding-bottom:30px"><a href=3D"https://www.atlassian.com" alias=3D"atla=
+ssian footer logo"><img src=3D"https://id-mail-assets.atlassian.com/shared/=
+id-summit/id-summit-logo-email-footer.png" width=3D"114" border=3D"0" alt=
+=3D"Atlassian" style=3D"display:block;color:#4c9ac9"/></a></td></tr></table=
+></div></div></div></td></tr></table>=0D=0A<img border=3D"0" width=3D"1" he=
+ight=3D"1" alt=3D"" src=3D"http://atlassian.et.e.sparkpost.com/q/WC6tJmrn9i=
+ZRiaSY10YI2g~~/AAAAAQA~/RgRikiKaPlcLYXRsYXNzaWFudXNCCmCump2vYI6bIahSF3NlYmF=
+zdGlhb0ByZWxpZXIuY29tLmJyWAQAAAAH">=0D=0A</body></html>=0D=0A
+--enmime-e1915d70-ab85-4633-b03b-4a7aedefc06e--
+
+--enmime-0a5434ec-4f15-48b2-8f01-7d5ea7b911b8--
+
+--enmime-92991edd-f2d8-4428-9ffc-a5c92bae487b--

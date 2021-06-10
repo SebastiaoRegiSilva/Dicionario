@@ -1,0 +1,5 @@
+{
+  "BACKGROUND_COLOR": "hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%)",
+  "IS_MAXIMIZED": true,
+  "IS_MINIMIZED": false
+}

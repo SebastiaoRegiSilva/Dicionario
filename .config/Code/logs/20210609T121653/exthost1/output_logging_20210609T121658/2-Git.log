@@ -1,0 +1,104 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /home/sebastiao/vscode/ProjectXadrez
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.vscode/tasks.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/tasks.json
+> git check-ignore -v -z --stdin
+> git show --textconv :xadrez-console/xadrez-console.csproj
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/xadrez-console.csproj
+> git cat-file -s 808d2415c7e9e4e6740292c7a2db00ae520d8742
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git show --textconv :.vscode/tasks.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/tasks.json
+> git show --textconv HEAD:.vscode/tasks.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/tasks.json
+> git show --textconv :.vscode/launch.json
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv HEAD:.vscode/tasks.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/tasks.json
+> git show --textconv HEAD:.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git clean -f -q -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git checkout -q
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv HEAD:.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git clean -f -q -- /home/sebastiao/vscode/ProjectXadrez/.vscode/tasks.json
+> git checkout -q
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv HEAD:.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git ls-tree -l HEAD -- /home/sebastiao/vscode/ProjectXadrez/.vscode/launch.json
+> git show --textconv :xadrez-console/Program.cs
+> git ls-files --stage -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git cat-file -s 05d04c6330981cbef905a7ad589bd3b8325fda53
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+Warning: Failed to watch ref '/home/sebastiao/vscode/ProjectXadrez/.git/refs/remotes/origin/main', is most likely packed.
+> git config --get commit.template
