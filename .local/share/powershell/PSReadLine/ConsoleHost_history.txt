@@ -40,3 +40,7 @@ git commit -m "Comentando e implementando a classe Posicao"
 git log --oneline
 git status
 git add --all
+git commit -m"Implementação e comentário das classes Peca, Posicao e Tabuleiro"
+git log --oneline
+git status
+git add --all

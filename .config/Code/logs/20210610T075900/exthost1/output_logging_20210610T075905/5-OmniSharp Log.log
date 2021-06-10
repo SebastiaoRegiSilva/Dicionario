@@ -913,3 +913,255 @@ Received response for /v2/blockstructure but could not find request.
         No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 41.
 [warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
         No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Program.cs added to workspace
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No document found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs added to workspace
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[fail]: OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.GetCodeActionsService
+        Error computing refactorings for Microsoft.CodeAnalysis.CSharp.CodeRefactorings.SyncNamespace.CSharpSyncNamespaceCodeRefactoringProvider
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Roslyn.Utilities.PathUtilities.PathsEqual (System.String path1, System.String path2) [0x00008] in <72580164e8774c42aba5fabaa7901be4>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].IsDocumentPathRootedInProjectFolder (Microsoft.CodeAnalysis.Document document) [0x00034] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3+State[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].CreateAsync (Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax] provider, Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan textSpan, System.Threading.CancellationToken cancellationToken) [0x0012f] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at Microsoft.CodeAnalysis.CodeRefactorings.SyncNamespace.AbstractSyncNamespaceCodeRefactoringProvider`3[TNamespaceDeclarationSyntax,TCompilationUnitSyntax,TMemberDeclarationSyntax].ComputeRefactoringsAsync (Microsoft.CodeAnalysis.CodeRefactorings.CodeRefactoringContext context) [0x00101] in <bf3f6a3a0dbb45a6850505bf74fd8b31>:0 
+  at OmniSharp.Roslyn.CSharp.Services.Refactoring.V2.BaseCodeActionService`2[TRequest,TResponse].CollectRefactoringActions (Microsoft.CodeAnalysis.Document document, Microsoft.CodeAnalysis.Text.TextSpan span, System.Collections.Generic.List`1[T] codeActions) [0x0010b] in <7b9dd31d0e9d4d9eafd9fddeb75c2c3e>:0 
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 8, Column: 58.
+[info]: OmniSharp.OmniSharpWorkspace
+        Miscellaneous file: /home/sebastiao/vscode/Cola/cola.cs added to workspace
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 3, Column: 7.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 3, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 7, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 12, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 12, Column: 43.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 12, Column: 85.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 12, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 12, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 35, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 35, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 35, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 35, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 35, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 36, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 11, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 7, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 76, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 77, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 77, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 77, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 77, Column: 58.
+Received response for /v2/blockstructure but could not find request.
+Received response for /v2/blockstructure but could not find request.
+Received response for /v2/getcodeactions but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 78, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 90, Column: 31.
+Received response for /quickinfo but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 71.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 75.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 76.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 67.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 61.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 99, Column: 58.
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 22505,
+  "Command": "/project",
+  "Arguments": {
+    "FileName": "/home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs"
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 22505,
+  "Command": "/project",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.ArgumentNullException: Value cannot be null.\\nParameter name: key\\n  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <9f0df102fe6e4cfea29d2e46f585d8a5>:0 \\n  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryGetValue (TKey key, TValue& value) [0x00000] in <9f0df102fe6e4cfea29d2e46f585d8a5>:0 \\n  at OmniSharp.MSBuild.ProjectFile.ProjectFileInfoCollection.TryGetValue (System.String filePath, OmniSharp.MSBuild.ProjectFile.ProjectFileInfo& fileInfo) [0x00000] in <8921d6e32d784814819c41040a33ab85>:0 \\n  at OmniSharp.MSBuild.ProjectManager.TryGetProject (System.String projectFilePath, OmniSharp.MSBuild.ProjectFile.ProjectFileInfo& projectFileInfo) [0x00000] in <8921d6e32d784814819c41040a33ab85>:0 \\n  at OmniSharp.MSBuild.ProjectSystem.OmniSharp.Services.IProjectSystem.GetProjectModelAsync (System.String filePath) [0x0009e] in <8921d6e32d784814819c41040a33ab85>:0 \\n  at OmniSharp.ProjectInformationService.Handle (OmniSharp.Models.ProjectInformation.ProjectInformationRequest request) [0x000d2] in <f0b7d64888304c3b82faf6a89d524be5>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].GetFirstNotEmptyResponseFromHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x00099] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x00163] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <2dbb2d70fbda48ce82bfb14b78e8b811>:0 \"",
+  "Body": null,
+  "Seq": 266871,
+  "Type": "response"
+}
+[warn]: OmniSharp.Stdio.Host
+        ************ Request ************
+{
+  "Type": "request",
+  "Seq": 22506,
+  "Command": "/v2/runtestsincontext",
+  "Arguments": {
+    "FileName": "/home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs",
+    "Line": 100,
+    "Column": 20
+  }
+}
+[fail]: OmniSharp.Stdio.Host
+        ************  Response ************ 
+{
+  "Request_seq": 22506,
+  "Command": "/v2/runtestsincontext",
+  "Running": true,
+  "Success": false,
+  "Message": "\"System.ArgumentNullException: Value cannot be null.\\nParameter name: workingDirectory\\n  at OmniSharp.DotNetTest.TestManager..ctor (Microsoft.CodeAnalysis.Project project, System.String workingDirectory, OmniSharp.Services.IDotNetCliService dotNetCli, NuGet.Versioning.SemanticVersion dotNetCliVersion, OmniSharp.Eventing.IEventEmitter eventEmitter, Microsoft.Extensions.Logging.ILogger logger) [0x0008d] in <a1bc96e3fe79477e83df38501e910607>:0 \\n  at OmniSharp.DotNetTest.VSTestManager..ctor (Microsoft.CodeAnalysis.Project project, System.String workingDirectory, OmniSharp.Services.IDotNetCliService dotNetCli, NuGet.Versioning.SemanticVersion dotNetCliVersion, OmniSharp.Eventing.IEventEmitter eventEmitter, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) [0x0000f] in <a1bc96e3fe79477e83df38501e910607>:0 \\n  at OmniSharp.DotNetTest.TestManager.Create (Microsoft.CodeAnalysis.Project project, OmniSharp.Services.IDotNetCliService dotNetCli, OmniSharp.Eventing.IEventEmitter eventEmitter, Microsoft.Extensions.Logging.ILoggerFactory loggerFactory) [0x00028] in <a1bc96e3fe79477e83df38501e910607>:0 \\n  at OmniSharp.DotNetTest.Services.RunTestsInContextService.Handle (OmniSharp.DotNetTest.Models.RunTestsInContextRequest request) [0x00057] in <a1bc96e3fe79477e83df38501e910607>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].GetFirstNotEmptyResponseFromHandlers (OmniSharp.Endpoint.Exports.ExportHandler`2[TRequest,TResponse][] handlers, TRequest request) [0x00099] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].HandleRequestForLanguage (System.String language, TRequest request, OmniSharp.Protocol.RequestPacket packet) [0x00163] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Endpoint.EndpointHandler`2[TRequest,TResponse].Process (OmniSharp.Protocol.RequestPacket packet, OmniSharp.Endpoint.LanguageModel model, Newtonsoft.Json.Linq.JToken requestObject) [0x0024b] in <39cbe7ee594a4dc5b2e18a2ea23cb5a2>:0 \\n  at OmniSharp.Stdio.Host.HandleRequest (System.String json, Microsoft.Extensions.Logging.ILogger logger) [0x000e8] in <2dbb2d70fbda48ce82bfb14b78e8b811>:0 \"",
+  "Body": null,
+  "Seq": 266874,
+  "Type": "response"
+}
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 108, Column: 32.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 117, Column: 29.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 76, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 11, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 117, Column: 39.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 61, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 62, Column: 23.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 62, Column: 25.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/Tela.cs, Line: 62, Column: 67.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 38.
+Received response for /quickinfo but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.

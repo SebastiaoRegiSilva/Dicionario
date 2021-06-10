@@ -33,12 +33,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/sebastiao/vscode/Learning" added="2021-06-09T19:04:04Z" modified="2021-06-09T19:04:04Z" visited="2021-06-09T19:04:04.866147Z">
+  <bookmark href="file:///home/sebastiao/vscode/Learning" added="2021-06-09T19:04:04Z" modified="2021-06-09T19:04:04Z" visited="2021-06-09T19:04:04Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
           <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-06-09T19:04:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sebastiao/vscode/Cola/cola.cs" added="2021-06-10T17:26:27Z" modified="2021-06-10T17:26:27Z" visited="2021-06-10T17:26:27.438850Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-csharp"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2021-06-10T17:26:27Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
