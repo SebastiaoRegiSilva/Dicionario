@@ -464,3 +464,452 @@ Received response for /v2/getcodeactions but could not find request.
         No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 27.
 [warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
         No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 8, Column: 20.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 2, Column: 19.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 120.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 109.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 101.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 98.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 90.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 71.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 69.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 61.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 49.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 37.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 26.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 19.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 88.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 84.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 10, Column: 89.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 23.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 23.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 34.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 15, Column: 31.
+Received response for /completion/resolve but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 37.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 82.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 76.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 75.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 80.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 101.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 91.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 85.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 82.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 78.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 76.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 72.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 59.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 2, Column: 18.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 18.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 50.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 23, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Posicao.cs, Line: 23, Column: 21.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Cor.cs, Line: 2, Column: 17.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 79.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 2, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 37.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 34.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 66.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 80.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 85.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 88.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 100.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 97.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 87.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 84.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 79.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 76.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 73.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 63.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 56.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 53.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 40.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 33.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 29.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 21.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 18.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 101.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 14.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 83.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 75.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 51.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 44.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 33.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 18.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 26.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 31.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 61.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 46.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 45.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 69.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 63.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 57.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 50.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 47.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 16, Column: 26.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 102.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 66, Column: 8.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 58.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 67.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 75.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 78.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 69.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 72.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 66, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 39.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 66, Column: 31.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 65, Column: 33.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 71, Column: 34.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 23.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 35.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 30.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 104.
+Received response for /v2/getcodeactions but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 26.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 58, Column: 90.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 11, Column: 26.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 12, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Peca.cs, Line: 13, Column: 21.
+Received response for /v2/codestructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 104.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 33.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 42.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 38.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 78.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 71.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 78.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 74.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 66.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 62.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 9, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 10, Column: 65.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 11, Column: 67.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 20, Column: 31.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 20, Column: 52.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 20, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 20, Column: 77.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 68.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 70.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 64.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 59.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 21, Column: 52.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+Received response for /findusages but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 22, Column: 21.
+Received response for /v2/blockstructure but could not find request.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 22, Column: 54.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 22, Column: 55.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 22.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 34.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 28.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 37.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 36.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 30.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 27.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 32.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 41.
+[warn]: OmniSharp.Roslyn.CSharp.Services.Navigation.FindUsagesService
+        No symbol found. File: /home/sebastiao/vscode/ProjectXadrez/xadrez-console/tabuleiro/Tabuleiro.cs, Line: 19, Column: 46.

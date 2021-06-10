@@ -36,3 +36,7 @@ git config --global user.email "swillian2009@gmail.com"
 git config --global user.name "SebastiaoW93"
 git status
 git add --all
+git commit -m "Comentando e implementando a classe Posicao"
+git log --oneline
+git status
+git add --all
