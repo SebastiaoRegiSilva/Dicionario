@@ -1,0 +1,16 @@
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras.deps.json
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras.runtimeconfig.json
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras.runtimeconfig.dev.json
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras.dll
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/ref/dic-palavras.dll
+/home/sebastiao/projetos/exercicios/dic-palavras/bin/Debug/net5.0/dic-palavras.pdb
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.csproj.AssemblyReference.cache
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.GeneratedMSBuildEditorConfig.editorconfig
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.AssemblyInfoInputs.cache
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.AssemblyInfo.cs
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.csproj.CoreCompileInputs.cache
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.dll
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/ref/dic-palavras.dll
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.pdb
+/home/sebastiao/projetos/exercicios/dic-palavras/obj/Debug/net5.0/dic-palavras.genruntimeconfig.cache
