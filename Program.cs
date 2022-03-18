@@ -14,10 +14,9 @@ namespace DicPalavras
         /// <summary>Lista pronta, depois de todos tratamentos.</summary>
         static List<PalavraGrupoPontuacao> _tabelaFinal = new List<PalavraGrupoPontuacao> { };
 
-          /// <summary>Método principal de execução do programa.</summary>
+        /// <summary>Método principal de execução do programa.</summary>
         static void Main(string[] args)
         {
-
             // Lista de grupo listaGrupo, divisão de Id's e títulos.
             List<TipoLista> listaGrupo = new List<TipoLista>
             {
@@ -108,7 +107,6 @@ namespace DicPalavras
             TratarTabelas(listaClasse, 10);
             TratarTabelas(listaSubclasse, 15);
 
-
             _tabelaFinal = RanquearPontosEmCategorias(_tabelaFinal).OrderByDescending(pt => pt.Pontos).ToList();
 
             System.Console.WriteLine(_tabelaFinal);
@@ -117,13 +115,8 @@ namespace DicPalavras
             {
                Console.WriteLine(String.Format("|{0,25}|{1,5}|{2,5}|", item.Palavra, item.Grupo, item.Pontos));
             }
-        
-        
-        
-        
         }
         
-
         ///<summary>Função utilizada para fazer tratamento nas listas.</summary>
         ///<param name="listas">É uma lista criada à partir da retirada de palavras da lista negra.</param>
         ///<param name="pontos">Quantidade de pontos atribuída a relação grupo e palavras da classe PalavraGrupoPontuacao.</param>
@@ -151,7 +144,6 @@ namespace DicPalavras
             }
         }
 
-      
         ///<summary>Função utilizada para converter Strings em arrays.</summary>
         ///<param name="palavra">Variável do tipo PalavraGrupoPontuacao utilizada para armazenar os títulos das listas.</param>
         ///<returns>Retorna um array de palavras separadas, linha-a-linha.</returns>
@@ -167,21 +159,18 @@ namespace DicPalavras
         {
             return palavra.Replace(";", "").Replace(",", "").Replace(".", "").Replace(")", "").Replace("(", "").Replace("_", "").Replace(" -", "");
         }
-
-        
+       
         ///<summary>Função utilizada para retirar palavras já pré-definidas.</summary>
         ///<param name="entrada">Variável do tipo array de strings.</param>
         ///<returns>Retorna uma nova lista tipo array sem as palavras da lista negra.</returns>       
         static string[] RetirarListaNegra(string[] entrada)
         {
             List<string> lista = new List<string>();
-
             foreach (string palavra in entrada)
             {
                 if (!_listaNegra.Any(bl => bl.ToUpper() == palavra.ToUpper()))
                     lista.Add(palavra);
             }
-
             return lista.ToArray();
         }
 
@@ -191,7 +180,6 @@ namespace DicPalavras
         static List<PalavraGrupoPontuacao> RanquearPontosEmCategorias(List<PalavraGrupoPontuacao> entrada)
         {
             List<PalavraGrupoPontuacao> listaDeElementos = new List<PalavraGrupoPontuacao>();
-
             foreach (var elemento in _tabelaFinal)
             {
                 var le = listaDeElementos.FirstOrDefault(le => le.Palavra == elemento.Palavra && le.Grupo == elemento.Grupo);
@@ -208,12 +196,9 @@ namespace DicPalavras
                 else
                     le.Pontos += elemento.Pontos;
             }
-
             return listaDeElementos;
         } 
-
     } 
-
 }
 
 
